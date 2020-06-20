@@ -21,11 +21,9 @@ class Collector():
 	def getCPU(self, containerName):
 		metric = 'query=container_cpu_usage_seconds_total'
 		query = self.assembleQuery(containerName, metric)
-		response = request.get(query)
+		response = requests.get(query).json()
 		return response['data']['result'][0]['value']
 
 
-		
-		
 		
 		    
