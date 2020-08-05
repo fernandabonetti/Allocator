@@ -24,12 +24,12 @@ class Collector():
 		response = requests.get(query).json()
 		return response['data']['result'][0]['value']
 
-  def getCPUDefinitions(self, containerName):
-    pass
+	def getCPUDefinitions(self, containerName):
+		pass
 
-  def getMEMDefinitions(self, containerName):
+	def getMEMDefinitions(self, containerName):
 
 
 
 		
-		    
+				
