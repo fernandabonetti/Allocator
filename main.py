@@ -1,5 +1,5 @@
 import gym
-import AllocatorEnv
+import envs
 
 #minikube service --namespace=monitoring prometheus
 
@@ -7,6 +7,8 @@ ip = '192.168.39.87'
 port = '32590'
 container = 'resource-consumer'
 
+env = gym.make('Allocator-v0')
+env.render()
 
 '''
 collector = rc.Collector(ip, port)

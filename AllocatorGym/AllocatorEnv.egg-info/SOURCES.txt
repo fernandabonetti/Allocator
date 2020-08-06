@@ -1,0 +1,6 @@
+setup.py
+AllocatorEnv.egg-info/PKG-INFO
+AllocatorEnv.egg-info/SOURCES.txt
+AllocatorEnv.egg-info/dependency_links.txt
+AllocatorEnv.egg-info/requires.txt
+AllocatorEnv.egg-info/top_level.txt
