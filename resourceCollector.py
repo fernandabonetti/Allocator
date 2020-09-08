@@ -2,33 +2,38 @@ import requests
 
 #https://prometheus.io/docs/prometheus/latest/querying/api/
 
+
+#http://localhost:3000/api/v1/query?'
+#querystring = {'query' : metric, } + metric + '{container="' + containerName + '"}'
+
 class Collector():
-	def __init__(self, ip, port):
+	def __init__(self, ip, port, container):
 		self.ip = ip
 		self.port = port
-	
-	def assembleQuery(self, containerName, metric):
+    self.container = container
+
+	def assembleQuery(self, metric):
 		address = 'http://' + self.ip + ':' + self.port
-		url = address + '/api/v1/query?' + metric + '{container="' + containerName + '"}'
+		url = address + '/api/v1/query?' + metric + '{container="' + self.container + '"}'
 		return url
 
-	def getMemory(self, containerName):
+	def getMemory(self):
 		metric = 'query=container_memory_usage_bytes'
-		query = self.assembleQuery(containerName, metric)
+		query = self.assembleQuery(metric)
 		response = requests.get(query).json()
 		return response['data']['result'][0]['value'] 		# verify scale
 
-	def getCPU(self, containerName):
+	def getCPU(self):
 		metric = 'query=container_cpu_usage_seconds_total'
-		query = self.assembleQuery(containerName, metric)
+		query = self.assembleQuery(metric)
 		response = requests.get(query).json()
 		return response['data']['result'][0]['value']
 
-	def getCPUDefinitions(self, containerName):
+	def getCPULimits(self):
 		pass
 
-	def getMEMDefinitions(self, containerName):
-
+	def getMEMLimits(self):
+		pass
 
 
 		

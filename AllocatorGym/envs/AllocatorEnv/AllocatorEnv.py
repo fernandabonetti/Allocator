@@ -2,61 +2,51 @@
 import numpy as np
 import gym
 from gym import spaces
-
+from resourceCollector import Collector
 
 class AllocatorEnv(gym.Env):
 
-	def __init__(self):
+	def __init__(self, ip, port, container):
 		super(AllocatorEnv, self).__init__()
-		'''  
+			
 		self.ip = ip
 		self.port = port
 		self.container = container
-		self.cpu_usage = 0.0
-		self.cpu_limit = 0.0
-		self.mem_usage = 0.0
-		self.mem_limit = 0.0
-		'''
+
+    collector = Collector(self.ip, self.port, self.container)
+		
 		# Observation Space is a box with 3-tuple elements
 		self.observation_space = spaces.Box(low=0, high=100, shape=(2,3), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(ACTIONS))
 
-
 	def _take_action(self, action):
 		cpu_thres, mem_thres = ACTIONS[action] 
 
-
-	def step(self, action, a, b):
+	def step(self, action, a, b, peak):
 		done = False 
 		self._take_action(action)
-
-		self.cpu_usage = getCPU(self.ip, self.port, self.container)
-		self.mem_usage = getMEM(self.ip, self.port, self.container)
-		self.cpu_request, self.cpu_limit = getCPULimits(self.ip, self.port, self.container)
-		self.mem_request, self.mem_limit = getMEMLimits(self.ip, self.port, self.container)
+		
+		self.cpu_usage = collector.getCPU()
+		self.mem_usage = collector.getMEM()
+		self.cpu_request, self.cpu_limit = Collector.getCPULimits()
+		self.mem_request, self.mem_limit = Collector.getMEMLimits()
 		next_state = [(cpu_usage, cpu_request, cpu_limit), (mem_usage, mem_request, mem_limit)]
 			
 		#TODO: check for OOM killing too
 		if self.cpu_usage > self.cpu_limit:
 			done = True  
-		reward =  a * np.sin(cpu_usage) + b * np.sin(mem_usage)  
+		reward =  a * (1 - (cpu_usage-peak)/100) + b * (1 - (mem_usage-peak)/100)  
 		return next_state, reward, done    
-
-
+		
 	def reset(self):
-	# Reset the values to an initial state.
+		self.cpu_usage = Collector.getCPU(self.ip, self.port, self.container)
+		self.mem_usage = Collector.getMEM(self.ip, self.port, self.container)
+		self.cpu_request, self.cpu_limit = Collector.getCPULimits(self.ip, self.port, self.container)
+		self.mem_request, self.mem_limit = Collector.getMEMLimits(self.ip, self.port, self.container)
 
-		self.cpu_usage = 0.0
-		self.cpu_limit = 0.0
-		self.mem_usage = 0.0
-		self.mem_limit = 0.0
-			
 	def render(self):
-		
-		print('Memória:{} bytes'.format(self.mem_usage))
-		print('CPU: {}'.format(self.cpu_usage))
-	
-		
+		print("deu certo")
+		print(self.ip, self.port, self.container)
 
 ACTIONS = {
 	1 : (-0.5, 0.0),
