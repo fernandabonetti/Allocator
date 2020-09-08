@@ -1,7 +1,6 @@
 import gym
 import envs
 from DQNAgent import DQNAgent
-#minikube service --namespace=monitoring prometheus
 
 ip = '192.168.39.87'
 port = '32590'
