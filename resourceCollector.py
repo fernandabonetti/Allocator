@@ -1,15 +1,9 @@
 import requests
+import subprocess
+import json
 
-#https://prometheus.io/docs/prometheus/latest/querying/api/
-'''
-metrics = {
-	"cpu_usage" : "container_cpu_usage_seconds_total",
-	"mem_usage" : "container_memory_usage_bytes",
-	
-}
-'''
-#http://localhost:3000/api/v1/query?'
-#querystring = {'query' : metric, } + metric + '{container="' + containerName + '"}'
+# https://prometheus.io/docs/prometheus/latest/querying/api/
+# put jq in dependencies
 
 class Collector():
 	def __init__(self, ip, port, container):
@@ -17,38 +11,37 @@ class Collector():
 		self.port = port
 		self.container = container
 
-	def assembleQuery(self, metric):
+	def assembleQuery(metric):
 		address = 'http://' + self.ip + ':' + self.port
-		url = address + '/api/v1/query?' + metric + '{container="' + self.container + '"}'
+		url = address + '/api/v1/query?query=' + metric + '{container="' + self.container + '"}'
 		return url
 
-	# TODO: DRY  eu posso criar um dicionario de metricas e só passar o codigo
-	def getMemory(self):
-		metric = 'query=container_memory_usage_bytes'
-		query = self.assembleQuery(metric)
+	def queryExec(query):
 		response = requests.get(query).json()
 		return response['data']['result'][0]['value'][1] 		# verify scale
 
-	def getCPU(self):
-		metric = 'query=container_cpu_usage_seconds_total'
-		query = self.assembleQuery(metric)
-		response = requests.get(query).json()
-		return response['data']['result'][0]['value'][1]
+	def getResouceUsage(self):
+		query_mem = assembleQuery('container_memory_usage_bytes')
+		query_cpu = assembleQuery('container_cpu_usage_seconds_total')
+		mem = queryExec(query_mem)
+		cpu = queryExec(query_cpu)
+		return cpu, mem
 
-	def getCPULimits(self):
-		metric = 'query=container_spec_cpu_shares'
-		query = self.assembleQuery(metric)
-		response = requests.get(query).json()
-		return response['data']['result'][0]['value'][1]
+	def getResourceLimits(self):
+		query_cpu = assembleQuery('container_spec_cpu_shares')
+		query_mem = assembleQuery('container_spec_memory_limit_bytes')
+		mem = queryExec(query_mem)
+		cpu = queryExec(query_cpu)
+		return cpu, mem
 
-
-	def getMemoryLimits(self):
-		metric = 'query=container_spec_memory_limit_bytes'
-		query = self.assembleQuery(metric)
-		response = requests.get(query).json()
-		return response['data']['result'][0]['value'][1]
-
-
+	def getResourceRequests(self):
+		command = "kubectl get pods -n default -o json | jq \".items[0].spec.containers[0].resources.requests\" > requests.json"
+		subprocess.run(command, shell=True)
+		with open('requests.json') as fp: 
+			requests = json.load(fp)
+		cpu = int(requests["cpu"][:-1])
+		mem = int(requests["memory"][:-2])
+		return cpu, mem	
 
 
 

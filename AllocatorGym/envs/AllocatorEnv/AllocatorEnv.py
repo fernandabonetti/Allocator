@@ -1,4 +1,4 @@
-
+import subprocess
 import numpy as np
 import gym
 from gym import spaces
@@ -13,14 +13,35 @@ class AllocatorEnv(gym.Env):
 		self.port = port
 		self.container = container
 
-    collector = Collector(self.ip, self.port, self.container)
+		collector = Collector(self.ip, self.port, self.container)
 		
 		# Observation Space is a box with 3-tuple elements
 		self.observation_space = spaces.Box(low=0, high=100, shape=(2,3), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(ACTIONS))
 
 	def _take_action(self, action):
-		cpu_thres, mem_thres = ACTIONS[action] 
+		cpu_limit = getCPULimits()
+		mem_limit = getMemoryLimits()
+		cpu_request = getCPURequest()
+		mem_request = getMemoryRequest()
+
+		cpu_thresh, mem_thresh = ACTIONS[action]
+		
+		cpu_resize = 0
+		mem_resize = 0
+		if cpu_thresh > 0:
+			cpu_resize = (cpu_thresh * 100)/(cpu_limit-cpu_request)
+		if mem_thresh > 0:
+			mem_resize = (mem_thresh * 100)/(mem_limit-mem_request)
+
+		cpu_limit += cpu_resize
+		cpu_request += cpu_resize
+		mem_limit += mem_resize
+		mem_request += mem_resize
+		command = 'kubectl set resources deployment ' + self.container + '--limits=cpu=' +
+		 cpu_limit +'m,memory=' + mem_limit + 'Mi --requests=cpu=' + cpu_request + 'm, memory=' + mem_request + 'Mi'
+		print(command)
+		subprocess.run(command, shell=True)
 
 	def step(self, action, a, b, peak):
 		done = False 
