@@ -29,14 +29,10 @@ class Collector():
 		cpu = math.floor(float(self.queryExec(query_cpu)) * 1000)
 		return cpu, mem
 
-	def getResourceLimits(self):
-		query_cpu = self.assembleQuery('container_spec_cpu_shares', "")
-		query_mem = self.assembleQuery('container_spec_memory_limit_bytes', "")
-		mem = math.ceil(float(self.queryExec(query_mem))/1049000)
-		cpu = math.floor(float(self.queryExec(query_cpu)) * 1000)
-		return cpu, mem
-
 	def getResourceRequests(self):
+		'''
+		it only scrapes the values defined on deployment file
+		'''
 		command = "kubectl get pods -o json | jq \".items[ 0].spec.containers[0].resources.requests\" > requests.json"
 		subprocess.run(command, shell=True)
 		with open('requests.json') as fp: 
@@ -45,6 +41,17 @@ class Collector():
 		mem = int(requests["memory"][:-2])
 		return cpu, mem	
 
+	def getResourceLimits(self):
+		'''
+		it only scrapes the values defined on deployment file
+		'''
+		command = "kubectl get pods -o json | jq \".items[ 0].spec.containers[0].resources.limits\" > limits.json"
+		subprocess.run(command, shell=True)
+		with open('limits.json') as fp: 
+			requests = json.load(fp)
+		cpu = int(requests["cpu"][:-1])
+		mem = int(requests["memory"][:-2])
+		return cpu, mem	
 
 
 

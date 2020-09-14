@@ -13,31 +13,31 @@ class AllocatorEnv(gym.Env):
 		self.ip = ip
 		self.port = port
 		self.container = container
+		self.collector = Collector(self.ip, self.port, self.container)
+		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
+		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
 		
 		# Observation Space is a box with 3-tuple elements
 		self.observation_space = spaces.Box(low=0, high=100, shape=(2,3), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(ACTIONS))
-		self.collector = Collector(self.ip, self.port, self.container)
 		
 
 	def _take_action(self, action):
-		cpu_limit, mem_limit = self.collector.getResourceLimits()
-		cpu_request, mem_request = self.collector.getResourceRequests()
-
 		cpu_thresh, mem_thresh = ACTIONS[action]
+		print("[thresholds]: ", cpu_thresh, mem_thresh)
 		
 		cpu_resize = 0
 		mem_resize = 0
 		if cpu_thresh > 0:
-			cpu_resize = (cpu_thresh * 100)/(cpu_limit-cpu_request)
+			cpu_resize = (cpu_thresh * 100)/(self.cpu_limit - self.cpu_request)
 		if mem_thresh > 0:
-			mem_resize = (mem_thresh * 100)/(mem_limit-mem_request)
+			mem_resize = (mem_thresh * 100)/(self.mem_limit - self.mem_request)
 
-		cpu_limit += cpu_resize
-		cpu_request += cpu_resize
-		mem_limit += mem_resize
-		mem_request += mem_resize
-		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) +'m,memory=' + str(mem_limit) + 'Mi --requests=cpu=' + str(cpu_request) + 'm,memory=' + str(mem_request) + 'Mi'
+		self.cpu_limit += cpu_resize
+		self.cpu_request += cpu_resize
+		self.mem_limit += mem_resize
+		self.mem_request += mem_resize
+		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(self.cpu_limit) +'m,memory=' + str(self.mem_limit) + 'Mi --requests=cpu=' + str(self.cpu_request) + 'm,memory=' + str(self.mem_request) + 'Mi'
 		print(command)
 		subprocess.run(command, shell=True)
 
@@ -46,23 +46,24 @@ class AllocatorEnv(gym.Env):
 		self._take_action(action)
 		
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
-		cpu_request, mem_request = self.collector.getResourceRequests()
-		cpu_limit, mem_limit = self.collector.getResourceLimits()
 	
-		next_state = ((cpu_usage, cpu_request, cpu_limit), (mem_usage, mem_request, mem_limit))
+	
+		next_state = ((cpu_usage, self.cpu_request, self.cpu_limit), (mem_usage, self.mem_request, self.mem_limit))
 			
 		#TODO: check for OOM killing too
-		if cpu_usage > cpu_limit:
+		if cpu_usage > self.cpu_limit:
+			print("vo mata esse container")
 			done = True  
-		reward =  a * (1 - (cpu_usage-peak)/100) + b * (1 - (mem_usage-peak)/100)  
+		reward =  a * (1 - abs(cpu_usage-peak)/100) + b * (1 - abs(mem_usage-peak)/100)
+		print("[REWARD]:", reward)  
 		return next_state, reward, done    
 		
 	def reset(self):
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
-		cpu_request, mem_request = self.collector.getResourceRequests()
-		cpu_limit, mem_limit = self.collector.getResourceLimits()
+		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
+		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
 
-		return ((cpu_usage, cpu_request, cpu_limit), (mem_usage, mem_request, mem_limit))
+		return ((cpu_usage, self.cpu_request, self.cpu_limit), (mem_usage, self.mem_request, self.mem_limit))
 
 	def render(self):
 		pass
