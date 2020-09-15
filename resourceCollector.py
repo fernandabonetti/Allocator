@@ -53,6 +53,23 @@ class Collector():
 		mem = int(requests["memory"][:-2])
 		return cpu, mem	
 
+	#machine_memory_bytes
+	def getNodeMemory(self):
+		address = 'http://' + self.ip + ':' + self.port
+		url = address + '/api/v1/query?query=' + 'machine_memory_bytes'
+		response = requests.get(url).json()
+		mem = math.ceil(int(response['data']['result'][0]['value'][1])/1049000)
+		return mem
+	
+	def getNodeCPU(self):
+		address = 'http://' + self.ip + ':' + self.port
+		url = address + '/api/v1/query?query=' + 'machine_cpu_cores'
+		response = requests.get(url).json()
+		cpu = int(response['data']['result'][0]['value'][1]) * 1000
+		return cpu
+
+
+
 
 
 
