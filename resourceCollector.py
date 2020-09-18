@@ -33,7 +33,7 @@ class Collector():
 		'''
 		it only scrapes the values defined on deployment file
 		'''
-		command = "kubectl get pods -o json | jq \".items[ 0].spec.containers[0].resources.requests\" > requests.json"
+		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources.requests\" > requests.json"
 		subprocess.run(command, shell=True)
 		with open('requests.json') as fp: 
 			requests = json.load(fp)

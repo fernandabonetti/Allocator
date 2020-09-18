@@ -22,13 +22,13 @@ class AllocatorEnv(gym.Env):
 		self.node_max_cpu = self.collector.getNodeCPU()
 
 		# Observation Space is a box with 3-tuple elements
-		self.observation_space = spaces.Box(low=0, high=10000, shape=(2,3), dtype=np.float32)
+		self.observation_space = spaces.Box(low=0, high=10000, shape=(1,6), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(ACTIONS))
 		
 
 	def _take_action(self, action):
 		cpu_thresh, mem_thresh = ACTIONS[action]
-		
+		print(cpu_thresh, mem_thresh)
 		cpu_resize = 0
 		mem_resize = 0
 		if cpu_thresh > 0:
@@ -41,7 +41,7 @@ class AllocatorEnv(gym.Env):
 		self.mem_limit += mem_resize
 		self.mem_request += mem_resize
 		#print("[parameters]", self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
-		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(self.cpu_limit) +'m,memory=' + str(self.mem_limit) + 'Mi --requests=cpu=' + str(self.cpu_request) + 'm,memory=' + str(self.mem_request) + 'Mi'
+		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(math.floor(self.cpu_limit)) +'m,memory=' + str(math.floor(self.mem_limit)) + 'Mi --requests=cpu=' + str(math.floor(self.cpu_request)) + 'm,memory=' + str(math.floor(self.mem_request)) + 'Mi'
 		print(command)
 		subprocess.run(command, shell=True)
 
@@ -50,17 +50,16 @@ class AllocatorEnv(gym.Env):
 		self._take_action(action)
 		
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
-		next_state = ((cpu_usage, self.cpu_request, self.cpu_limit), (mem_usage, self.mem_request, self.mem_limit))
+		next_state = (cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit)
 			
 		if cpu_usage > self.cpu_limit or mem_usage > self.mem_limit:
-			print("vo mata esse container")
 			done = True
 		if self.cpu_limit >= self.node_max_cpu or self.mem_limit >= self.node_max_memory:
 			done = True	
 
-		peak_mem = ((self.mem_limit - self.mem_request) * peak)/100
-		peak_cpu = ((self.cpu_limit - self.cpu_request) * peak)/100
-
+		peak_mem = self.mem_request + (((self.mem_limit - self.mem_request) * peak)/100) # transform peak to be limits relative
+		peak_cpu = self.cpu_request + (((self.cpu_limit - self.cpu_request) * peak)/100)
+		print("[peak]", peak_cpu, peak_mem)
 		reward =  (a * (1 - abs(cpu_usage - peak_cpu)/100)) + (b * (1 - abs(mem_usage - peak_mem)/100))
 		return np.array(next_state), reward, done    
 		
@@ -72,7 +71,7 @@ class AllocatorEnv(gym.Env):
 		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
 		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
 
-		return np.array(((cpu_usage, self.cpu_request, self.cpu_limit), (mem_usage, self.mem_request, self.mem_limit)))
+		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def render(self):
 		pass
