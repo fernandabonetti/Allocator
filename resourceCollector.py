@@ -2,6 +2,7 @@ import requests
 import subprocess
 import math
 import json
+import time
 
 # https://prometheus.io/docs/prometheus/latest/querying/api/
 # put jq in dependencies
@@ -19,10 +20,14 @@ class Collector():
 
 	def queryExec(self, query):
 		response = requests.get(query).json()
-		return response['data']['result'][0]['value'][1] 		# verify scale
+		try: 
+			value = response['data']['result'][0]['value'][1] 		# verify scale
+		except IndexError:
+			time.sleep(5)
+			value = self.queryExec(query)
+		return value
 
 	def getResourceUsage(self):
-		#rate(container_cpu_usage_seconds_total{container=\"resource-consumer\"}[5m])",
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
 		query_cpu = self.assembleQuery('rate(container_cpu_usage_seconds_total', "[1m])")
 		mem = math.ceil(float(self.queryExec(query_mem))/1049000)
@@ -30,9 +35,6 @@ class Collector():
 		return cpu, mem
 
 	def getResourceRequests(self):
-		'''
-		it only scrapes the values defined on deployment file
-		'''
 		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources.requests\" > requests.json"
 		subprocess.run(command, shell=True)
 		with open('requests.json') as fp: 
@@ -42,10 +44,7 @@ class Collector():
 		return cpu, mem	
 
 	def getResourceLimits(self):
-		'''
-		it only scrapes the values defined on deployment file
-		'''
-		command = "kubectl get pods -o json | jq \".items[ 0].spec.containers[0].resources.limits\" > limits.json"
+		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources.limits\" > limits.json"
 		subprocess.run(command, shell=True)
 		with open('limits.json') as fp: 
 			requests = json.load(fp)
@@ -53,7 +52,6 @@ class Collector():
 		mem = int(requests["memory"][:-2])
 		return cpu, mem	
 
-	#machine_memory_bytes
 	def getNodeMemory(self):
 		address = 'http://' + self.ip + ':' + self.port
 		url = address + '/api/v1/query?query=' + 'machine_memory_bytes'
@@ -68,11 +66,7 @@ class Collector():
 		cpu = int(response['data']['result'][0]['value'][1]) * 1000
 		return cpu
 
-
-
-
-
-
-
-
-
+	def changeAllocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
+		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(math.floor(cpu_limit)) +'m,memory=' + str(math.floor(mem_limit)) + 'Mi --requests=cpu=' + str(math.floor(cpu_request)) + 'm,memory=' + str(math.floor(mem_request)) + 'Mi'
+		print(command)
+		subprocess.run(command, shell=True)

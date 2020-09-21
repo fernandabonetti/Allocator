@@ -29,21 +29,16 @@ class AllocatorEnv(gym.Env):
 	def _take_action(self, action):
 		cpu_thresh, mem_thresh = ACTIONS[action]
 		print(cpu_thresh, mem_thresh)
-		cpu_resize = 0
-		mem_resize = 0
-		if cpu_thresh > 0:
-			cpu_resize = ((cpu_thresh * 100) * (self.cpu_limit - self.cpu_request))/100
-		if mem_thresh > 0:
-			mem_resize = ((mem_thresh * 100) * (self.mem_limit - self.mem_request))/100
-			
-		self.cpu_limit += cpu_resize
-		self.cpu_request += cpu_resize
-		self.mem_limit += mem_resize
-		self.mem_request += mem_resize
-		#print("[parameters]", self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
-		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(math.floor(self.cpu_limit)) +'m,memory=' + str(math.floor(self.mem_limit)) + 'Mi --requests=cpu=' + str(math.floor(self.cpu_request)) + 'm,memory=' + str(math.floor(self.mem_request)) + 'Mi'
-		print(command)
-		subprocess.run(command, shell=True)
+		
+		if cpu_thresh != 0.0:
+			self.cpu_limit += ((cpu_thresh * 100) * self.cpu_limit)/100
+			self.cpu_request += ((cpu_thresh * 100) * self.cpu_request)/100
+
+		if mem_thresh != 0.0:
+			self.mem_limit += ((mem_thresh * 100) * self.mem_limit)/100
+			self.mem_request += ((mem_thresh * 100) * self.mem_request)/100
+
+		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
 	def step(self, action, a, b, peak):
 		done = False 
@@ -66,11 +61,10 @@ class AllocatorEnv(gym.Env):
 	def reset(self):
 		command = "cd services/resource-consumer && ./cleanup.sh"
 		subprocess.run(command, shell=True)
-		time.sleep(10)
+		time.sleep(30)
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
 		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
-
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def render(self):

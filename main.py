@@ -26,8 +26,6 @@ for episode in range(n_episodes):
 	state = np.reshape(state, [1,6])
 
 	for timestep in range(5000):
-		#time.sleep(5)
-		
 		action = agent.sample_action(state)
 
 		next_state, reward, done = env.step(action, a, b, peak)
