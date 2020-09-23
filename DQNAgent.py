@@ -14,6 +14,7 @@ class DQNAgent():
 		# Discount and Learning Rate
 		self.gamma = 0.95
 		self.alpha = 0.001
+		self.tau = 0.01
 
 		self.epsilon = 1.0
 		self.epsilon_decay = 0.995
@@ -21,7 +22,7 @@ class DQNAgent():
 
 		self.model = self._build_model()
 		self.model.summary()
-		#self.target_model = self._build_model()
+		self.target_model = self._build_model()
 
 	def _build_model(self):
 		model = Sequential()
@@ -43,20 +44,24 @@ class DQNAgent():
 	def replay(self, batch_size): 
 		minibatch = random.sample(self.replay_memory, batch_size) 
 		for state, action, reward, next_state, done in minibatch:
-			target = reward
+			target = self.target_model.predict(state)
+			if done:
+				target[0][action] = reward
+			else:			
+				q_future = np.amax(self.model.predict(next_state)[0])
+				target[0][action] = reward + q_future * self.gamma
+			self.model.fit(state, target, epochs=1, verbose=0)
 			 
-			if not done:
-				target = reward + self.gamma * np.amax(self.model.predict(next_state)[0])
-			q_future = self.model.predict(state)
-			q_future[0][action] = target
-			self.model.fit(state, q_future, epochs=1, verbose=0) 
 
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay
 
 	def target_train(self):
-		weights = self.model.get_weights()
-		self.target_model.set_weights(weights)
+		online_weights = self.model.get_weights()
+		target_weights = self.target_model.get_weights()
+		for i in range(len(target_weights)):
+			target_weights[i] = online_weights[i] * self.tau + (1 - self.tau) * target_weights[i]
+		self.target_model.set_weights(target_weights)
 	
 	# Load previously trained weights from HDF5 file
 	def load(self, name):

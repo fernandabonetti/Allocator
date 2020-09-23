@@ -22,11 +22,12 @@ action_size = env.action_space.n
 steps = []
 agent = DQNAgent(state_size, action_size, a, b, peak)
 done = False
+
 for episode in range(n_episodes):
 	state = env.reset()
 	state = np.reshape(state, [1,6]) 
 
-	for timestep in range(5000):
+	for timestep in range(500):
 		action = agent.sample_action(state)
 
 		next_state, reward, done = env.step(action, a, b, peak)
@@ -43,15 +44,17 @@ for episode in range(n_episodes):
 			break
 
 		# change to 50	
-		#if timestep % 100 == 0:
-		#	agent.target_train()
+		if timestep % 50 == 0:
+			agent.target_train()
+
 	steps.append([timestep, episode])
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)
+
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" +
 								'{:04d}'.format(episode) + ".hdf5")
-		with open("test.txt", "a") as myfile:
+		with open("test.txt", "w") as myfile:
 			for value in steps:
-    		myfile.write(str(value))						
+				myfile.write(str(value))						

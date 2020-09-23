@@ -20,16 +20,15 @@ class Collector():
 
 	def queryExec(self, query):
 		response = requests.get(query).json()
-		try: 
-			value = response['data']['result'][0]['value'][1] 		# verify scale
-		except IndexError:
-			time.sleep(5)
-			value = self.queryExec(query)
-		return value
+		print(response)
+		if response['status'] == 'success':
+			return response['data']['result'][0]['value'][1] 		# verify scale
+		
 
 	def getResourceUsage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
-		query_cpu = self.assembleQuery('rate(container_cpu_usage_seconds_total', "[1m])")
+		options = "[1m])&or rate(container_cpu_usage_seconds_total{container=" + self.container + "}[5m])"
+		query_cpu = self.assembleQuery('rate(container_cpu_usage_seconds_total', options)
 		mem = math.ceil(float(self.queryExec(query_mem))/1049000)
 		cpu = math.floor(float(self.queryExec(query_cpu)) * 1000)
 		return cpu, mem
