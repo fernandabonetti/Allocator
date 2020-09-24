@@ -1,4 +1,5 @@
-tensorflow==2.3.0
-numpy==1.18.5
-requests==2.22.0
 gym==0.17.2
+requests==2.22.0
+numpy==1.18.5
+tensorflow==2.3.0
+python-dotenv==0.14.0

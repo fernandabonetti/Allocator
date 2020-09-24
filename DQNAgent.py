@@ -21,7 +21,7 @@ class DQNAgent():
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		self.model.summary()
+		self.model.load_weights("model_output/weights_0150.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
@@ -50,9 +50,9 @@ class DQNAgent():
 			else:			
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
-			self.model.fit(state, target, epochs=1, verbose=0)
+			history = self.model.fit(state, target, epochs=1, verbose=0)
+			print(history.history)
 			 
-
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay
 

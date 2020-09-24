@@ -3,11 +3,7 @@
 Dynamic Resource Allocation for Containerized Network Functions
 
 
-## Getting Started
-  
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
+## Prerequisites
 
 * [jq](https://stedolan.github.io/jq/)
 
@@ -17,7 +13,7 @@ To get a local copy up and running follow these simple steps.
 
 * [Gym](https://gym.openai.com/docs/)
 
-### Installation  
+## Installation  
 
 1. Clone the repo
 
@@ -34,9 +30,6 @@ git clone https://github.com/fernandabonetti/DRACON.git
 pip install -e .
 ```
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
   
   
  

@@ -6,7 +6,6 @@ import gym
 from gym import spaces
 from resourceCollector import Collector
 
-
 class AllocatorEnv(gym.Env):
 
 	def __init__(self, ip, port, container):
@@ -16,8 +15,8 @@ class AllocatorEnv(gym.Env):
 		self.port = port
 		self.container = container
 		self.collector = Collector(self.ip, self.port, self.container)
-		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
-		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
+		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
+		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
 		self.node_max_memory = self.collector.getNodeMemory()
 		self.node_max_cpu = self.collector.getNodeCPU()
 
@@ -25,7 +24,6 @@ class AllocatorEnv(gym.Env):
 		self.observation_space = spaces.Box(low=0, high=10000, shape=(1,6), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(ACTIONS))
 		
-
 	def _take_action(self, action):
 		cpu_thresh, mem_thresh = ACTIONS[action]
 		print(cpu_thresh, mem_thresh)
@@ -54,7 +52,7 @@ class AllocatorEnv(gym.Env):
 
 		peak_mem = self.mem_request + (((self.mem_limit - self.mem_request) * peak)/100) # transform peak to be limits relative
 		peak_cpu = self.cpu_request + (((self.cpu_limit - self.cpu_request) * peak)/100)
-		print("[peak]", peak_cpu, peak_mem)
+		
 		reward =  (a * (1 - abs(cpu_usage - peak_cpu)/100)) + (b * (1 - abs(mem_usage - peak_mem)/100))
 		return np.array(next_state), reward, done    
 		
@@ -63,12 +61,10 @@ class AllocatorEnv(gym.Env):
 		subprocess.run(command, shell=True)
 		time.sleep(30)
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
-		self.cpu_request, self.mem_request = self.collector.getResourceRequests()
-		self.cpu_limit, self.mem_limit = self.collector.getResourceLimits()
+		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
+		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
-	def render(self):
-		pass
 
 ACTIONS = {
 	0 : (-0.5, 0.0),
