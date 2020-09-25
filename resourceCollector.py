@@ -18,9 +18,9 @@ class Collector():
 	def queryExec(self, query):
 		response = requests.get(query).json()
 		if response['status'] == 'success':
-			if len(response['data']['result'][0]['value']) < 1:
-				return -1
-			return response['data']['result'][0]['value'][1] 		# verify scale
+			if len(response['data']['result'][0]['value']) > 1:
+				return response['data']['result'][0]['value'][1] 		# verify scale
+		return -1
 		
 	def getResourceUsage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")

@@ -2,6 +2,7 @@ import subprocess
 import numpy as np
 import math
 import time
+import pickle
 import gym
 from gym import spaces
 from resourceCollector import Collector
@@ -15,17 +16,20 @@ class AllocatorEnv(gym.Env):
 		self.port = port
 		self.container = container
 		self.collector = Collector(self.ip, self.port, self.container)
+		
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
 		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
 		self.node_max_memory = self.collector.getNodeMemory()
 		self.node_max_cpu = self.collector.getNodeCPU()
+		
+		self.actions = self._load_actions()
 
 		# Observation Space is a box with 3-tuple elements
 		self.observation_space = spaces.Box(low=0, high=10000, shape=(1,6), dtype=np.float32)
-		self.action_space = spaces.Discrete(len(ACTIONS))
+		self.action_space = spaces.Discrete(len(self.actions))
 		
 	def _take_action(self, action):
-		cpu_thresh, mem_thresh = ACTIONS[action]
+		cpu_thresh, mem_thresh = self.actions[action]
 		print(cpu_thresh, mem_thresh)
 		
 		if cpu_thresh != 0.0:
@@ -65,55 +69,7 @@ class AllocatorEnv(gym.Env):
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
-
-ACTIONS = {
-	0 : (-0.5, 0.0),
-	1 : (-0.5, -0.5), 
-	2 : (-0.5, -0.25),
-	3 : (-0.5, -0.10), 
-	4 : (-0.5, 0.10), 
-	5 : (-0.5, 0.25), 
-	6 : (-0.5, 0.5),
-	7 : (-0.25, 0.0),
-	8 : (-0.25, -0.5), 
-	9 : (-0.25, -0.25),
-	10 : (-0.25, -0.10), 
-	11 : (-0.25, 0.10), 
-	12 : (-0.25, 0.25), 
-	13 : (-0.25, 0.5), 
-	14 : (-0.10, 0.0),
-	15 : (-0.10, -0.5), 
-	16 : (-0.10, -0.25),
-	17 : (-0.10, -0.10),  
-	18 : (-0.10, 0.10),
-	19 : (-0.10, 0.25),
-	20 : (-0.10, 0.5),
-	21 : (0.0, 0.0),
-	22 : (0.0, -0.50),
-	23 : (0.0, -0.25),
-	24 : (0.0, -0.10),
-	25 : (0.0, 0.10),
-	26 : (0.0, 0.25),
-	27 : (0.0, 0.50),
-	28 : (0.10, 0.0),
-	29 : (0.10, -0.50),
-	30 : (0.10, -0.25),
-	31 : (0.10, -0.10),
-	32 : (0.10, 0.10),
-	33 : (0.10, 0.25),
-	34 : (0.10, 0.50),
-	35 : (0.25, 0.0),
-	36 : (0.25, -0.50),
-	37 : (0.25, -0.25),
-	38 : (0.25, -0.10),
-	39 : (0.25, 0.10),
-	40 : (0.25, 0.25),
-	41 : (0.25, 0.50),
-	42 : (0.50, 0.0),
-	43 : (0.50, -0.50),
-	44 : (0.50, -0.25),
-	45 : (0.50, -0.10),
-	46 : (0.50, 0.10),
-	47 : (0.50, 0.25),
-	48 : (0.50, 0.50)
-}                     
+	def _load_actions(self):
+		with open('actions.pkl', 'rb') as fp:
+			actions = pickle.load(fp)	
+		return actions
