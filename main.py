@@ -2,18 +2,26 @@ import gym
 import envs
 import numpy as np
 import os
+import logging
 from dotenv import load_dotenv
 from DQNAgent import DQNAgent
 
 load_dotenv('.env')
-
 ip = os.getenv("IP")
 port = os.getenv("PORT")
 container = os.getenv("CONTAINER")
 output_dir = os.getenv("OUTPUT_DIR")
+
+# a and b are 'boundness' parameters of each resource
 a = float(os.getenv("A"))
 b = float(os.getenv("B"))
 peak = int(os.getenv("PEAK"))
+
+logFormatter = '%(asctime)s - %(message)s'
+logging.basicConfig(format=logFormatter, level=logging.INFO)
+logger = logging.getLogger(__name__)
+handler = logging.FileHandler('dracon.log')
+logger.addHandler(handler)
 
 n_episodes = 1000
 batch_size = 32
@@ -26,15 +34,14 @@ action_size = env.action_space.n
 steps = []
 agent = DQNAgent(state_size, action_size, a, b, peak)
 
-print(type(a))
-
 for episode in range(n_episodes):
 	state = env.reset()
 	total_reward = 0
-	state = np.reshape(state, [1,6]) 
+	state = np.reshape(state, [1, 6]) 
 
-	for timestep in range(100):
+	for timestep in range(500):
 		action = agent.sample_action(state)
+		logger.info("Action:{}".format(action))
 
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
@@ -46,20 +53,21 @@ for episode in range(n_episodes):
 
 		state = next_state
 		if done:
-			print("episode: {}/{}, score: {}, e: {:.2}".format(episode, n_episodes, timestep, agent.epsilon))
+			logger.info("episode: {}/{}, score: {}, e: {:.2}".format(episode, n_episodes, timestep, agent.epsilon))
 			break
 
 		# change to 50	
 		if timestep % 50 == 0:
 			agent.target_train()
 
-	steps.append([timestep, episode, total_reward])
+	logger.info("Steps: {} Episode: {} Total Reward: {}".format(timestep, episode, total_reward))
+	#steps.append([timestep, episode, total_reward])
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)
-
+	
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
-		with open("test2.txt", "w") as myfile:
-			for value in steps:
-				myfile.write(str(value)+ "\n")						
+		#with open("test.txt", "w") as myfile:
+		#	for value in steps:
+		#		myfile.write(str(value)+ "\n")						

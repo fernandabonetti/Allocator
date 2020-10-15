@@ -1,5 +1,5 @@
 import requests
-import subprocess
+from subprocess import PIPE, run
 import math
 import json
 import time
@@ -17,10 +17,9 @@ class Collector():
 
 	def queryExec(self, query):
 		response = requests.get(query).json()
-		if response['status'] == 'success':
-			if len(response['data']['result'][0]['value']) > 1:
-				return response['data']['result'][0]['value'][1] 		# verify scale
-		return -1
+		if (response['status'] == 'success' and len(response['data']['result']) > 0):
+			return response['data']['result'][0]['value'][1] 		# verify scale
+		return -1	
 		
 	def getResourceUsage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
@@ -31,31 +30,38 @@ class Collector():
 		return cpu, mem
 
 	def getResourceSpecs(self, spec):
-		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources." + spec + "\" > "+  spec +".json"
-		subprocess.run(command, shell=True)
-		with open(spec + '.json') as fp: 
-			requests = json.load(fp)
-			
-		cpu = int(requests["cpu"][:-1])
-		mem = int(requests["memory"][:-2])
+		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources." + spec + "\""
+		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
+		resource = json.loads(result.stdout)
+		
+		if (resource["cpu"][-1:] != "m"):	
+			cpu = int(resource["cpu"])
+			mem = int(resource["mem"])
+		else:
+			cpu = int(resource["cpu"][:-1])
+			mem = int(resource["memory"][:-2])
 		return cpu, mem	
 
 	def getNodeMemory(self):
+
 		address = 'http://' + self.ip + ':' + self.port
 		url = address + '/api/v1/query?query=' + 'machine_memory_bytes'
 		response = requests.get(url).json()
-		mem = math.ceil(int(response['data']['result'][0]['value'][1])/1049000)
-		return mem
+		if (len(response['data']['result']) > 0):
+			mem = math.ceil(int(response['data']['result'][0]['value'][1])/1049000)
+			return mem
+		return -1	
 	
 	def getNodeCPU(self):
 		address = 'http://' + self.ip + ':' + self.port
 		url = address + '/api/v1/query?query=' + 'machine_cpu_cores'
 		response = requests.get(url).json()
-		cpu = int(response['data']['result'][0]['value'][1]) * 1000
-		return cpu
+		if (len(response['data']['result']) > 0):
+			cpu = int(response['data']['result'][0]['value'][1]) * 1000
+			return cpu
+		return -1	
 
 	def changeAllocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
-		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(math.floor(cpu_limit)) +'m,memory=' 
-		+ str(math.floor(mem_limit)) + 'Mi --requests=cpu=' + str(math.floor(cpu_request)) + 'm,memory=' + str(math.floor(mem_request)) + 'Mi'
-		print(command)
-		subprocess.run(command, shell=True)
+		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
+			 +'m,memory=' + str(mem_limit) + 'Mi --requests=cpu=' + str(cpu_request) + 'm,memory=' + str(mem_request) + 'Mi'
+		run(command, shell=True)

@@ -21,13 +21,13 @@ class DQNAgent():
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		self.model.load_weights("model_output/weights_0150.hdf5")
+		#self.model.load_weights("model_output/weights_0150.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
 		model = Sequential()
-		model.add(Dense(6, input_shape=(6,), activation='relu'))
-		model.add(Dense(49, activation='relu')) 
+		model.add(Dense(70, input_shape=(6,), activation='relu'))
+		model.add(Dense(70, activation='relu')) 
 		model.add(Dense(self.action_size, activation='linear')) # 49 actions on output layer
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model
@@ -51,7 +51,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			print(history.history)
+			print(history.history['loss'])
 			 
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay

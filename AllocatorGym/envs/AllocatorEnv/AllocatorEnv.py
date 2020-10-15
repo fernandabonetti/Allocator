@@ -30,15 +30,14 @@ class AllocatorEnv(gym.Env):
 		
 	def _take_action(self, action):
 		cpu_thresh, mem_thresh = self.actions[action]
-		print(cpu_thresh, mem_thresh)
 		
 		if cpu_thresh != 0.0:
-			self.cpu_limit += ((cpu_thresh * 100) * self.cpu_limit)/100
-			self.cpu_request += ((cpu_thresh * 100) * self.cpu_request)/100
+			self.cpu_limit += math.floor(((cpu_thresh * 100) * self.cpu_limit)/100)
+			self.cpu_request += math.floor(((cpu_thresh * 100) * self.cpu_request)/100)
 
 		if mem_thresh != 0.0:
-			self.mem_limit += ((mem_thresh * 100) * self.mem_limit)/100
-			self.mem_request += ((mem_thresh * 100) * self.mem_request)/100
+			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
+			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
 
 		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
