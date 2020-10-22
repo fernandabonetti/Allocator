@@ -56,18 +56,12 @@ for episode in range(n_episodes):
 			logger.info("episode: {}/{}, score: {}, e: {:.2}".format(episode, n_episodes, timestep, agent.epsilon))
 			break
 
-		# change to 50	
-		if timestep % 50 == 0:
-			agent.target_train()
-
 	logger.info("Steps: {} Episode: {} Total Reward: {}".format(timestep, episode, total_reward))
-	#steps.append([timestep, episode, total_reward])
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)
+		agent.target_train()
 	
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
-		#with open("test.txt", "w") as myfile:
-		#	for value in steps:
-		#		myfile.write(str(value)+ "\n")						
+					

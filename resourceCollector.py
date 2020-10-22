@@ -36,9 +36,12 @@ class Collector():
 		
 		if (resource["cpu"][-1:] != "m"):	
 			cpu = int(resource["cpu"])
-			mem = int(resource["mem"])
 		else:
 			cpu = int(resource["cpu"][:-1])
+
+		if (resource["memory"][-1:] != "i"):	
+			mem = int(resource["memory"])
+		else:
 			mem = int(resource["memory"][:-2])
 		return cpu, mem	
 

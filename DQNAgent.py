@@ -1,11 +1,14 @@
 import random
 import numpy as np
+import logging
 from collections import deque
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 
 class DQNAgent():
+	log = logging.getLogger(__name__)
+
 	def __init__(self, state_size, action_size, a, b, peak):
 		self.state_size = state_size
 		self.action_size = action_size
@@ -51,7 +54,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			print(history.history['loss'])
+			logging.info(history.history['loss'])
 			 
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay
