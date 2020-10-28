@@ -1,6 +1,6 @@
 __pycache__/
 .vscode/
 .env
-limits.json
-requests.json
+*.log
+*.pcap
 test*

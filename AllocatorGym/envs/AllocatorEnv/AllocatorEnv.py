@@ -62,7 +62,7 @@ class AllocatorEnv(gym.Env):
 	def reset(self):
 		command = "cd services/resource-consumer && ./cleanup.sh"
 		subprocess.run(command, shell=True)
-		time.sleep(30)
+		time.sleep(5)
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
