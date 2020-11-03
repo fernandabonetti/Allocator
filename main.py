@@ -17,10 +17,14 @@ a = float(os.getenv("A"))
 b = float(os.getenv("B"))
 peak = int(os.getenv("PEAK"))
 
-logFormatter = '%(asctime)s - %(message)s'
-logging.basicConfig(format=logFormatter, level=logging.INFO)
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 handler = logging.FileHandler('dracon.log')
+
+file_formatter=logging.Formatter(
+    "{'time':'%(asctime)s','message': {'%(message)s'}}"
+)
+handler.setFormatter(file_formatter)
 logger.addHandler(handler)
 
 n_episodes = 1000
@@ -41,7 +45,7 @@ for episode in range(n_episodes):
 
 	for timestep in range(500):
 		action = agent.sample_action(state)
-		logger.info("Action:{}".format(action))
+		logger.info("action\': \'{}".format(action))
 
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
@@ -53,10 +57,10 @@ for episode in range(n_episodes):
 
 		state = next_state
 		if done:
-			logger.info("episode: {}/{}, score: {}, e: {:.2}".format(episode, n_episodes, timestep, agent.epsilon))
+			logger.info("episode\': \'{}/{}\', \'score\': \'{}\', \'e\': \'{:.2}".format(episode, n_episodes, timestep, agent.epsilon))
 			break
 
-	logger.info("Steps: {} Episode: {} Total Reward: {}".format(timestep, episode, total_reward))
+	logger.info("Steps\': \'{}\', \'Episode\': \'{}\', \'Total Reward\': \'{:.2}".format(timestep, episode, total_reward))
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)

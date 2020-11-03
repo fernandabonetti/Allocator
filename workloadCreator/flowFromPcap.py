@@ -14,8 +14,8 @@ def main():
 	for packet in packets:
 		if packet[IP]:
 			del packet[IP].chksum
-			packet[IP].src = "192.168.32.120"
-			packet[IP].dst = "192.168.32.129"
+			packet[IP].src = "192.168.39.120"
+			packet[IP].dst = "192.168.39.126"
 
 			if TCP in packet:
 				packet[TCP].sport = 80
@@ -24,7 +24,9 @@ def main():
 				packet[UDP].sport = 80
 				packet[UDP].dport = 30006	
 				
-	wrpcap("workload.pcap", packets)
+	#wrpcap("workload.pcap", packets)
+
+	sendpfast(packets)
 
 if __name__ == '__main__':
 	main()
