@@ -1,4 +1,6 @@
 import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 from subprocess import PIPE, run
 import math
 import json
@@ -16,7 +18,13 @@ class Collector():
 		return url
 
 	def queryExec(self, query):
-		response = requests.get(query).json()
+		session = requests.Session()
+		retry = Retry(connect=3, backoff_factor=1)
+		adapter = HTTPAdapter(max_retries=retry)
+		session.mount('http://', adapter)
+
+		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
+
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):
 			return response['data']['result'][0]['value'][1] 		# verify scale
 		return -1	
