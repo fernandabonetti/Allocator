@@ -54,7 +54,6 @@ class Collector():
 		return cpu, mem	
 
 	def getNodeMemory(self):
-
 		address = 'http://' + self.ip + ':' + self.port
 		url = address + '/api/v1/query?query=' + 'machine_memory_bytes'
 		response = requests.get(url).json()

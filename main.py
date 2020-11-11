@@ -48,7 +48,7 @@ for episode in range(n_episodes):
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
 
-		reward = reward if not done else -1  # punish agent if it fails
+		#reward = reward 
 		total_reward += reward
 		
 		agent.store_experience(state, action, reward, next_state, done)

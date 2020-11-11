@@ -14,19 +14,26 @@ def main():
 	for packet in packets:
 		if packet[IP]:
 			del packet[IP].chksum
-			packet[IP].src = "192.168.39.120"
-			packet[IP].dst = "192.168.39.126"
+			del packet[IP].len
+			packet[IP].src = "192.168.49.2"
+			packet[IP].dst = "192.168.49.2"
 
 			if TCP in packet:
+				del packet[TCP].chksum
 				packet[TCP].sport = 80
 				packet[TCP].dport = 30006
+				#del packet[TCP].len
+				packet[TCP].options = [('Timestamp',(0,0))]
 			elif UDP in packet:
+				del packet[UDP].len
+				del packet[UDP].chksum
 				packet[UDP].sport = 80
-				packet[UDP].dport = 30006	
+				packet[UDP].dport = 30006
+			packet = Ether(packet.build())		
 				
-	#wrpcap("workload.pcap", packets)
+	wrpcap("workload.pcap", packets)
 
-	sendpfast(packets)
+	sendp(packets, iface="wlp3s0")
 
 if __name__ == '__main__':
 	main()
