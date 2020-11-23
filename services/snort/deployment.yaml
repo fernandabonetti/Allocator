@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snort
+spec:
+  # replicas: 1
+  # strategy:
+  #   type: RollingUpdate
+  #   rollingUpdate:
+  #     maxSurge: 1
+  #     maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: snort
+  template:
+    metadata:
+      name: snort
+      labels:
+        app: snort
+    spec:
+      containers:
+      - name: docker-snort
+        image: linton/docker-snort:latest
+        stdin: true 
+        tty: true 
+        command: ["/bin/sh", "-c"]
+        args: ["echo \"alert icmp any any -> any any (msg:\"Pinging...\";sid:1000004;)\" >> /etc/snort/rules/local.rules & snort -i eth0 -c /etc/snort/etc/snort.conf -A console"]
+        #ports:
+        #- containerPort: 8080
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+        resources:
+          requests: 
+            memory: 200Mi
+            cpu: 100m
+          limits:
+            memory: 500Mi
+            cpu: 500m
+        imagePullPolicy: Always
+      hostNetwork: true  
