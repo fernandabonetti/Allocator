@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: snort
 spec:
-  # replicas: 1
-  # strategy:
-  #   type: RollingUpdate
-  #   rollingUpdate:
-  #     maxSurge: 1
-  #     maxUnavailable: 0
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   selector:
     matchLabels:
       app: snort
@@ -33,10 +33,10 @@ spec:
               - NET_ADMIN
         resources:
           requests: 
-            memory: 200Mi
+            memory: 100Mi
             cpu: 100m
           limits:
-            memory: 500Mi
-            cpu: 500m
+            memory: 200Mi
+            cpu: 200m
         imagePullPolicy: Always
       hostNetwork: true  

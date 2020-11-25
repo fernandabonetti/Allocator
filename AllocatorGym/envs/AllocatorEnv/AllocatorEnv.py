@@ -60,7 +60,7 @@ class AllocatorEnv(gym.Env):
 		return np.array(next_state), reward, done    
 		
 	def reset(self):
-		command = "cd services/resource-consumer && ./cleanup.sh"
+		command = "cd services/snort && ./cleanup.sh"
 		subprocess.run(command, shell=True)
 		time.sleep(1)
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
