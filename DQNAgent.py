@@ -24,14 +24,14 @@ class DQNAgent():
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		self.model.load_weights("model_output/#1/weights_950.hdf5")
+		#self.model.load_weights("model_output/#1/weights_950.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
 		model = Sequential()
 		model.add(Dense(70, input_shape=(6,), activation='relu'))
 		model.add(Dense(70, activation='relu')) 
-		model.add(Dense(self.action_size, activation='linear')) # 49 actions on output layer
+		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model
 

@@ -45,6 +45,7 @@ for episode in range(n_episodes):
 		action = agent.sample_action(state)
 		logger.info("action\': \'{}".format(action))
 
+		print(state)
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
 
