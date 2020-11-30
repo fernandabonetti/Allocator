@@ -1,3 +1,3 @@
 #!/bin/sh
-kubectl delete deployment snort --namespace default
+kubectl delete deployment docker-snort --namespace default
 kubectl create -f deployment.yaml

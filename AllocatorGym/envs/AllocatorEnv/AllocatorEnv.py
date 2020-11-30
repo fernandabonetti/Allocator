@@ -66,9 +66,9 @@ class AllocatorEnv(gym.Env):
 		command = "cd services/snort && ./cleanup.sh"
 		subprocess.run(command, shell=True)
 		time.sleep(1)
-		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
+		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def _load_actions(self):

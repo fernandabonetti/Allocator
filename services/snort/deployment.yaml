@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: snort
+  name: docker-snort
 spec:
   replicas: 1
   strategy:
@@ -11,12 +11,12 @@ spec:
       maxUnavailable: 0
   selector:
     matchLabels:
-      app: snort
+      app: docker-snort
   template:
     metadata:
-      name: snort
+      name: docker-snort
       labels:
-        app: snort
+        app: docker-snort
     spec:
       containers:
       - name: docker-snort
@@ -38,5 +38,5 @@ spec:
           limits:
             memory: 200Mi
             cpu: 200m
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
       hostNetwork: true  
