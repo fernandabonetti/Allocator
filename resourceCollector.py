@@ -22,7 +22,6 @@ class Collector():
 		retry = Retry(connect=3, backoff_factor=1)
 		adapter = HTTPAdapter(max_retries=retry)
 		session.mount('http://', adapter)
-
 		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
 
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):

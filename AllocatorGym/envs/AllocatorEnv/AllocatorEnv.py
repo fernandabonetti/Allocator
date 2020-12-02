@@ -32,26 +32,12 @@ class AllocatorEnv(gym.Env):
 		cpu_thresh, mem_thresh = self.actions[action]
 		
 		if cpu_thresh != 0.0:
-			limit_allocation = self.cpu_limit + math.floor(((cpu_thresh * 100) * self.cpu_limit)/100)
-			request_allocation = self.cpu_request + math.floor(((cpu_thresh * 100) * self.cpu_request)/100)
-
-			#Change CPU limits only if it respects the constraints
-			if limit_allocation > 0 and limit_allocation > request_allocation: 
-				self.cpu_limit = limit_allocation
-				self.cpu_request = request_allocation
-			else:
-				print("Ineffective CPU Allocation")
+			self.cpu_limit += math.floor(((cpu_thresh * 100) * self.cpu_limit)/100)
+			self.cpu_request += math.floor(((cpu_thresh * 100) * self.cpu_request)/100)
 
 		if mem_thresh != 0.0:
-			limit_mem_allocation = self.mem_limit + math.floor(((mem_thresh * 100) * self.mem_limit)/100)
-			request_mem_allocation = self.mem_request + math.floor(((mem_thresh * 100) * self.mem_request)/100)
-			
-			#Change MEM limits only if it respects the constraints
-			if limit_mem_allocation > 0 and limit_mem_allocation > request_mem_allocation:
-				self.mem_limit = limit_mem_allocation
-				self.mem_request = request_mem_allocation
-			else:
-				print("Ineffective MEM allocation")	
+			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
+			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
 
 		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
