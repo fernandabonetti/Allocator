@@ -27,16 +27,32 @@ class Collector():
 
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):
 			return response['data']['result'][0]['value'][1] 		# verify scale
-		return 0	
+		return -1
+
+	def checkMetricsApi(resource):
+		command = "kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods | jq \".items[0].containers[0].usage"
+		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
+		return json.loads(result.stdout)
 		
 	def getResourceUsage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
-
 		options = '[1m]))'
 		query_cpu = self.assembleQuery('sum%20by%20(pod)(rate(container_cpu_usage_seconds_total' , options)
 		
-		mem = math.ceil(float(self.queryExec(query_mem))/1049000)
-		cpu = math.floor(float(self.queryExec(query_cpu)) * 1000)
+		mem = self.queryExec(query_mem)
+		cpu = self.queryExec(query_cpu)
+
+		metrics = checkMetricsApi()
+
+		# Verify with 'kubectl get' if usage is really zero 
+		if (mem == -1):
+			mem = metrics["memory"][:-2] if metrics != None
+		if (cpu == -1):
+			cpu = metrics["cpu"] if metrics != None
+
+		mem = math.ceil(float(mem)/1049000)
+		cpu = math.floor(float(cpu) *1000)
+
 		return cpu, mem
 
 	def getResourceSpecs(self, spec):
