@@ -43,15 +43,14 @@ for episode in range(n_episodes):
 
 	for timestep in range(500):
 		action = agent.sample_action(state)
-		logger.info("action\': \'{}".format(action))
 
-		print(state)
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
 
 		#reward = reward 
 		total_reward += reward
 		
+		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		agent.store_experience(state, action, reward, next_state, done)
 
 		state = next_state

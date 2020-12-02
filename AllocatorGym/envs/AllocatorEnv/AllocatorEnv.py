@@ -19,8 +19,8 @@ class AllocatorEnv(gym.Env):
 		
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
 		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
-		self.node_max_memory = self.collector.getNodeMemory()
-		self.node_max_cpu = self.collector.getNodeCPU()
+		self.node_max_memory = 2418
+		self.node_max_cpu = 1250
 		
 		self.actions = self._load_actions()
 
@@ -32,12 +32,26 @@ class AllocatorEnv(gym.Env):
 		cpu_thresh, mem_thresh = self.actions[action]
 		
 		if cpu_thresh != 0.0:
-			self.cpu_limit += math.floor(((cpu_thresh * 100) * self.cpu_limit)/100)
-			self.cpu_request += math.floor(((cpu_thresh * 100) * self.cpu_request)/100)
+			limit_allocation = self.cpu_limit + math.floor(((cpu_thresh * 100) * self.cpu_limit)/100)
+			request_allocation = self.cpu_request + math.floor(((cpu_thresh * 100) * self.cpu_request)/100)
+
+			#Change CPU limits only if it respects the constraints
+			if limit_allocation > 0 and limit_allocation > request_allocation: 
+				self.cpu_limit = limit_allocation
+				self.cpu_request = request_allocation
+			else:
+				print("Ineffective CPU Allocation")
 
 		if mem_thresh != 0.0:
-			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
-			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
+			limit_mem_allocation = self.mem_limit + math.floor(((mem_thresh * 100) * self.mem_limit)/100)
+			request_mem_allocation = self.mem_request + math.floor(((mem_thresh * 100) * self.mem_request)/100)
+			
+			#Change MEM limits only if it respects the constraints
+			if limit_mem_allocation > 0 and limit_mem_allocation > request_mem_allocation:
+				self.mem_limit = limit_mem_allocation
+				self.mem_request = request_mem_allocation
+			else:
+				print("Ineffective MEM allocation")	
 
 		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
@@ -46,7 +60,7 @@ class AllocatorEnv(gym.Env):
 		self._take_action(action)
 		
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
-		print("cpu", cpu_usage)
+		
 		next_state = (cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit)
 			
 		if cpu_usage > self.cpu_limit or mem_usage > self.mem_limit:
@@ -56,10 +70,8 @@ class AllocatorEnv(gym.Env):
 
 		peak_mem = self.mem_request + (((self.mem_limit - self.mem_request) * peak)/100) # transform peak to be limits relative
 		peak_cpu = self.cpu_request + (((self.cpu_limit - self.cpu_request) * peak)/100)
-
-		print("peak:", peak_mem, peak_cpu)
 		
-		reward =  (a * (1 - (abs(cpu_usage - peak_cpu)/100))) + (b * (1 - (abs(mem_usage - peak_mem)/100)))
+		reward =  (a * (1 - (abs(cpu_usage - peak_cpu)/self.cpu_limit))) + (b * (1 - (abs(mem_usage - peak_mem)/self.mem_limit)))
 		return np.array(next_state), reward, done    
 		
 	def reset(self):

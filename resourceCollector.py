@@ -55,23 +55,6 @@ class Collector():
 			mem = int(resource["memory"][:-2])
 		return cpu, mem	
 
-	def getNodeMemory(self):
-		# command = "kubectl get node minikube -o=jsonpath=\'{.status.allocatable.memory}\'"
-		# result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
-		# resource = json.loads(result.stdout[:-2])
-		# mem = math.floor(resource/1049) 	#transform Ki to Mi
-		# return mem
-		return 2418
-	
-	def getNodeCPU(self):
-		# command = "kubectl get node minikube -o=jsonpath=\'{.status.allocatable.cpu}\'"
-		# result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
-		# resource = json.loads(result.stdout)
-		# cpu = int(resource)*1000 	#transform to millicores
-		# return cpu
-		return 1250
-
-
 	def changeAllocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
 		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
 			 +'m,memory=' + str(mem_limit) + 'Mi --requests=cpu=' + str(cpu_request) + 'm,memory=' + str(mem_request) + 'Mi'
