@@ -47,7 +47,7 @@ for episode in range(n_episodes):
 		next_state, reward, done = env.step(action, a, b, peak)
 		next_state = np.reshape(next_state, [1, 6])
 
-		#reward = reward 
+		reward = reward if not done else -1
 		total_reward += reward
 		
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))

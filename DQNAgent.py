@@ -7,7 +7,6 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 
 class DQNAgent():
-	log = logging.getLogger(__name__)
 
 	def __init__(self, state_size, action_size, a, b, peak):
 		self.state_size = state_size
@@ -16,7 +15,7 @@ class DQNAgent():
 
 		# Discount and Learning Rate
 		self.gamma = 0.95
-		self.alpha = 0.001
+		self.alpha = 0.0001
 		self.tau = 0.01
 
 		self.epsilon = 0.18
@@ -24,7 +23,7 @@ class DQNAgent():
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		#self.model.load_weights("model_output/#1/weights_850.hdf5")
+		#self.model.load_weights("model_output/weights_850.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
@@ -54,7 +53,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			logging.info(history.history['loss'])
+			print(history.history['loss'])
 			 
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay
