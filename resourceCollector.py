@@ -31,7 +31,7 @@ class Collector():
 	def checkMetricsApi(self):
 		command = "kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods | jq \".items[0].containers[0].usage\""
 		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
-		return json.loads(result.stdout)
+		return result.stdout
 		
 	def getResourceUsage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
@@ -42,16 +42,16 @@ class Collector():
 		cpu = self.queryExec(query_cpu)
 
 		metrics = self.checkMetricsApi()
-
-		# Verify with 'kubectl get' if usage is really zero 
-		if (mem == 0):
-			if metrics != None:
+		if metrics != None:
+			metrics = json.loads(metrics)
+		
+			# Verify with 'kubectl get' if usage is really zero 
+			if (mem == 0):
 				try:
 					mem = float(metrics["memory"][:-2])
-				except ValueError:
+				except:
 					print("conversion error")
-		if (cpu == 0):
-			if metrics != None:
+			if (cpu == 0):
 				try:
 					cpu = float(metrics["cpu"])
 				except:
@@ -65,9 +65,9 @@ class Collector():
 	def getResourceSpecs(self, spec):
 		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources." + spec + "\""
 		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
-		resource = json.loads(result.stdout)
 		
-		if resource != None:
+		if result.stdout != None:
+			resource = json.loads(result.stdout)
 			if (resource["cpu"][-1:] != "m"):	
 				cpu = int(resource["cpu"])
 			else:
