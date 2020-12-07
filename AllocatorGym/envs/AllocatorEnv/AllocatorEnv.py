@@ -76,6 +76,7 @@ class AllocatorEnv(gym.Env):
 							+ (b * (1 - (abs(mem_usage - peak_mem)/self.mem_limit - self.mem_request)))
 		else:
 			done = True
+			reward = 0
 		return np.array(next_state), reward, done    
 		
 	def reset(self):
