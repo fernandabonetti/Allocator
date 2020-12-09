@@ -15,10 +15,10 @@ class DQNAgent():
 
 		# Discount and Learning Rate
 		self.gamma = 0.95
-		self.alpha = 0.0001
+		self.alpha = 0.001
 		self.tau = 0.01
 
-		self.epsilon = 0.18
+		self.epsilon = 0.1
 		self.epsilon_decay = 0.998
 		self.epsilon_min = 0.01
 
