@@ -19,7 +19,7 @@ class Collector():
 
 	def queryExec(self, query):
 		session = requests.Session()
-		retry = Retry(connect=3, backoff_factor=1)
+		retry = Retry(connect=3, backoff_factor=3)
 		adapter = HTTPAdapter(max_retries=retry)
 		session.mount('http://', adapter)
 		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
@@ -38,11 +38,14 @@ class Collector():
 		options = '[1m]))'
 		query_cpu = self.assembleQuery('sum%20by%20(pod)(rate(container_cpu_usage_seconds_total' , options)
 		
+		print(query_cpu)
 		mem = self.queryExec(query_mem)
 		cpu = self.queryExec(query_cpu)
 
 		metrics = self.checkMetricsApi()
-		if metrics != None:
+		print(cpu,type(cpu))	
+
+		if len(metrics) > 5:
 			metrics = json.loads(metrics)
 		
 			# Verify with 'kubectl get' if usage is really zero 
@@ -66,7 +69,7 @@ class Collector():
 		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources." + spec + "\""
 		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
 		
-		if result.stdout != None:
+		if len(result.stdout) > 5:
 			resource = json.loads(result.stdout)
 			if (resource["cpu"][-1:] != "m"):	
 				cpu = int(resource["cpu"])

@@ -3,6 +3,7 @@ import sys
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.ticker as ticker
+import numpy as np
 
 def main():
 	if len(sys.argv) < 1:
@@ -13,10 +14,11 @@ def main():
 	x= []
 	y = []
 	with open(filename, 'r') as fp:
-		for index, line in enumerate(fp.readlines()):
-			x.append(index)
-			y.append(float(line[1:-2]))
+		for line in fp.readlines():
+			if line[0]=='[':
+				y.append(float(line[1:-2]))  
 	
+	x = np.arange(0, len(y), 1)
 	sns.set_theme(style="darkgrid")
 
 	ax = sns.lineplot(x=x, y=y, data=y)
@@ -32,4 +34,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
