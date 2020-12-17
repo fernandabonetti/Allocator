@@ -14,7 +14,7 @@ class DQNAgent():
 		self.replay_memory = deque(maxlen=1000)
 
 		# Discount and Learning Rate
-		self.gamma = 0.95
+		self.gamma = 0.90
 		self.alpha = 0.0001
 		self.tau = 0.01
 
