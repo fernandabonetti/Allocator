@@ -38,12 +38,10 @@ class Collector():
 		options = '[1m]))'
 		query_cpu = self.assembleQuery('sum%20by%20(pod)(rate(container_cpu_usage_seconds_total' , options)
 		
-		print(query_cpu)
 		mem = self.queryExec(query_mem)
 		cpu = self.queryExec(query_cpu)
 
-		metrics = self.checkMetricsApi()
-		print(cpu,type(cpu))	
+		metrics = self.checkMetricsApi()	
 
 		if len(metrics) > 5:
 			metrics = json.loads(metrics)
