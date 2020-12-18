@@ -62,6 +62,9 @@ for episode in range(n_episodes):
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)
+
+	# Update Target Network weights at each 100 episodes
+	if episode % 100 == 0:
 		agent.target_train()
 	
 	if episode % 50 == 0:
