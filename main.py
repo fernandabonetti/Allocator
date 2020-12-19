@@ -62,9 +62,9 @@ for episode in range(n_episodes):
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)
+		agent.target_train()
 
 	# Update Target Network weights at each 100 episodes
 	if episode % 50 == 0:
-		agent.target_train()
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
 					
