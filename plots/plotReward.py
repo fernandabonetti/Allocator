@@ -33,6 +33,7 @@ def main():
 	ax.set_title('Total Reward by Episode')
 	ax.set_ylabel('Reward Amount')
 	ax.set_xlabel('Episode')
+	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 if __name__ == '__main__':
 	main()	

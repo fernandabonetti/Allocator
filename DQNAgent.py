@@ -62,7 +62,7 @@ class DQNAgent():
 		online_weights = self.model.get_weights()
 		target_weights = self.target_model.get_weights()
 		for i in range(len(target_weights)):
-			target_weights[i] = online_weights[i] #* self.tau + (1 - self.tau) * target_weights[i]
+			target_weights[i] = online_weights[i] * self.tau + (1 - self.tau) * target_weights[i]
 		self.target_model.set_weights(target_weights)
 	
 	# Load previously trained weights from HDF5 file
