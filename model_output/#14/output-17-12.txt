@@ -192,7 +192,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [75726.6796875]
 [4221.42431640625]
 [153418.4375]
-[32531.994140625]deployment.apps "docker-snort" deleted
+[32531.994140625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -516,7 +516,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [69182.96875]
 [1224.0604248046875]
 [21832.994140625]
-[61636.515625]deployment.apps "docker-snort" deleted
+[61636.515625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -805,7 +805,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [587.2260131835938]
 [3915.73681640625]
 [2129.476806640625]
-[1517.4254150390625]deployment.apps "docker-snort" deleted
+[1517.4254150390625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -1496,7 +1496,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [113.91919708251953]
 [214.26681518554688]
 [76.66619873046875]
-[412.8768005371094]deployment.apps "docker-snort" deleted
+[412.8768005371094]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -2856,7 +2856,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu_usage_seconds_total{container="docker-snort"}[1m]))
 0.0003889390543724222 <class 'str'>
 [167.71311950683594]
-[57.93922424316406]deployment.apps "docker-snort" deleted
+[57.93922424316406]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -3153,7 +3153,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [51.48918914794922]
 [81.52649688720703]
 [257.33636474609375]
-[60.65187454223633]deployment.apps "docker-snort" deleted
+[60.65187454223633]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -3463,7 +3463,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [144.52359008789062]
 [86.31529998779297]
 [80.50542449951172]
-[89.13190460205078]deployment.apps "docker-snort" deleted
+[89.13190460205078]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -5346,7 +5346,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [43.871177673339844]
 [47.514705657958984]
 [58.65480041503906]
-[32.308319091796875]deployment.apps "docker-snort" deleted
+[32.308319091796875]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -5671,7 +5671,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [166.5089874267578]
 [20.881074905395508]
 [221.85000610351562]
-[29.126728057861328]deployment.apps "docker-snort" deleted
+[29.126728057861328]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -5958,7 +5958,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [27.302610397338867]
 [17.376840591430664]
 [28.290422439575195]
-[45.783329010009766]deployment.apps "docker-snort" deleted
+[45.783329010009766]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -6289,7 +6289,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [35.991973876953125]
 [10.996040344238281]
 [14.609816551208496]
-[32.216983795166016]deployment.apps "docker-snort" deleted
+[32.216983795166016]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -6546,7 +6546,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [1.0281850099563599]
 [7.944669246673584]
 [157.44619750976562]
-[6.320792198181152]deployment.apps "docker-snort" deleted
+[6.320792198181152]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -7165,7 +7165,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 0 <class 'int'>
 [65.36767578125]
 [1.3782179355621338]
-[25.32904815673828]deployment.apps "docker-snort" deleted
+[25.32904815673828]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -7449,7 +7449,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu_usage_seconds_total{container="docker-snort"}[1m]))
 0 <class 'int'>
 [20.214677810668945]
-[7.578742504119873]deployment.apps "docker-snort" deleted
+[7.578742504119873]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -7748,7 +7748,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 0.0005040828302935517 <class 'str'>
 http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu_usage_seconds_total{container="docker-snort"}[1m]))
 0.0005040828302935517 <class 'str'>
-[10.269047737121582]deployment.apps "docker-snort" deleted
+[10.269047737121582]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -8030,7 +8030,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [33.25305938720703]
 [9.774470329284668]
 [5.721615791320801]
-[78.8122329711914]deployment.apps "docker-snort" deleted
+[78.8122329711914]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -8610,7 +8610,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [11.458719253540039]
 [1.8531708717346191]
 [2.9767260551452637]
-[3.361128568649292]deployment.apps "docker-snort" deleted
+[3.361128568649292]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -8906,7 +8906,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [4.206470012664795]
 [83.16521453857422]
 [62.311920166015625]
-[3.0221166610717773]deployment.apps "docker-snort" deleted
+[3.0221166610717773]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -9517,7 +9517,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [1.5234735012054443]
 [2.347991704940796]
 [8.074982643127441]
-[176.49879455566406]deployment.apps "docker-snort" deleted
+[176.49879455566406]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -9844,7 +9844,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 0.00016944866217097175 <class 'str'>
 [1.5569957494735718]
 [7.915889263153076]
-[2.439767837524414]deployment.apps "docker-snort" deleted
+[2.439767837524414]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -10174,7 +10174,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [9.462442398071289]
 [9.552497863769531]
 [3.7740564346313477]
-[1.7098764181137085]deployment.apps "docker-snort" deleted
+[1.7098764181137085]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -11847,7 +11847,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [3.9954729080200195]
 [0.5784874558448792]
 [2.443164110183716]
-[0.9082235097885132]deployment.apps "docker-snort" deleted
+[0.9082235097885132]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -12343,7 +12343,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [7.197780132293701]
 [0.5841879844665527]
 [0.6757338643074036]
-[0.9744172096252441]deployment.apps "docker-snort" deleted
+[0.9744172096252441]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -12632,7 +12632,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.35176634788513184]
 [7.849752426147461]
 [3.785949468612671]
-[4.968366622924805]deployment.apps "docker-snort" deleted
+[4.968366622924805]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -13152,7 +13152,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.115625858306885]
 [0.1824411004781723]
 [1.4103127717971802]
-[0.5859346985816956]deployment.apps "docker-snort" deleted
+[0.5859346985816956]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -14056,7 +14056,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.5004093050956726]
 [5.925370693206787]
 [0.19317355751991272]
-[1.122301459312439]deployment.apps "docker-snort" deleted
+[1.122301459312439]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -14325,7 +14325,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.07171173393726349]
 [0.09815603494644165]
 [1.0919065475463867]
-[3.5176031589508057]deployment.apps "docker-snort" deleted
+[3.5176031589508057]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -15361,7 +15361,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.8841504454612732]
 [0.20592446625232697]
 [2.986292839050293]
-[0.2529182732105255]deployment.apps "docker-snort" deleted
+[0.2529182732105255]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -16663,7 +16663,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.12057138234376907]
 [0.09181013703346252]
 [0.28599804639816284]
-[0.09155210852622986]deployment.apps "docker-snort" deleted
+[0.09155210852622986]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -19459,7 +19459,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.06311279535293579]
 [0.09071227163076401]
 [19.06778335571289]
-[3.1678497791290283]deployment.apps "docker-snort" deleted
+[3.1678497791290283]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -20030,7 +20030,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.033262427896261215]
 [4.788064479827881]
 [0.33787402510643005]
-[0.05649954453110695]deployment.apps "docker-snort" deleted
+[0.05649954453110695]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21348,7 +21348,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.14484384655952454]
 [0.29500630497932434]
 [0.17294877767562866]
-[0.09353882074356079]deployment.apps "docker-snort" deleted
+[0.09353882074356079]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -21649,7 +21649,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [3.5221357345581055]
 [1.9455952644348145]
 [0.3722498416900635]
-[0.05710699409246445]deployment.apps "docker-snort" deleted
+[0.05710699409246445]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21923,7 +21923,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.0969412550330162]
 [3.5770668983459473]
 [6.992786884307861]
-[0.178360715508461]deployment.apps "docker-snort" deleted
+[0.178360715508461]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -22427,7 +22427,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [12.043340682983398]
 [1.0338345766067505]
 [26.111345291137695]
-[0.1264231950044632]deployment.apps "docker-snort" deleted
+[0.1264231950044632]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -22650,7 +22650,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.23856714367866516]
 [12.361211776733398]
 [1.2614103555679321]
-[0.5094406008720398]deployment.apps "docker-snort" deleted
+[0.5094406008720398]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -23081,7 +23081,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [2.0955944061279297]
 [0.09279283881187439]
 [37.15971374511719]
-[0.20687374472618103]deployment.apps "docker-snort" deleted
+[0.20687374472618103]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -23972,7 +23972,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.0801369920372963]
 [0.3248217701911926]
 [0.011235185898840427]
-[1.2514456510543823]deployment.apps "docker-snort" deleted
+[1.2514456510543823]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24226,7 +24226,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [6.6658830642700195]
 [8.609521865844727]
 [1.0946170091629028]
-[3.5347750186920166]deployment.apps "docker-snort" deleted
+[3.5347750186920166]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24678,7 +24678,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [37.39116668701172]
 [0.07242435216903687]
 [600.3858032226562]
-[0.13150928914546967]deployment.apps "docker-snort" deleted
+[0.13150928914546967]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -25582,7 +25582,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu_usage_seconds_total{container="docker-snort"}[1m]))
 0.00048261712734104165 <class 'str'>
 [48.494441986083984]
-[0.013895997777581215]deployment.apps "docker-snort" deleted
+[0.013895997777581215]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -25847,7 +25847,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.08871030062437057]
 [0.36907875537872314]
 [0.06250319629907608]
-[0.4733008146286011]deployment.apps "docker-snort" deleted
+[0.4733008146286011]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -26656,7 +26656,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.467111110687256]
 [0.5517230033874512]
 [15.38789176940918]
-[2.151975393295288]deployment.apps "docker-snort" deleted
+[2.151975393295288]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -27269,7 +27269,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.8014941215515137]
 [4.0155534744262695]
 [0.16143803298473358]
-[158.43218994140625]deployment.apps "docker-snort" deleted
+[158.43218994140625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -28027,7 +28027,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.836338520050049]
 [5.760358810424805]
 [6.0018744468688965]
-[0.307229608297348]deployment.apps "docker-snort" deleted
+[0.307229608297348]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -28255,7 +28255,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [10.78830337524414]
 [1.015963077545166]
 [23.409311294555664]
-[0.00020677402790170163]deployment.apps "docker-snort" deleted
+[0.00020677402790170163]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -28518,7 +28518,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.319656848907471]
 [20.691692352294922]
 [0.4341839551925659]
-[0.026900703087449074]deployment.apps "docker-snort" deleted
+[0.026900703087449074]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -29795,7 +29795,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [34.37712860107422]
 [0.3351815342903137]
 [0.7221747040748596]
-[0.5357195138931274]deployment.apps "docker-snort" deleted
+[0.5357195138931274]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -30502,7 +30502,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [4.491319179534912]
 [181.73623657226562]
 [0.5944725871086121]
-[0.00022584899852517992]deployment.apps "docker-snort" deleted
+[0.00022584899852517992]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -30816,7 +30816,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [1.5961843729019165]
 [0.015167607925832272]
 [4.032609939575195]
-[0.17502695322036743]deployment.apps "docker-snort" deleted
+[0.17502695322036743]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -32861,7 +32861,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.1585235595703125]
 [1.2557796239852905]
 [0.7332050204277039]
-[0.6373041272163391]deployment.apps "docker-snort" deleted
+[0.6373041272163391]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -33319,7 +33319,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [44.4261589050293]
 [1.5479154586791992]
 [0.3559316396713257]
-[0.31913089752197266]deployment.apps "docker-snort" deleted
+[0.31913089752197266]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -33566,7 +33566,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [6.690554618835449]
 [0.7732607126235962]
 [0.34936410188674927]
-[0.28258416056632996]deployment.apps "docker-snort" deleted
+[0.28258416056632996]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -34088,7 +34088,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [142.59864807128906]
 [0.1214398443698883]
 [0.16107751429080963]
-[0.15791261196136475]deployment.apps "docker-snort" deleted
+[0.15791261196136475]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -34850,7 +34850,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [54.2888298034668]
 [23.201190948486328]
 [1.5174424648284912]
-[2.9915387630462646]deployment.apps "docker-snort" deleted
+[2.9915387630462646]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -35679,7 +35679,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [2.224113702774048]
 [1.1124123334884644]
 [1.2197012901306152]
-[0.12494826316833496]deployment.apps "docker-snort" deleted
+[0.12494826316833496]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -38043,7 +38043,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.05349068343639374]
 [0.05673234164714813]
 [0.1300944983959198]
-[0.1623968482017517]deployment.apps "docker-snort" deleted
+[0.1623968482017517]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -38849,7 +38849,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.053345274180173874]
 [0.5448198318481445]
 [2.4584708213806152]
-[0.04924792796373367]deployment.apps "docker-snort" deleted
+[0.04924792796373367]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -39141,7 +39141,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu_usage_seconds_total{container="docker-snort"}[1m]))
 0 <class 'int'>
 [1.4815809726715088]
-[0.024684768170118332]deployment.apps "docker-snort" deleted
+[0.024684768170118332]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -41513,7 +41513,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.10986781865358353]
 [1.5432270765304565]
 [0.030485359951853752]
-[0.9308088421821594]deployment.apps "docker-snort" deleted
+[0.9308088421821594]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -42156,7 +42156,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [5.568549156188965]
 [1.2809420824050903]
 [0.5804159045219421]
-[12.314733505249023]deployment.apps "docker-snort" deleted
+[12.314733505249023]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -45672,7 +45672,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.7422144412994385]
 [0.10245788842439651]
 [0.22375768423080444]
-[0.029087388888001442]deployment.apps "docker-snort" deleted
+[0.029087388888001442]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -46239,7 +46239,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [3.6224565505981445]
 [1.1664094924926758]
 [0.04680127277970314]
-[0.06324264407157898]deployment.apps "docker-snort" deleted
+[0.06324264407157898]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -48206,7 +48206,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.1222110465168953]
 [8.050511360168457]
 [0.5811580419540405]
-[0.0650208443403244]deployment.apps "docker-snort" deleted
+[0.0650208443403244]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -48945,7 +48945,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.8868656158447266]
 [7.040310859680176]
 [5.200900077819824]
-[3.549743890762329]deployment.apps "docker-snort" deleted
+[3.549743890762329]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -49536,7 +49536,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.03918372467160225]
 [0.3408964276313782]
 [0.10883558541536331]
-[0.37214863300323486]deployment.apps "docker-snort" deleted
+[0.37214863300323486]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -50513,7 +50513,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.07302749156951904]
 [33.339195251464844]
 [4.796011924743652]
-[0.0856163278222084]deployment.apps "docker-snort" deleted
+[0.0856163278222084]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -51843,7 +51843,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 0.00010748014811587774 <class 'str'>
 [1.9537136554718018]
 [21.080162048339844]
-[0.031163133680820465]deployment.apps "docker-snort" deleted
+[0.031163133680820465]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -52158,7 +52158,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [2.31339955329895]
 [1.966113567352295]
 [7.095303535461426]
-[0.06660617142915726]deployment.apps "docker-snort" deleted
+[0.06660617142915726]
 deployment.apps/docker-snort created
 deployment.apps "docker-snort" deleted
 deployment.apps/docker-snort created
@@ -53117,7 +53117,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.1455877423286438]
 [2.2754507064819336]
 [0.09900364279747009]
-[0.1585615575313568]deployment.apps "docker-snort" deleted
+[0.1585615575313568]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -53623,7 +53623,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [37.648746490478516]
 [109.90045928955078]
 [29.576644897460938]
-[0.7750259637832642]deployment.apps "docker-snort" deleted
+[0.7750259637832642]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -56272,7 +56272,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.07812373340129852]
 [0.36439645290374756]
 [1.3988404273986816]
-[0.49319878220558167]deployment.apps "docker-snort" deleted
+[0.49319878220558167]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -58255,7 +58255,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [1.6542669534683228]
 [1.8813706636428833]
 [86.8248519897461]
-[1.0694384574890137]deployment.apps "docker-snort" deleted
+[1.0694384574890137]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -58740,7 +58740,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.009395066648721695]
 [0.9170630574226379]
 [43.45914077758789]
-[6.492288112640381]deployment.apps "docker-snort" deleted
+[6.492288112640381]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -62463,7 +62463,7 @@ http://192.168.49.2:30000/api/v1/query?query=sum%20by%20(pod)(rate(container_cpu
 [0.12472966313362122]
 [0.30636847019195557]
 [0.4671660363674164]
-[2.470351457595825]deployment.apps "docker-snort" deleted
+[2.470351457595825]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
