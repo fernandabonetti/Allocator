@@ -26,7 +26,7 @@ handler.setFormatter(file_formatter)
 logger.addHandler(handler)
 
 n_episodes = 1000
-batch_size = 50
+batch_size = 100
 
 env = gym.make('Allocator-v0', ip=ip, port=port,  container=container)
 
