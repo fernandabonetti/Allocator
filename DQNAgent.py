@@ -29,7 +29,7 @@ class DQNAgent():
 	def _build_model(self):
 		model = Sequential()
 		model.add(Dense(70, input_shape=(6,), activation='relu'))
-		model.add(Dense(70, activation='relu')) 
+		model.add(Dense(100, activation='relu')) 
 		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model
