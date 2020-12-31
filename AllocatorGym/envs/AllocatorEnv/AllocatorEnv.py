@@ -75,6 +75,6 @@ class AllocatorEnv(gym.Env):
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def _load_actions(self):
-		with open('actions.pkl', 'rb') as fp:
+		with open('actions2.pkl', 'rb') as fp:
 			actions = pickle.load(fp)	
 		return actions
