@@ -37,9 +37,9 @@ def main():
 	grad = np.arange(0, 20, 1)
 	sns.set_theme(style="darkgrid")
 
-	ax = sns.lineplot(x=steps[800:1000], y=mem_usage[800:1000], data=mem_usage[800:1000], lw=1)
-	ax = sns.lineplot(x=steps[800:1000], y=mem_max[800:1000], data=mem_max[800:1000], lw=1)
-	ax = sns.lineplot(x=steps[800:1000], y=mem_min[800:1000], data=mem_min[800:1000], lw=1)
+	ax = sns.lineplot(x=steps[800:1000], y=cpu_usage[800:1000], data=cpu_usage[800:1000], lw=1)
+	ax = sns.lineplot(x=steps[800:1000], y=cpu_max[800:1000], data=cpu_max[800:1000], lw=1)
+	ax = sns.lineplot(x=steps[800:1000], y=cpu_min[800:1000], data=cpu_min[800:1000], lw=1)
 	
 	#ax.xaxis.set_major_locator(ticker.MultipleLocator(1000
 	# ))	#set x ticks interval
@@ -50,7 +50,7 @@ def main():
 	ax.set_title('Limits Behaviour')
 	ax.set_ylabel('Resource')
 	ax.set_xlabel('Steps')
-	plt.legend(loc='upper left', labels=['MEM Usage', 'MEM Limits', "MEM Request"])
+	plt.legend(loc='upper left', labels=['cpu Usage', 'cpu Limits', "cpu Request"])
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 

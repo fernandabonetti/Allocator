@@ -25,7 +25,7 @@ file_formatter=logging.Formatter("{'time':'%(asctime)s','message': {'%(message)s
 handler.setFormatter(file_formatter)
 logger.addHandler(handler)
 
-n_episodes = 1000
+n_episodes = 1500
 batch_size = 100
 
 env = gym.make('Allocator-v0', ip=ip, port=port,  container=container)
