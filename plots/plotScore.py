@@ -22,17 +22,18 @@ def main():
 		if 'score' in record["message"].keys():
 			score.append(int(record["message"]["score"]))
 			episodes.append(int(record["message"]["episode"][:-5]))
-	
-	sns.set_theme(style="darkgrid")
+
+	#sns.set_theme(style="darkgrid")
 	
 	ax = sns.lineplot(x=episodes, y=score, data=score)
 	ax.xaxis.set_major_locator(ticker.MultipleLocator(100))	#set x ticks interval
 	ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
-	ax.margins(x=0)					#remove the ugly inner side margin 
+	ax.margins(x=0)					#remove the ugly inner side margin
+	ax.margins(y=0) 
 
-	ax.set_title('Total Score by Episode')
-	ax.set_ylabel('Score Amount')
-	ax.set_xlabel('Episode')
+	#ax.set_title('Total Score by Episode')
+	ax.set_ylabel('Score Amount', fontsize='20')
+	ax.set_xlabel('Episode', fontsize='20')
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 

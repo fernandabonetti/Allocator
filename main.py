@@ -55,10 +55,10 @@ for episode in range(n_episodes):
 
 		state = next_state
 		if done:
-			logger.info("episode\': \'{}/{}\', \'score\': \'{}\', \'e\': \'{:.2}".format(episode, n_episodes, timestep, agent.epsilon))
+			logger.info("episode\': \'{}/{}\', \'score\': \'{}\', \'e\': \'{:.2}".format(episode, n_episodes, timestep+1, agent.epsilon))
 			break
 
-	logger.info("Steps\': \'{}\', \'Episode\': \'{}\', \'Total Reward\': \'{}".format(timestep, episode, total_reward))
+	logger.info("Steps\': \'{}\', \'Episode\': \'{}\', \'Total Reward\': \'{}".format(timestep+1, episode, total_reward))
 
 	if len(agent.replay_memory) > batch_size:
 		agent.replay(batch_size)

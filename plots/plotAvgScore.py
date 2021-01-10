@@ -29,7 +29,7 @@ def main():
 	i = 0
 	while i <= len(score)-100:
 		mean.append(sum(score[x] for x in range(i,top))/100)
-		eps.append(i)
+		eps.append(i+100)
 		i+=100
 		top+=100
 	sns.set_theme(style="darkgrid")

@@ -32,25 +32,29 @@ def main():
 			mem_usage.append(state[3])
 			mem_min.append(state[4])
 			mem_max.append(state[5])
+
+	
+	#for i in range(0, len(cpu_usage)):
+		#print("{},{},{}".format(cpu_usage[i], cpu_min[i], cpu_max[i]))
+		#print("{},{},{}".format(mem_usage[i], mem_min[i], mem_max[i]))
 			
 	steps = np.arange(0, len(cpu_usage), 1)
-	grad = np.arange(0, 20, 1)
-	sns.set_theme(style="darkgrid")
+	#[print(d) for d in steps]
 
-	ax = sns.lineplot(x=steps[800:1000], y=cpu_usage[800:1000], data=cpu_usage[800:1000], lw=1)
-	ax = sns.lineplot(x=steps[800:1000], y=cpu_max[800:1000], data=cpu_max[800:1000], lw=1)
-	ax = sns.lineplot(x=steps[800:1000], y=cpu_min[800:1000], data=cpu_min[800:1000], lw=1)
+	ax = sns.lineplot(x=steps, y=mem_usage, data=mem_usage, lw=1)
+	ax = sns.lineplot(x=steps, y=mem_max, data=mem_max, lw=1)
+	ax = sns.lineplot(x=steps, y=mem_min, data=mem_min, lw=1)
 	
-	#ax.xaxis.set_major_locator(ticker.MultipleLocator(1000
-	# ))	#set x ticks interval
-	#ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
-
 	ax.margins(x=0)				#remove the ugly inner side margin 
 
-	ax.set_title('Limits Behaviour')
-	ax.set_ylabel('Resource')
-	ax.set_xlabel('Steps')
-	plt.legend(loc='upper left', labels=['cpu Usage', 'cpu Limits', "cpu Request"])
+	#ax.set_title('Limits Behaviour')
+	ax.set_ylabel('Resource', fontsize=24)
+	ax.set_xlabel('Steps', fontsize=24)
+	for tick in ax.xaxis.get_major_ticks():
+		tick.label.set_fontsize(20)
+	for tick in ax.yaxis.get_major_ticks():
+		tick.label.set_fontsize(20)
+	plt.legend(loc='upper left', labels=['MEM Usage', 'MEM Limits', "MEM Request"], fontsize=20)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 

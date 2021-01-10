@@ -604,7 +604,7 @@ deployment.apps/docker-snort resource requirements updated
 [151.42166137695312]
 [136.44924926757812]
 [17.086944580078125]
-[35.096466064453125]deployment.apps "docker-snort" deleted
+[35.096466064453125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -1018,7 +1018,7 @@ deployment.apps/docker-snort resource requirements updated
 [10.582569122314453]
 [15.259119987487793]
 [10.335978507995605]
-[24.985977172851562]deployment.apps "docker-snort" deleted
+[24.985977172851562]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -1442,7 +1442,7 @@ deployment.apps/docker-snort resource requirements updated
 [59.663490295410156]
 [4.086437225341797]
 [9.128198623657227]
-[3.5747592449188232]deployment.apps "docker-snort" deleted
+[3.5747592449188232]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -1858,7 +1858,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.3206071853637695]
 [10.609158515930176]
 [3.703498601913452]
-[5.78225040435791]deployment.apps "docker-snort" deleted
+[5.78225040435791]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -2276,7 +2276,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.2797608375549316]
 [19.533750534057617]
 [16.886144638061523]
-[4.582571029663086]deployment.apps "docker-snort" deleted
+[4.582571029663086]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -2688,7 +2688,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.3550424575805664]
 [1.1017367839813232]
 [18.58504867553711]
-[15.7631196975708]deployment.apps "docker-snort" deleted
+[15.7631196975708]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -3511,7 +3511,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.3207337856292725]
 [2.349729537963867]
 [0.754314124584198]
-[2.0625226497650146]deployment.apps "docker-snort" deleted
+[2.0625226497650146]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -3921,7 +3921,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.638679027557373]
 [2.1908938884735107]
 [1.4344879388809204]
-[0.48262453079223633]deployment.apps "docker-snort" deleted
+[0.48262453079223633]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -4353,7 +4353,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.294071197509766]
 [2.9452269077301025]
 [3.082754135131836]
-[4.488107204437256]deployment.apps "docker-snort" deleted
+[4.488107204437256]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -4774,7 +4774,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.5112144947052]
 [4.124424934387207]
 [1.4332197904586792]
-[0.5289720296859741]deployment.apps "docker-snort" deleted
+[0.5289720296859741]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -5208,7 +5208,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.48481982946395874]
 [0.6469811797142029]
 [1.049687385559082]
-[8.871413230895996]deployment.apps "docker-snort" deleted
+[8.871413230895996]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -5619,7 +5619,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.37372374534606934]
 [8.58337688446045]
 [103.9908218383789]
-[9.054584503173828]deployment.apps "docker-snort" deleted
+[9.054584503173828]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -6041,7 +6041,7 @@ deployment.apps/docker-snort created
 [1.0829447507858276]
 [17.14936065673828]
 [2.0217506885528564]
-[13.941821098327637]deployment.apps "docker-snort" deleted
+[13.941821098327637]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -6886,7 +6886,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.34599608182907104]
 [0.5077372789382935]
 [0.8354820013046265]
-[0.47583436965942383]deployment.apps "docker-snort" deleted
+[0.47583436965942383]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -7295,7 +7295,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.9739999771118164]
 [2.101480007171631]
 [97.65160369873047]
-[118.21978759765625]deployment.apps "docker-snort" deleted
+[118.21978759765625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -7707,7 +7707,7 @@ deployment.apps/docker-snort resource requirements updated
 [31.390634536743164]
 [3.108323097229004]
 [3.090456485748291]
-[25.345378875732422]deployment.apps "docker-snort" deleted
+[25.345378875732422]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -8137,7 +8137,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7641331553459167]
 [3.422732353210449]
 [4.6850972175598145]
-[2.312028646469116]deployment.apps "docker-snort" deleted
+[2.312028646469116]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -8555,7 +8555,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.979613184928894]
 [1.4417695999145508]
 [59.41027069091797]
-[0.6182355880737305]deployment.apps "docker-snort" deleted
+[0.6182355880737305]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -8966,7 +8966,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.046311378479004]
 [13.27902889251709]
 [7.642632484436035]
-[0.106303371489048]deployment.apps "docker-snort" deleted
+[0.106303371489048]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -9394,7 +9394,7 @@ deployment.apps/docker-snort resource requirements updated
 [18.652711868286133]
 [2.8217999935150146]
 [2.4930691719055176]
-[2.438957929611206]deployment.apps "docker-snort" deleted
+[2.438957929611206]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -9807,7 +9807,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.1729767322540283]
 [10.265380859375]
 [0.7128843069076538]
-[3.6198127269744873]deployment.apps "docker-snort" deleted
+[3.6198127269744873]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -10228,7 +10228,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.199058771133423]
 [37.822906494140625]
 [1.3766238689422607]
-[18.363971710205078]deployment.apps "docker-snort" deleted
+[18.363971710205078]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -10659,7 +10659,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1518094539642334]
 [0.7631978392601013]
 [1.4756276607513428]
-[89.30162048339844]deployment.apps "docker-snort" deleted
+[89.30162048339844]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -11070,7 +11070,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.4593305587768555]
 [0.6308935284614563]
 [3.2643086910247803]
-[4.004206657409668]deployment.apps "docker-snort" deleted
+[4.004206657409668]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -11480,7 +11480,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5605414509773254]
 [11.076714515686035]
 [0.370816707611084]
-[0.5818743705749512]deployment.apps "docker-snort" deleted
+[0.5818743705749512]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -11896,7 +11896,7 @@ deployment.apps/docker-snort resource requirements updated
 [78.53309631347656]
 [2.451500654220581]
 [0.10014382004737854]
-[4.7963056564331055]deployment.apps "docker-snort" deleted
+[4.7963056564331055]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -12314,7 +12314,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.774454116821289]
 [5.6389265060424805]
 [2.1212520599365234]
-[0.9822538495063782]deployment.apps "docker-snort" deleted
+[0.9822538495063782]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -12726,7 +12726,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7613320350646973]
 [13.383454322814941]
 [1.155415415763855]
-[34.234737396240234]deployment.apps "docker-snort" deleted
+[34.234737396240234]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -13139,7 +13139,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3661834001541138]
 [0.5888829231262207]
 [4.982047080993652]
-[4.448630332946777]deployment.apps "docker-snort" deleted
+[4.448630332946777]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -13552,7 +13552,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.829843997955322]
 [14.919230461120605]
 [0.1211017593741417]
-[744.945068359375]deployment.apps "docker-snort" deleted
+[744.945068359375]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -13974,7 +13974,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5234551429748535]
 [5.912944793701172]
 [0.39817655086517334]
-[1.1170096397399902]deployment.apps "docker-snort" deleted
+[1.1170096397399902]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -14394,7 +14394,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4055311679840088]
 [0.3970750570297241]
 [2.969224691390991]
-[0.6812666058540344]deployment.apps "docker-snort" deleted
+[0.6812666058540344]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -14804,7 +14804,7 @@ deployment.apps/docker-snort resource requirements updated
 [31.66513442993164]
 [5.755661487579346]
 [492.0532531738281]
-[12.689901351928711]deployment.apps "docker-snort" deleted
+[12.689901351928711]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -15221,7 +15221,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.24284113943576813]
 [26.90047264099121]
 [4.945797443389893]
-[4.882015228271484]deployment.apps "docker-snort" deleted
+[4.882015228271484]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -15639,7 +15639,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9425925612449646]
 [0.08842607587575912]
 [14.23393440246582]
-[28.449005126953125]deployment.apps "docker-snort" deleted
+[28.449005126953125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -16053,7 +16053,7 @@ deployment.apps/docker-snort resource requirements updated
 [112.92334747314453]
 [63.21805191040039]
 [2.144324541091919]
-[0.9002215266227722]deployment.apps "docker-snort" deleted
+[0.9002215266227722]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -16464,7 +16464,7 @@ deployment.apps/docker-snort resource requirements updated
 [12.955738067626953]
 [28.937217712402344]
 [0.9419543147087097]
-[5.393290042877197]deployment.apps "docker-snort" deleted
+[5.393290042877197]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -16879,7 +16879,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5296408534049988]
 [0.7817911505699158]
 [2.9112582206726074]
-[97.96113586425781]deployment.apps "docker-snort" deleted
+[97.96113586425781]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -17289,7 +17289,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4028873443603516]
 [0.13782957196235657]
 [1.2098814249038696]
-[10.540417671203613]deployment.apps "docker-snort" deleted
+[10.540417671203613]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -17702,7 +17702,7 @@ deployment.apps/docker-snort resource requirements updated
 [23.942291259765625]
 [1.0652350187301636]
 [0.8461564779281616]
-[0.557306706905365]deployment.apps "docker-snort" deleted
+[0.557306706905365]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -18120,7 +18120,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.9103569984436035]
 [13.697627067565918]
 [0.11133068799972534]
-[3.7491352558135986]deployment.apps "docker-snort" deleted
+[3.7491352558135986]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -18532,7 +18532,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.104375839233398]
 [7.328562259674072]
 [0.318660706281662]
-[201.89218139648438]deployment.apps "docker-snort" deleted
+[201.89218139648438]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -18946,7 +18946,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.995767593383789]
 [6.944291591644287]
 [1.1891404390335083]
-[0.8139895796775818]deployment.apps "docker-snort" deleted
+[0.8139895796775818]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -19357,7 +19357,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5003091096878052]
 [2.5561680793762207]
 [12.344941139221191]
-[1.3299877643585205]deployment.apps "docker-snort" deleted
+[1.3299877643585205]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -19766,7 +19766,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13506066799163818]
 [1.7352197170257568]
 [3.8570263385772705]
-[0.40586861968040466]deployment.apps "docker-snort" deleted
+[0.40586861968040466]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -20186,7 +20186,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7591105103492737]
 [0.546966016292572]
 [0.5403526425361633]
-[37.90632629394531]deployment.apps "docker-snort" deleted
+[37.90632629394531]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -20606,7 +20606,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.7421015501022339]
 [4.7008514404296875]
 [1.158705472946167]
-[0.8473649024963379]deployment.apps "docker-snort" deleted
+[0.8473649024963379]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21015,7 +21015,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.30109891295433044]
 [7.516360759735107]
 [1.1199865341186523]
-[6.548580169677734]deployment.apps "docker-snort" deleted
+[6.548580169677734]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -21423,7 +21423,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6342914700508118]
 [18.568511962890625]
 [3.4668641090393066]
-[1.7296518087387085]deployment.apps "docker-snort" deleted
+[1.7296518087387085]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21828,7 +21828,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.6839659214019775]
 [1.5567119121551514]
 [11.888667106628418]
-[78.970947265625]deployment.apps "docker-snort" deleted
+[78.970947265625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -22243,7 +22243,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5902273058891296]
 [3.3239192962646484]
 [0.9529870748519897]
-[6.177175045013428]deployment.apps "docker-snort" deleted
+[6.177175045013428]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -22662,7 +22662,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.55005145072937]
 [0.08480998128652573]
 [3.2011232376098633]
-[8.788097381591797]deployment.apps "docker-snort" deleted
+[8.788097381591797]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -23075,7 +23075,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6573867201805115]
 [0.5719573497772217]
 [1.2821382284164429]
-[2.386958360671997]deployment.apps "docker-snort" deleted
+[2.386958360671997]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -23493,7 +23493,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.987631797790527]
 [0.06347761303186417]
 [2.366542100906372]
-[3.3818559646606445]deployment.apps "docker-snort" deleted
+[3.3818559646606445]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24321,7 +24321,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7082282900810242]
 [7.039860248565674]
 [2.792543649673462]
-[5.756585597991943]deployment.apps "docker-snort" deleted
+[5.756585597991943]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24740,7 +24740,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.49821576476097107]
 [6.257533550262451]
 [0.7872681021690369]
-[6.097564220428467]deployment.apps "docker-snort" deleted
+[6.097564220428467]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -25160,7 +25160,7 @@ deployment.apps/docker-snort resource requirements updated
 [16.02531623840332]
 [1.8669805526733398]
 [9.007664680480957]
-[0.42634743452072144]deployment.apps "docker-snort" deleted
+[0.42634743452072144]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -25570,7 +25570,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.49403661489486694]
 [40.36166000366211]
 [0.887835681438446]
-[0.8973925113677979]deployment.apps "docker-snort" deleted
+[0.8973925113677979]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -25978,7 +25978,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4074854850769043]
 [2.267385482788086]
 [0.030587807297706604]
-[0.23611193895339966]deployment.apps "docker-snort" deleted
+[0.23611193895339966]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -26387,7 +26387,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3872346580028534]
 [0.5739571452140808]
 [0.4253670871257782]
-[2.9927055835723877]deployment.apps "docker-snort" deleted
+[2.9927055835723877]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -26800,7 +26800,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.050338268280029]
 [9.532913208007812]
 [2.109931230545044]
-[8.289867401123047]deployment.apps "docker-snort" deleted
+[8.289867401123047]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -27207,7 +27207,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7405962347984314]
 [0.04667634889483452]
 [0.20234757661819458]
-[0.16671542823314667]deployment.apps "docker-snort" deleted
+[0.16671542823314667]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -27623,7 +27623,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.267220973968506]
 [5.264525890350342]
 [24.782817840576172]
-[18.254335403442383]deployment.apps "docker-snort" deleted
+[18.254335403442383]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -28042,7 +28042,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6659485697746277]
 [2.426466703414917]
 [1.1166696548461914]
-[1.808290719985962]deployment.apps "docker-snort" deleted
+[1.808290719985962]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -28451,7 +28451,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.897331237792969]
 [4.887372016906738]
 [139.23080444335938]
-[1.2667741775512695]deployment.apps "docker-snort" deleted
+[1.2667741775512695]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -28866,7 +28866,7 @@ deployment.apps/docker-snort resource requirements updated
 [41.19587707519531]
 [0.03816331550478935]
 [2.283839225769043]
-[4.678712368011475]deployment.apps "docker-snort" deleted
+[4.678712368011475]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -29282,7 +29282,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2607933282852173]
 [1.6669373512268066]
 [0.16666071116924286]
-[0.8107907772064209]deployment.apps "docker-snort" deleted
+[0.8107907772064209]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -29696,7 +29696,7 @@ deployment.apps/docker-snort resource requirements updated
 [14.438509941101074]
 [0.7461262941360474]
 [0.3871023952960968]
-[1.8233542442321777]deployment.apps "docker-snort" deleted
+[1.8233542442321777]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -30116,7 +30116,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.1305253505706787]
 [0.10115036368370056]
 [5.009618759155273]
-[4.483687877655029]deployment.apps "docker-snort" deleted
+[4.483687877655029]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -30527,7 +30527,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.591836929321289]
 [1.9828916788101196]
 [3.270576238632202]
-[0.4998142123222351]deployment.apps "docker-snort" deleted
+[0.4998142123222351]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -30942,7 +30942,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4304191470146179]
 [1.529038906097412]
 [2.388929605484009]
-[0.5786020159721375]deployment.apps "docker-snort" deleted
+[0.5786020159721375]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -31346,7 +31346,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.903587818145752]
 [0.2229081690311432]
 [0.2974001169204712]
-[4.256067752838135]deployment.apps "docker-snort" deleted
+[4.256067752838135]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -31770,7 +31770,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.1367886066436768]
 [0.40946608781814575]
 [0.03513726964592934]
-[0.5948201417922974]deployment.apps "docker-snort" deleted
+[0.5948201417922974]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -32179,7 +32179,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.643316626548767]
 [2.1149182319641113]
 [1.6835811138153076]
-[109.20953369140625]deployment.apps "docker-snort" deleted
+[109.20953369140625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -32612,7 +32612,7 @@ deployment.apps/docker-snort resource requirements updated
 [11.227882385253906]
 [12.564803123474121]
 [1.7282058000564575]
-[0.40496963262557983]deployment.apps "docker-snort" deleted
+[0.40496963262557983]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -33028,7 +33028,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.6401872634887695]
 [0.1631793975830078]
 [0.01943128928542137]
-[37.11774444580078]deployment.apps "docker-snort" deleted
+[37.11774444580078]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -33445,7 +33445,7 @@ deployment.apps/docker-snort resource requirements updated
 [10.998133659362793]
 [0.7740426063537598]
 [3.4755802154541016]
-[16.31822967529297]deployment.apps "docker-snort" deleted
+[16.31822967529297]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -33852,7 +33852,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.28666019439697266]
 [1.5716933012008667]
 [6.216104507446289]
-[26.214078903198242]deployment.apps "docker-snort" deleted
+[26.214078903198242]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -34259,7 +34259,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.19734756648540497]
 [263.537109375]
 [4.229005336761475]
-[121.33490753173828]deployment.apps "docker-snort" deleted
+[121.33490753173828]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -34673,7 +34673,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.0965776443481445]
 [0.5311564207077026]
 [12.548163414001465]
-[0.1899835765361786]deployment.apps "docker-snort" deleted
+[0.1899835765361786]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -35081,7 +35081,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.84657621383667]
 [26.582773208618164]
 [0.24090451002120972]
-[0.5138207077980042]deployment.apps "docker-snort" deleted
+[0.5138207077980042]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -35500,7 +35500,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8244682550430298]
 [1.982656717300415]
 [0.13799649477005005]
-[37.14720153808594]deployment.apps "docker-snort" deleted
+[37.14720153808594]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -35906,7 +35906,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2022981643676758]
 [0.18701452016830444]
 [0.6612823009490967]
-[7.559162139892578]deployment.apps "docker-snort" deleted
+[7.559162139892578]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -36335,7 +36335,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.42628908157348633]
 [1.287424921989441]
 [0.17025306820869446]
-[0.4207693934440613]deployment.apps "docker-snort" deleted
+[0.4207693934440613]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -36754,7 +36754,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.39559826254844666]
 [0.4889953136444092]
 [6.4448957443237305]
-[120.14810180664062]deployment.apps "docker-snort" deleted
+[120.14810180664062]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -37585,7 +37585,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.833261966705322]
 [2.922198534011841]
 [0.9857669472694397]
-[171.10964965820312]deployment.apps "docker-snort" deleted
+[171.10964965820312]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -38018,7 +38018,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5194208025932312]
 [0.46306610107421875]
 [0.6198978424072266]
-[0.33668965101242065]deployment.apps "docker-snort" deleted
+[0.33668965101242065]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -38433,7 +38433,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.599426746368408]
 [4.791747570037842]
 [34.454917907714844]
-[8.93492603302002]deployment.apps "docker-snort" deleted
+[8.93492603302002]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -38853,7 +38853,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.04107929393649101]
 [0.6149592399597168]
 [1.219276785850525]
-[15.01073932647705]deployment.apps "docker-snort" deleted
+[15.01073932647705]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -39268,7 +39268,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.9498409032821655]
 [6.219522953033447]
 [1.9445419311523438]
-[2.338381767272949]deployment.apps "docker-snort" deleted
+[2.338381767272949]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -39704,7 +39704,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.10551070421934128]
 [1.5288944244384766]
 [0.7479825019836426]
-[15.526766777038574]deployment.apps "docker-snort" deleted
+[15.526766777038574]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -40130,7 +40130,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.514842987060547]
 [0.8248072266578674]
 [0.4288085997104645]
-[1.6010609865188599]deployment.apps "docker-snort" deleted
+[1.6010609865188599]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -40557,7 +40557,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3739638328552246]
 [1.7928308248519897]
 [0.31589606404304504]
-[1.3244706392288208]deployment.apps "docker-snort" deleted
+[1.3244706392288208]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -40968,7 +40968,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.035181045532227]
 [47.89188003540039]
 [104.11060333251953]
-[24.041976928710938]deployment.apps "docker-snort" deleted
+[24.041976928710938]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -41377,7 +41377,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.280441552400589]
 [1.191714882850647]
 [0.5263291001319885]
-[6.172818660736084]deployment.apps "docker-snort" deleted
+[6.172818660736084]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -41787,7 +41787,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.276391983032227]
 [1.7524924278259277]
 [2.020890474319458]
-[54.27162551879883]deployment.apps "docker-snort" deleted
+[54.27162551879883]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -42198,7 +42198,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.7015537023544312]
 [2.849428415298462]
 [3.572716474533081]
-[43.25583267211914]deployment.apps "docker-snort" deleted
+[43.25583267211914]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -42618,7 +42618,7 @@ deployment.apps/docker-snort resource requirements updated
 [149.558349609375]
 [0.6176711916923523]
 [25.399137496948242]
-[0.11811933666467667]deployment.apps "docker-snort" deleted
+[0.11811933666467667]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -43027,7 +43027,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2011883556842804]
 [0.2699240744113922]
 [2.304544448852539]
-[0.7797864079475403]deployment.apps "docker-snort" deleted
+[0.7797864079475403]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -43458,7 +43458,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5717695355415344]
 [0.05848076939582825]
 [20.08719253540039]
-[61.937252044677734]deployment.apps "docker-snort" deleted
+[61.937252044677734]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -43878,7 +43878,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.0556107722222805]
 [2.2290070056915283]
 [0.6615967154502869]
-[0.7378214001655579]deployment.apps "docker-snort" deleted
+[0.7378214001655579]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -44712,7 +44712,7 @@ deployment.apps/docker-snort resource requirements updated
 [46.14539337158203]
 [72.28192901611328]
 [28.981019973754883]
-[0.1392585039138794]deployment.apps "docker-snort" deleted
+[0.1392585039138794]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -45122,7 +45122,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.754647731781006]
 [2.490712881088257]
 [2.979074239730835]
-[235.64894104003906]deployment.apps "docker-snort" deleted
+[235.64894104003906]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -45539,7 +45539,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.794537901878357]
 [100.2100830078125]
 [5.209231376647949]
-[12.599757194519043]deployment.apps "docker-snort" deleted
+[12.599757194519043]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -45961,7 +45961,7 @@ deployment.apps/docker-snort resource requirements updated
 [12.124919891357422]
 [78.48993682861328]
 [1.0869468450546265]
-[5.9027509689331055]deployment.apps "docker-snort" deleted
+[5.9027509689331055]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -46381,7 +46381,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.827516555786133]
 [5.744204998016357]
 [0.5446756482124329]
-[35.34287643432617]deployment.apps "docker-snort" deleted
+[35.34287643432617]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -46808,7 +46808,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.8421261310577393]
 [0.2393331527709961]
 [1.4618111848831177]
-[0.857805609703064]deployment.apps "docker-snort" deleted
+[0.857805609703064]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -47227,7 +47227,7 @@ deployment.apps/docker-snort resource requirements updated
 [59.38323211669922]
 [0.16848507523536682]
 [1.8432137966156006]
-[1.9471715688705444]deployment.apps "docker-snort" deleted
+[1.9471715688705444]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -47636,7 +47636,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.3483054637908936]
 [0.1619531512260437]
 [1.274237871170044]
-[1.467327356338501]deployment.apps "docker-snort" deleted
+[1.467327356338501]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -48055,7 +48055,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3747192621231079]
 [0.18752169609069824]
 [1.5306950807571411]
-[1.0423991680145264]deployment.apps "docker-snort" deleted
+[1.0423991680145264]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -48464,7 +48464,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.6367350816726685]
 [0.8101491928100586]
 [1.2571074962615967]
-[1.1797022819519043]deployment.apps "docker-snort" deleted
+[1.1797022819519043]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -49298,7 +49298,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.541769981384277]
 [4.983850479125977]
 [5.9591965675354]
-[4.252198696136475]deployment.apps "docker-snort" deleted
+[4.252198696136475]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -49706,7 +49706,7 @@ deployment.apps/docker-snort resource requirements updated
 [37.73190689086914]
 [1.793606162071228]
 [77.96527862548828]
-[3.4957590103149414]deployment.apps "docker-snort" deleted
+[3.4957590103149414]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -50117,7 +50117,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.143480062484741]
 [12.043933868408203]
 [2.6124534606933594]
-[137.8506622314453]deployment.apps "docker-snort" deleted
+[137.8506622314453]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -50526,7 +50526,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.7480762004852295]
 [0.38684651255607605]
 [0.5840041637420654]
-[0.32521799206733704]deployment.apps "docker-snort" deleted
+[0.32521799206733704]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -50935,7 +50935,7 @@ deployment.apps/docker-snort resource requirements updated
 [79.83869171142578]
 [0.22301031649112701]
 [0.26057156920433044]
-[2.3340346813201904]deployment.apps "docker-snort" deleted
+[2.3340346813201904]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -51352,7 +51352,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5358531475067139]
 [0.32691091299057007]
 [15.03531551361084]
-[0.350629061460495]deployment.apps "docker-snort" deleted
+[0.350629061460495]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -51766,7 +51766,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7023612260818481]
 [41.208614349365234]
 [1.7674356698989868]
-[8.943288803100586]deployment.apps "docker-snort" deleted
+[8.943288803100586]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -52186,7 +52186,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.626733303070068]
 [143.01724243164062]
 [1.0566625595092773]
-[3.07175874710083]deployment.apps "docker-snort" deleted
+[3.07175874710083]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -52609,7 +52609,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.739098072052002]
 [82.673095703125]
 [0.41354793310165405]
-[0.3456038534641266]deployment.apps "docker-snort" deleted
+[0.3456038534641266]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -53019,7 +53019,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1414366960525513]
 [115.16621398925781]
 [1.0230011940002441]
-[0.3108803331851959]deployment.apps "docker-snort" deleted
+[0.3108803331851959]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -53439,7 +53439,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.90571403503418]
 [4.1545233726501465]
 [2.4718854427337646]
-[114.16806030273438]deployment.apps "docker-snort" deleted
+[114.16806030273438]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -53848,7 +53848,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.856491088867188]
 [1.9403738975524902]
 [0.8539754152297974]
-[1.7291336059570312]deployment.apps "docker-snort" deleted
+[1.7291336059570312]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -54272,7 +54272,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.121263265609741]
 [109.31703186035156]
 [4.721722602844238]
-[0.36910873651504517]deployment.apps "docker-snort" deleted
+[0.36910873651504517]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -54697,7 +54697,7 @@ deployment.apps/docker-snort resource requirements updated
 [22.704864501953125]
 [0.23739628493785858]
 [0.6512417793273926]
-[1.0568113327026367]deployment.apps "docker-snort" deleted
+[1.0568113327026367]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -55111,7 +55111,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.23617799580097198]
 [0.6811879873275757]
 [1.2243952751159668]
-[0.24342375993728638]deployment.apps "docker-snort" deleted
+[0.24342375993728638]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -55520,7 +55520,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.0316191911697388]
 [4.155375957489014]
 [66.641845703125]
-[0.7932713627815247]deployment.apps "docker-snort" deleted
+[0.7932713627815247]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -55943,7 +55943,7 @@ deployment.apps/docker-snort resource requirements updated
 [30.694475173950195]
 [0.2653352916240692]
 [0.7946838736534119]
-[0.25193867087364197]deployment.apps "docker-snort" deleted
+[0.25193867087364197]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -56351,7 +56351,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.729783773422241]
 [0.6596954464912415]
 [275.230224609375]
-[0.22343799471855164]deployment.apps "docker-snort" deleted
+[0.22343799471855164]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -56762,7 +56762,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.36876001954078674]
 [1.6046987771987915]
 [59.751426696777344]
-[4.540660858154297]deployment.apps "docker-snort" deleted
+[4.540660858154297]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -57173,7 +57173,7 @@ deployment.apps/docker-snort resource requirements updated
 [20.681997299194336]
 [2.313626289367676]
 [0.6161010265350342]
-[52.990020751953125]deployment.apps "docker-snort" deleted
+[52.990020751953125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -57598,7 +57598,7 @@ deployment.apps/docker-snort resource requirements updated
 [43.24996566772461]
 [0.6412190198898315]
 [0.2206379473209381]
-[3.495877265930176]deployment.apps "docker-snort" deleted
+[3.495877265930176]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -58009,7 +58009,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.541656494140625]
 [0.19568970799446106]
 [4.283232688903809]
-[2.6714518070220947]deployment.apps "docker-snort" deleted
+[2.6714518070220947]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -58420,7 +58420,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.1742682456970215]
 [2.218761444091797]
 [0.9414876699447632]
-[71.12115478515625]deployment.apps "docker-snort" deleted
+[71.12115478515625]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -58829,7 +58829,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.502397537231445]
 [104.56985473632812]
 [7.274317741394043]
-[13.8853178024292]deployment.apps "docker-snort" deleted
+[13.8853178024292]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -59240,7 +59240,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.6704459190368652]
 [39.83945083618164]
 [79.6200180053711]
-[0.45894700288772583]deployment.apps "docker-snort" deleted
+[0.45894700288772583]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -59660,7 +59660,7 @@ deployment.apps/docker-snort resource requirements updated
 [57.84791946411133]
 [1.073303461074829]
 [374.0433654785156]
-[0.4517630338668823]deployment.apps "docker-snort" deleted
+[0.4517630338668823]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -60093,7 +60093,7 @@ deployment.apps/docker-snort resource requirements updated
 [21.638458251953125]
 [0.2637236714363098]
 [2.7718639373779297]
-[49.724124908447266]deployment.apps "docker-snort" deleted
+[49.724124908447266]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -60503,7 +60503,7 @@ deployment.apps/docker-snort resource requirements updated
 [61.98931121826172]
 [21.268075942993164]
 [5.8365583419799805]
-[18.339702606201172]deployment.apps "docker-snort" deleted
+[18.339702606201172]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -60924,7 +60924,7 @@ deployment.apps/docker-snort resource requirements updated
 [69.52162170410156]
 [36.72972106933594]
 [1.0659672021865845]
-[3.383316993713379]deployment.apps "docker-snort" deleted
+[3.383316993713379]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -61369,7 +61369,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.276768207550049]
 [53.66799545288086]
 [0.24174463748931885]
-[0.16119813919067383]deployment.apps "docker-snort" deleted
+[0.16119813919067383]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -61787,7 +61787,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3128944933414459]
 [0.19183681905269623]
 [1.5505284070968628]
-[5.230110168457031]deployment.apps "docker-snort" deleted
+[5.230110168457031]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -62201,7 +62201,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.9243597984313965]
 [7.242541313171387]
 [2.9290313720703125]
-[19.397560119628906]deployment.apps "docker-snort" deleted
+[19.397560119628906]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -62628,7 +62628,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.150367736816406]
 [5.490158557891846]
 [2.637979030609131]
-[0.9799038767814636]deployment.apps "docker-snort" deleted
+[0.9799038767814636]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -63049,7 +63049,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.721573829650879]
 [0.17866192758083344]
 [40.18646240234375]
-[61.26934051513672]deployment.apps "docker-snort" deleted
+[61.26934051513672]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -63459,7 +63459,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13342688977718353]
 [61.5521354675293]
 [33.652503967285156]
-[1.5979251861572266]deployment.apps "docker-snort" deleted
+[1.5979251861572266]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -64281,7 +64281,7 @@ deployment.apps/docker-snort resource requirements updated
 [45.016326904296875]
 [0.7990031242370605]
 [3.0999956130981445]
-[7.832269191741943]deployment.apps "docker-snort" deleted
+[7.832269191741943]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -64701,7 +64701,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.0483653545379639]
 [0.3506408631801605]
 [36.25973129272461]
-[0.34379664063453674]deployment.apps "docker-snort" deleted
+[0.34379664063453674]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -65129,7 +65129,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.29017922282218933]
 [39.459468841552734]
 [1.2200837135314941]
-[3.397104263305664]deployment.apps "docker-snort" deleted
+[3.397104263305664]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -65546,7 +65546,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.7445969581604]
 [2.5297670364379883]
 [0.17928944528102875]
-[0.7520902752876282]deployment.apps "docker-snort" deleted
+[0.7520902752876282]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -65955,7 +65955,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1971944272518158]
 [0.8378521800041199]
 [0.4236861765384674]
-[0.29493772983551025]deployment.apps "docker-snort" deleted
+[0.29493772983551025]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -66372,7 +66372,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.181978225708008]
 [2.7517833709716797]
 [72.0025634765625]
-[0.41897961497306824]deployment.apps "docker-snort" deleted
+[0.41897961497306824]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -66783,7 +66783,7 @@ deployment.apps/docker-snort resource requirements updated
 [40.684364318847656]
 [29.591815948486328]
 [26.25432014465332]
-[40.251365661621094]deployment.apps "docker-snort" deleted
+[40.251365661621094]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -67201,7 +67201,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.413607120513916]
 [45.495601654052734]
 [1.714656949043274]
-[2.135939359664917]deployment.apps "docker-snort" deleted
+[2.135939359664917]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -67615,7 +67615,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.9283967018127441]
 [5.607879161834717]
 [0.702415943145752]
-[1.8362349271774292]deployment.apps "docker-snort" deleted
+[1.8362349271774292]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -68034,7 +68034,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.427543640136719]
 [92.20536041259766]
 [0.30996763706207275]
-[2.8432610034942627]deployment.apps "docker-snort" deleted
+[2.8432610034942627]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -68449,7 +68449,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.21678327023983002]
 [3.037782907485962]
 [1.2614316940307617]
-[0.21298235654830933]deployment.apps "docker-snort" deleted
+[0.21298235654830933]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -68869,7 +68869,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.7412515878677368]
 [42.35197067260742]
 [7.533029556274414]
-[242.28143310546875]deployment.apps "docker-snort" deleted
+[242.28143310546875]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -69278,7 +69278,7 @@ deployment.apps/docker-snort resource requirements updated
 [61.49226379394531]
 [69.71549224853516]
 [11.711689949035645]
-[0.7894022464752197]deployment.apps "docker-snort" deleted
+[0.7894022464752197]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -69688,7 +69688,7 @@ deployment.apps/docker-snort resource requirements updated
 [26.56324577331543]
 [37.43208694458008]
 [3.4259908199310303]
-[1.3018196821212769]deployment.apps "docker-snort" deleted
+[1.3018196821212769]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -70106,7 +70106,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5859782695770264]
 [0.7024576663970947]
 [67.09327697753906]
-[79.02700805664062]deployment.apps "docker-snort" deleted
+[79.02700805664062]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -70516,7 +70516,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.28497862815856934]
 [5.548564910888672]
 [52.91596221923828]
-[1.1102192401885986]deployment.apps "docker-snort" deleted
+[1.1102192401885986]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -71357,7 +71357,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3669665455818176]
 [143.34994506835938]
 [2.1248481273651123]
-[0.21268799901008606]deployment.apps "docker-snort" deleted
+[0.21268799901008606]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -71780,7 +71780,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.011642456054688]
 [33.53102493286133]
 [56.970706939697266]
-[6.401607036590576]deployment.apps "docker-snort" deleted
+[6.401607036590576]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -72621,7 +72621,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.906991481781006]
 [24.548633575439453]
 [0.8014422655105591]
-[69.87145233154297]deployment.apps "docker-snort" deleted
+[69.87145233154297]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -73040,7 +73040,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4266337156295776]
 [2.12650990486145]
 [116.1447982788086]
-[1.3097671270370483]deployment.apps "docker-snort" deleted
+[1.3097671270370483]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -73460,7 +73460,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.22832395136356354]
 [1.0260188579559326]
 [55.97863006591797]
-[0.7819830179214478]deployment.apps "docker-snort" deleted
+[0.7819830179214478]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -73869,7 +73869,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.319904804229736]
 [40.22756576538086]
 [9.786489486694336]
-[22.767873764038086]deployment.apps "docker-snort" deleted
+[22.767873764038086]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -74295,7 +74295,7 @@ deployment.apps/docker-snort resource requirements updated
 [113.45397186279297]
 [0.3741130530834198]
 [2.861266851425171]
-[2.599334955215454]deployment.apps "docker-snort" deleted
+[2.599334955215454]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -74736,7 +74736,7 @@ deployment.apps/docker-snort resource requirements updated
 [40.13923645019531]
 [244.70623779296875]
 [32.745113372802734]
-[3.329904556274414]deployment.apps "docker-snort" deleted
+[3.329904556274414]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -75145,7 +75145,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.647133827209473]
 [0.7548403739929199]
 [77.83516693115234]
-[32.10148239135742]deployment.apps "docker-snort" deleted
+[32.10148239135742]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -75566,7 +75566,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.719221115112305]
 [36.648956298828125]
 [13.843488693237305]
-[9.134003639221191]deployment.apps "docker-snort" deleted
+[9.134003639221191]
 deployment.apps/docker-snort created
 deployment.apps "docker-snort" deleted
 deployment.apps/docker-snort created
@@ -76407,7 +76407,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1649775356054306]
 [81.64083099365234]
 [26.034893035888672]
-[0.24134159088134766]deployment.apps "docker-snort" deleted
+[0.24134159088134766]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -76830,7 +76830,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.2254276275634766]
 [51.94072341918945]
 [46.714073181152344]
-[1.2047762870788574]deployment.apps "docker-snort" deleted
+[1.2047762870788574]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -77240,7 +77240,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.869259834289551]
 [9.095714569091797]
 [1.7214335203170776]
-[0.22408363223075867]deployment.apps "docker-snort" deleted
+[0.22408363223075867]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -77648,7 +77648,7 @@ deployment.apps/docker-snort resource requirements updated
 [30.72545623779297]
 [0.4279814064502716]
 [40.85614013671875]
-[74.6367416381836]deployment.apps "docker-snort" deleted
+[74.6367416381836]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -78070,7 +78070,7 @@ deployment.apps/docker-snort resource requirements updated
 [25.57979393005371]
 [10.007536888122559]
 [2.825946807861328]
-[58.84848403930664]deployment.apps "docker-snort" deleted
+[58.84848403930664]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -78507,7 +78507,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.25056934356689453]
 [0.2997050881385803]
 [49.05330276489258]
-[0.6214086413383484]deployment.apps "docker-snort" deleted
+[0.6214086413383484]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -78922,7 +78922,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.7097010612487793]
 [2.277679681777954]
 [25.627960205078125]
-[135.5906219482422]deployment.apps "docker-snort" deleted
+[135.5906219482422]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -79356,7 +79356,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6093398928642273]
 [3.8301331996917725]
 [2.831136703491211]
-[1.082951545715332]deployment.apps "docker-snort" deleted
+[1.082951545715332]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -79764,7 +79764,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.975708544254303]
 [0.9395110607147217]
 [4.476461410522461]
-[0.2383464127779007]deployment.apps "docker-snort" deleted
+[0.2383464127779007]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -80181,7 +80181,7 @@ deployment.apps/docker-snort resource requirements updated
 [33.29934310913086]
 [1.6566587686538696]
 [4.9649834632873535]
-[1.5772063732147217]deployment.apps "docker-snort" deleted
+[1.5772063732147217]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -80592,7 +80592,7 @@ deployment.apps/docker-snort resource requirements updated
 [35.59550476074219]
 [33.344871520996094]
 [155.88833618164062]
-[3.5213193893432617]deployment.apps "docker-snort" deleted
+[3.5213193893432617]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -81011,7 +81011,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.201462745666504]
 [11.493106842041016]
 [7.066241264343262]
-[4.780794620513916]deployment.apps "docker-snort" deleted
+[4.780794620513916]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -81427,7 +81427,7 @@ deployment.apps/docker-snort resource requirements updated
 [19.518352508544922]
 [1.6095683574676514]
 [0.7219294309616089]
-[33.69175338745117]deployment.apps "docker-snort" deleted
+[33.69175338745117]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -81845,7 +81845,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4023674726486206]
 [1.3039093017578125]
 [39.07611846923828]
-[42.590782165527344]deployment.apps "docker-snort" deleted
+[42.590782165527344]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -82267,7 +82267,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4749305844306946]
 [1.4625778198242188]
 [73.11427307128906]
-[42.69493865966797]deployment.apps "docker-snort" deleted
+[42.69493865966797]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -82684,7 +82684,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.32648202776908875]
 [1.304656744003296]
 [17.336528778076172]
-[2.0954043865203857]deployment.apps "docker-snort" deleted
+[2.0954043865203857]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -83101,7 +83101,7 @@ deployment.apps/docker-snort resource requirements updated
 [28.714231491088867]
 [0.12985585629940033]
 [31.08175277709961]
-[0.696120023727417]deployment.apps "docker-snort" deleted
+[0.696120023727417]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -83516,7 +83516,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8317432999610901]
 [0.38353511691093445]
 [60.326995849609375]
-[0.18414179980754852]deployment.apps "docker-snort" deleted
+[0.18414179980754852]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -84873,7 +84873,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.34095311164855957]
 [1.0740426778793335]
 [18.175172805786133]
-[4.946426868438721]deployment.apps "docker-snort" deleted
+[4.946426868438721]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -85338,7 +85338,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.5514330863952637]
 [4.011404991149902]
 [1.6037194728851318]
-[1.3232976198196411]deployment.apps "docker-snort" deleted
+[1.3232976198196411]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -86229,7 +86229,7 @@ deployment.apps/docker-snort resource requirements updated
 [48.544578552246094]
 [2.086915969848633]
 [0.9928244948387146]
-[1.2414836883544922]deployment.apps "docker-snort" deleted
+[1.2414836883544922]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -86661,7 +86661,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.3932695388793945]
 [2.8450376987457275]
 [1.2999064922332764]
-[6.769280433654785]deployment.apps "docker-snort" deleted
+[6.769280433654785]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -87076,7 +87076,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.489757776260376]
 [4.979262828826904]
 [20.2451114654541]
-[0.24086080491542816]deployment.apps "docker-snort" deleted
+[0.24086080491542816]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -87484,7 +87484,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1871347427368164]
 [1.7771234512329102]
 [5.3594584465026855]
-[3.5232560634613037]deployment.apps "docker-snort" deleted
+[3.5232560634613037]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -87901,7 +87901,7 @@ deployment.apps/docker-snort resource requirements updated
 [57.99846649169922]
 [0.7011551856994629]
 [25.8404541015625]
-[0.3813517391681671]deployment.apps "docker-snort" deleted
+[0.3813517391681671]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -88317,7 +88317,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.422595500946045]
 [0.7870651483535767]
 [0.16364847123622894]
-[0.2551266551017761]deployment.apps "docker-snort" deleted
+[0.2551266551017761]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -89169,7 +89169,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.898862838745117]
 [0.6577162742614746]
 [68.40225982666016]
-[0.8216781616210938]deployment.apps "docker-snort" deleted
+[0.8216781616210938]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -89587,7 +89587,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.385534763336182]
 [0.3676632344722748]
 [1.901071310043335]
-[6.241516590118408]deployment.apps "docker-snort" deleted
+[6.241516590118408]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -90008,7 +90008,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.298146724700928]
 [1.3879588842391968]
 [2.6925477981567383]
-[27.06222915649414]deployment.apps "docker-snort" deleted
+[27.06222915649414]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -90421,7 +90421,7 @@ deployment.apps/docker-snort resource requirements updated
 [116.63109588623047]
 [2.1250455379486084]
 [0.2964112460613251]
-[12.610718727111816]deployment.apps "docker-snort" deleted
+[12.610718727111816]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -90839,7 +90839,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4513535499572754]
 [0.8134579062461853]
 [2.9013171195983887]
-[1.6519230604171753]deployment.apps "docker-snort" deleted
+[1.6519230604171753]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -91263,7 +91263,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2612524032592773]
 [0.4956386387348175]
 [16.75290870666504]
-[4.7180609703063965]deployment.apps "docker-snort" deleted
+[4.7180609703063965]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -91671,7 +91671,7 @@ deployment.apps/docker-snort resource requirements updated
 [31.174081802368164]
 [0.9750837087631226]
 [9.233997344970703]
-[0.1844252496957779]deployment.apps "docker-snort" deleted
+[0.1844252496957779]
 deployment.apps/docker-snort created
 deployment.apps "docker-snort" deleted
 deployment.apps/docker-snort created
@@ -92099,7 +92099,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9174259901046753]
 [2.2931783199310303]
 [2.1341960430145264]
-[0.9648772478103638]deployment.apps "docker-snort" deleted
+[0.9648772478103638]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -92507,7 +92507,7 @@ deployment.apps/docker-snort created
 [1.4248732328414917]
 [2.578296184539795]
 [1.2652472257614136]
-[1.8105798959732056]deployment.apps "docker-snort" deleted
+[1.8105798959732056]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -92946,7 +92946,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.6759568452835083]
 [1.314626693725586]
 [0.7126108407974243]
-[1.1172107458114624]deployment.apps "docker-snort" deleted
+[1.1172107458114624]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -93364,7 +93364,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.063430786132812]
 [1.0275928974151611]
 [0.7360672950744629]
-[22.685129165649414]deployment.apps "docker-snort" deleted
+[22.685129165649414]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -93781,7 +93781,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.528632879257202]
 [0.7650937438011169]
 [2.809288501739502]
-[0.57291179895401]deployment.apps "docker-snort" deleted
+[0.57291179895401]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -94190,7 +94190,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3930258750915527]
 [1.9525116682052612]
 [1.6673710346221924]
-[1.3771628141403198]deployment.apps "docker-snort" deleted
+[1.3771628141403198]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -94606,7 +94606,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.151306629180908]
 [61.415283203125]
 [3.3841919898986816]
-[1.132401704788208]deployment.apps "docker-snort" deleted
+[1.132401704788208]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -95027,7 +95027,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.082085609436035]
 [4.801540851593018]
 [0.2759990096092224]
-[1.591975212097168]deployment.apps "docker-snort" deleted
+[1.591975212097168]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -95446,7 +95446,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3176777958869934]
 [4.002007007598877]
 [88.86315155029297]
-[0.44180402159690857]deployment.apps "docker-snort" deleted
+[0.44180402159690857]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -95875,7 +95875,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5968542098999023]
 [0.7165235280990601]
 [6.767836570739746]
-[0.6030703783035278]deployment.apps "docker-snort" deleted
+[0.6030703783035278]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -96312,7 +96312,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.511301040649414]
 [47.623355865478516]
 [2.8710999488830566]
-[0.901619553565979]deployment.apps "docker-snort" deleted
+[0.901619553565979]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -96754,7 +96754,7 @@ deployment.apps/docker-snort resource requirements updated
 [22.020078659057617]
 [10.229106903076172]
 [1.6600277423858643]
-[1.2564547061920166]deployment.apps "docker-snort" deleted
+[1.2564547061920166]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -97171,7 +97171,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5591374635696411]
 [0.15464751422405243]
 [1.290394902229309]
-[1.1739420890808105]deployment.apps "docker-snort" deleted
+[1.1739420890808105]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -97580,7 +97580,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.7377920150756836]
 [2.2926077842712402]
 [0.8038613200187683]
-[39.08519744873047]deployment.apps "docker-snort" deleted
+[39.08519744873047]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -97996,7 +97996,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6159941554069519]
 [70.18506622314453]
 [0.25864946842193604]
-[1.726438045501709]deployment.apps "docker-snort" deleted
+[1.726438045501709]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -98404,7 +98404,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.8843201398849487]
 [8.6560697555542]
 [157.0996856689453]
-[0.7122597694396973]deployment.apps "docker-snort" deleted
+[0.7122597694396973]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -98821,7 +98821,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5188939571380615]
 [3.4283692836761475]
 [2.5312447547912598]
-[72.25287628173828]deployment.apps "docker-snort" deleted
+[72.25287628173828]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -99646,7 +99646,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.819416880607605]
 [0.909737229347229]
 [13.99440860748291]
-[26.563379287719727]deployment.apps "docker-snort" deleted
+[26.563379287719727]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -100069,7 +100069,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.1912436485290527]
 [6.363835334777832]
 [0.21994569897651672]
-[0.4209107458591461]deployment.apps "docker-snort" deleted
+[0.4209107458591461]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -100495,7 +100495,7 @@ deployment.apps/docker-snort resource requirements updated
 [119.0849609375]
 [9.026284217834473]
 [1.307208776473999]
-[0.20577353239059448]deployment.apps "docker-snort" deleted
+[0.20577353239059448]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -100911,7 +100911,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3738915920257568]
 [1.01152765750885]
 [34.50176239013672]
-[13.339862823486328]deployment.apps "docker-snort" deleted
+[13.339862823486328]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -101757,7 +101757,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.5781917572021484]
 [2.7585387229919434]
 [1.4363658428192139]
-[2.0436506271362305]deployment.apps "docker-snort" deleted
+[2.0436506271362305]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -102176,7 +102176,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4509178400039673]
 [94.90524291992188]
 [0.5461521744728088]
-[1.1653292179107666]deployment.apps "docker-snort" deleted
+[1.1653292179107666]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -102590,7 +102590,7 @@ deployment.apps/docker-snort resource requirements updated
 [22.891357421875]
 [1.5688810348510742]
 [6.016392707824707]
-[1.5541820526123047]deployment.apps "docker-snort" deleted
+[1.5541820526123047]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -103010,7 +103010,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4315917491912842]
 [28.144424438476562]
 [13.687422752380371]
-[2.1815524101257324]deployment.apps "docker-snort" deleted
+[2.1815524101257324]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -103440,7 +103440,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8494954109191895]
 [28.992935180664062]
 [2.9704782962799072]
-[1.0555384159088135]deployment.apps "docker-snort" deleted
+[1.0555384159088135]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -103875,7 +103875,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.23684075474739075]
 [62.40644454956055]
 [11.843706130981445]
-[6.001591682434082]deployment.apps "docker-snort" deleted
+[6.001591682434082]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -104309,7 +104309,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8085944652557373]
 [0.19928044080734253]
 [0.2882707417011261]
-[0.2812167704105377]deployment.apps "docker-snort" deleted
+[0.2812167704105377]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -104734,7 +104734,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.5977463722229004]
 [0.610733687877655]
 [3.5903756618499756]
-[0.2643618583679199]deployment.apps "docker-snort" deleted
+[0.2643618583679199]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -105157,7 +105157,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7268196940422058]
 [0.26532313227653503]
 [1.8067443370819092]
-[1.664626955986023]deployment.apps "docker-snort" deleted
+[1.664626955986023]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -105572,7 +105572,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3460369408130646]
 [0.24816371500492096]
 [0.1382184624671936]
-[0.13661929965019226]deployment.apps "docker-snort" deleted
+[0.13661929965019226]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -105995,7 +105995,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1172155141830444]
 [0.1849943846464157]
 [1.0993893146514893]
-[1.4002084732055664]deployment.apps "docker-snort" deleted
+[1.4002084732055664]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -106408,7 +106408,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9378820657730103]
 [0.69507896900177]
 [30.601694107055664]
-[1.0919902324676514]deployment.apps "docker-snort" deleted
+[1.0919902324676514]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -106821,7 +106821,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.006977081298828]
 [0.5090509057044983]
 [0.21853432059288025]
-[58.9721794128418]deployment.apps "docker-snort" deleted
+[58.9721794128418]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -107228,7 +107228,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6733370423316956]
 [0.15507225692272186]
 [87.73342895507812]
-[66.26060485839844]deployment.apps "docker-snort" deleted
+[66.26060485839844]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -108056,7 +108056,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5004655122756958]
 [0.12105954438447952]
 [20.062664031982422]
-[0.1506171077489853]deployment.apps "docker-snort" deleted
+[0.1506171077489853]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -108485,7 +108485,7 @@ deployment.apps/docker-snort resource requirements updated
 [435.5019836425781]
 [25.93638801574707]
 [2.4114603996276855]
-[27.274436950683594]deployment.apps "docker-snort" deleted
+[27.274436950683594]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -108914,7 +108914,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.24887801706790924]
 [32.83738708496094]
 [1.4125016927719116]
-[68.74520874023438]deployment.apps "docker-snort" deleted
+[68.74520874023438]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -109361,7 +109361,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.869288444519043]
 [33.2930793762207]
 [1.4645826816558838]
-[222.46678161621094]deployment.apps "docker-snort" deleted
+[222.46678161621094]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -109781,7 +109781,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.334712505340576]
 [163.07774353027344]
 [25.612529754638672]
-[0.7842597365379333]deployment.apps "docker-snort" deleted
+[0.7842597365379333]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -110199,7 +110199,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.434748649597168]
 [91.17692565917969]
 [1.7315423488616943]
-[0.2252483367919922]deployment.apps "docker-snort" deleted
+[0.2252483367919922]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -110630,7 +110630,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.11100482940673828]
 [0.6945857405662537]
 [1.3434792757034302]
-[1.3520162105560303]deployment.apps "docker-snort" deleted
+[1.3520162105560303]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -111044,7 +111044,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.3182954788208]
 [1.9077163934707642]
 [0.2759169936180115]
-[0.1346222460269928]deployment.apps "docker-snort" deleted
+[0.1346222460269928]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -111454,7 +111454,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2604980170726776]
 [31.011960983276367]
 [3.753286838531494]
-[33.9143180847168]deployment.apps "docker-snort" deleted
+[33.9143180847168]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -111880,7 +111880,7 @@ deployment.apps/docker-snort resource requirements updated
 [20.654451370239258]
 [0.13509389758110046]
 [1.2452126741409302]
-[0.9909878373146057]deployment.apps "docker-snort" deleted
+[0.9909878373146057]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -112310,7 +112310,7 @@ deployment.apps/docker-snort resource requirements updated
 [21.44361114501953]
 [0.38968437910079956]
 [81.49137878417969]
-[28.809860229492188]deployment.apps "docker-snort" deleted
+[28.809860229492188]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -112757,7 +112757,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4990450143814087]
 [0.49435675144195557]
 [1.394655466079712]
-[1.374223232269287]deployment.apps "docker-snort" deleted
+[1.374223232269287]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -113214,7 +113214,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.6456098556518555]
 [0.8260668516159058]
 [0.5108604431152344]
-[19.42523765563965]deployment.apps "docker-snort" deleted
+[19.42523765563965]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -113619,7 +113619,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7729188799858093]
 [43.2695426940918]
 [0.9694786071777344]
-[1.0262811183929443]deployment.apps "docker-snort" deleted
+[1.0262811183929443]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -114036,7 +114036,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6760179400444031]
 [18.951841354370117]
 [1.0387393236160278]
-[28.892536163330078]deployment.apps "docker-snort" deleted
+[28.892536163330078]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -114441,7 +114441,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.3845059871673584]
 [48.882293701171875]
 [0.29474151134490967]
-[15.705375671386719]deployment.apps "docker-snort" deleted
+[15.705375671386719]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -114845,7 +114845,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5470763444900513]
 [43.72315979003906]
 [2.393836736679077]
-[0.4791560173034668]deployment.apps "docker-snort" deleted
+[0.4791560173034668]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -115331,7 +115331,7 @@ deployment.apps/docker-snort resource requirements updated
 [47.55600357055664]
 [6.647352695465088]
 [24.057514190673828]
-[25.247840881347656]deployment.apps "docker-snort" deleted
+[25.247840881347656]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -115735,7 +115735,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.9390065670013428]
 [1.9820622205734253]
 [0.6381093859672546]
-[1.261979579925537]deployment.apps "docker-snort" deleted
+[1.261979579925537]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -116163,7 +116163,7 @@ deployment.apps/docker-snort resource requirements updated
 [36.44985580444336]
 [0.6119241714477539]
 [17.838294982910156]
-[3.1791887283325195]deployment.apps "docker-snort" deleted
+[3.1791887283325195]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -116578,7 +116578,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.23741863667964935]
 [0.6401937007904053]
 [0.14691627025604248]
-[0.7247606515884399]deployment.apps "docker-snort" deleted
+[0.7247606515884399]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -116990,7 +116990,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.454777240753174]
 [0.042557492852211]
 [5.8011345863342285]
-[10.95241641998291]deployment.apps "docker-snort" deleted
+[10.95241641998291]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -117409,7 +117409,7 @@ deployment.apps/docker-snort resource requirements updated
 [22.82461166381836]
 [0.1879526972770691]
 [0.18141710758209229]
-[0.9309079051017761]deployment.apps "docker-snort" deleted
+[0.9309079051017761]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -117811,7 +117811,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4823659658432007]
 [1.0515910387039185]
 [0.13292866945266724]
-[0.0011440266389399767]deployment.apps "docker-snort" deleted
+[0.0011440266389399767]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -118240,7 +118240,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.624033451080322]
 [0.5228683948516846]
 [67.10531616210938]
-[0.16575483977794647]deployment.apps "docker-snort" deleted
+[0.16575483977794647]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -118645,7 +118645,7 @@ deployment.apps/docker-snort resource requirements updated
 [10.088336944580078]
 [26.690128326416016]
 [0.18323035538196564]
-[1.3591501712799072]deployment.apps "docker-snort" deleted
+[1.3591501712799072]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -119055,7 +119055,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.836258888244629]
 [38.29461669921875]
 [0.13655857741832733]
-[0.6587216854095459]deployment.apps "docker-snort" deleted
+[0.6587216854095459]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -119482,7 +119482,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.07206561416387558]
 [1.9407826662063599]
 [0.798280656337738]
-[10.934903144836426]deployment.apps "docker-snort" deleted
+[10.934903144836426]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -119908,7 +119908,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1505359411239624]
 [0.3034883439540863]
 [2.7280516624450684]
-[15.641777992248535]deployment.apps "docker-snort" deleted
+[15.641777992248535]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -120319,7 +120319,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.174753189086914]
 [9.23140811920166]
 [0.2501720190048218]
-[0.0020434570033103228]deployment.apps "docker-snort" deleted
+[0.0020434570033103228]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -120719,7 +120719,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.34168195724487305]
 [1.9483942985534668]
 [1.835319995880127]
-[10.25274658203125]deployment.apps "docker-snort" deleted
+[10.25274658203125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -121130,7 +121130,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.510007381439209]
 [0.11292358487844467]
 [1.0208649635314941]
-[0.10464820265769958]deployment.apps "docker-snort" deleted
+[0.10464820265769958]
 deployment.apps/docker-snort created
 deployment.apps "docker-snort" deleted
 deployment.apps/docker-snort created
@@ -121544,7 +121544,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.14347359538078308]
 [6.020479679107666]
 [0.41002413630485535]
-[0.42333146929740906]deployment.apps "docker-snort" deleted
+[0.42333146929740906]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -121977,7 +121977,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.07282143086194992]
 [1.284213900566101]
 [0.8239221572875977]
-[0.7956739664077759]deployment.apps "docker-snort" deleted
+[0.7956739664077759]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -122386,7 +122386,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.30425119400024414]
 [0.13696618378162384]
 [5.107213020324707]
-[0.0036249803379178047]deployment.apps "docker-snort" deleted
+[0.0036249803379178047]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -122800,7 +122800,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4497884511947632]
 [0.9587735533714294]
 [1.5740392208099365]
-[1.2961729764938354]deployment.apps "docker-snort" deleted
+[1.2961729764938354]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -123205,7 +123205,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6513971090316772]
 [3.2237346172332764]
 [0.7023510336875916]
-[0.5722155570983887]deployment.apps "docker-snort" deleted
+[0.5722155570983887]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -123608,7 +123608,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.15570540726184845]
 [7.137607097625732]
 [41.59796905517578]
-[0.298356294631958]deployment.apps "docker-snort" deleted
+[0.298356294631958]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -124419,7 +124419,7 @@ deployment.apps/docker-snort resource requirements updated
 [42.12574768066406]
 [0.11524282395839691]
 [0.11877676099538803]
-[2.9699971675872803]deployment.apps "docker-snort" deleted
+[2.9699971675872803]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -124830,7 +124830,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.086864948272705]
 [0.12726089358329773]
 [2.574345350265503]
-[21.13349723815918]deployment.apps "docker-snort" deleted
+[21.13349723815918]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -125262,7 +125262,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.09480641037225723]
 [0.6016114950180054]
 [0.21529212594032288]
-[0.7838152050971985]deployment.apps "docker-snort" deleted
+[0.7838152050971985]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -125693,7 +125693,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.2485902309417725]
 [1.4692282676696777]
 [1.591399073600769]
-[1.066268801689148]deployment.apps "docker-snort" deleted
+[1.066268801689148]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -126255,7 +126255,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.23185227811336517]
 [44.52576446533203]
 [2.322474479675293]
-[0.08265495300292969]deployment.apps "docker-snort" deleted
+[0.08265495300292969]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -126659,7 +126659,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.4613518714904785]
 [0.21995994448661804]
 [0.016609564423561096]
-[28.351947784423828]deployment.apps "docker-snort" deleted
+[28.351947784423828]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -127073,7 +127073,7 @@ deployment.apps/docker-snort resource requirements updated
 [37.24341583251953]
 [19.831663131713867]
 [23.54987144470215]
-[0.13873344659805298]deployment.apps "docker-snort" deleted
+[0.13873344659805298]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -127900,7 +127900,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.908602237701416]
 [3.441157102584839]
 [16.616506576538086]
-[28.35027503967285]deployment.apps "docker-snort" deleted
+[28.35027503967285]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -128315,7 +128315,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.681307792663574]
 [5.696972370147705]
 [0.0022995597682893276]
-[86.40162658691406]deployment.apps "docker-snort" deleted
+[86.40162658691406]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -128721,7 +128721,7 @@ deployment.apps/docker-snort resource requirements updated
 [52.89479446411133]
 [1.1436376571655273]
 [1.801726222038269]
-[4.006563186645508]deployment.apps "docker-snort" deleted
+[4.006563186645508]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -129125,7 +129125,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2106447219848633]
 [0.46139439940452576]
 [2.208087921142578]
-[1.7909096479415894]deployment.apps "docker-snort" deleted
+[1.7909096479415894]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -129940,7 +129940,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.582741737365723]
 [1.139926791191101]
 [0.01380140520632267]
-[5.063980579376221]deployment.apps "docker-snort" deleted
+[5.063980579376221]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -130353,7 +130353,7 @@ deployment.apps/docker-snort resource requirements updated
 [14.483702659606934]
 [0.7359684705734253]
 [0.17438095808029175]
-[2.1233863830566406]deployment.apps "docker-snort" deleted
+[2.1233863830566406]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -130767,7 +130767,7 @@ deployment.apps/docker-snort resource requirements updated
 [48.94340515136719]
 [41.449920654296875]
 [2.635754346847534]
-[30.299152374267578]deployment.apps "docker-snort" deleted
+[30.299152374267578]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -131181,7 +131181,7 @@ deployment.apps/docker-snort resource requirements updated
 [17.322790145874023]
 [0.4582735598087311]
 [80.947021484375]
-[0.45651859045028687]deployment.apps "docker-snort" deleted
+[0.45651859045028687]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -131595,7 +131595,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1167062520980835]
 [0.1731434017419815]
 [0.3356925845146179]
-[193.96127319335938]deployment.apps "docker-snort" deleted
+[193.96127319335938]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -132003,7 +132003,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.133550763130188]
 [0.500296950340271]
 [1.9247376918792725]
-[0.8206121325492859]deployment.apps "docker-snort" deleted
+[0.8206121325492859]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -132410,7 +132410,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3734594583511353]
 [0.27406248450279236]
 [1.2852424383163452]
-[0.14186151325702667]deployment.apps "docker-snort" deleted
+[0.14186151325702667]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -132811,7 +132811,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.250124216079712]
 [6.692605972290039]
 [17.201364517211914]
-[60.914894104003906]deployment.apps "docker-snort" deleted
+[60.914894104003906]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -133229,7 +133229,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.07670074701309204]
 [28.152164459228516]
 [0.21471431851387024]
-[0.48448604345321655]deployment.apps "docker-snort" deleted
+[0.48448604345321655]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -133644,7 +133644,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.49247539043426514]
 [0.540945291519165]
 [1.3982584476470947]
-[0.14193831384181976]deployment.apps "docker-snort" deleted
+[0.14193831384181976]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -134051,7 +134051,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.680611252784729]
 [0.4285765290260315]
 [2.042552947998047]
-[42.956642150878906]deployment.apps "docker-snort" deleted
+[42.956642150878906]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -134466,7 +134466,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.004694375675171614]
 [1.2724496126174927]
 [98.15723419189453]
-[0.35595542192459106]deployment.apps "docker-snort" deleted
+[0.35595542192459106]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -134870,7 +134870,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.525059223175049]
 [34.88777160644531]
 [3.2908201217651367]
-[1.0398603677749634]deployment.apps "docker-snort" deleted
+[1.0398603677749634]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -135275,7 +135275,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4541207253932953]
 [6.121854305267334]
 [1.526457667350769]
-[1.2727677822113037]deployment.apps "docker-snort" deleted
+[1.2727677822113037]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -135678,7 +135678,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13929787278175354]
 [1.9157929420471191]
 [2.28078293800354]
-[0.7297988533973694]deployment.apps "docker-snort" deleted
+[0.7297988533973694]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -136095,7 +136095,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1583560705184937]
 [0.0015495946863666177]
 [34.47357177734375]
-[0.5181080102920532]deployment.apps "docker-snort" deleted
+[0.5181080102920532]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -136498,7 +136498,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.337745428085327]
 [15.632946968078613]
 [2.9878883361816406]
-[0.14596933126449585]deployment.apps "docker-snort" deleted
+[0.14596933126449585]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -136908,7 +136908,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.409644216299057]
 [0.30361267924308777]
 [0.6320645809173584]
-[0.06312054395675659]deployment.apps "docker-snort" deleted
+[0.06312054395675659]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -137311,7 +137311,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2307262420654297]
 [0.3011797070503235]
 [34.06275939941406]
-[0.06915412843227386]deployment.apps "docker-snort" deleted
+[0.06915412843227386]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -137723,7 +137723,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.435172200202942]
 [57.39556884765625]
 [1.0300406217575073]
-[0.11630208790302277]deployment.apps "docker-snort" deleted
+[0.11630208790302277]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -138127,7 +138127,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9704475402832031]
 [17.90132713317871]
 [17.163999557495117]
-[0.1647520810365677]deployment.apps "docker-snort" deleted
+[0.1647520810365677]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -138541,7 +138541,7 @@ deployment.apps/docker-snort resource requirements updated
 [145.34048461914062]
 [0.2115609347820282]
 [11.359268188476562]
-[16.722637176513672]deployment.apps "docker-snort" deleted
+[16.722637176513672]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -138943,7 +138943,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.7126225233078003]
 [1.4584401845932007]
 [0.13876599073410034]
-[1.4238643646240234]deployment.apps "docker-snort" deleted
+[1.4238643646240234]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -139347,7 +139347,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.174056887626648]
 [46.50498580932617]
 [9.049487113952637]
-[1.3540226221084595]deployment.apps "docker-snort" deleted
+[1.3540226221084595]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -139749,7 +139749,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.1624443531036377]
 [0.29671716690063477]
 [0.6008015275001526]
-[0.26824843883514404]deployment.apps "docker-snort" deleted
+[0.26824843883514404]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -140162,7 +140162,7 @@ deployment.apps/docker-snort resource requirements updated
 [18.237205505371094]
 [3.36210036277771]
 [14.272725105285645]
-[0.1526949554681778]deployment.apps "docker-snort" deleted
+[0.1526949554681778]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -140563,7 +140563,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7422619462013245]
 [16.09122085571289]
 [1.1708875894546509]
-[0.17472216486930847]deployment.apps "docker-snort" deleted
+[0.17472216486930847]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -140983,7 +140983,7 @@ deployment.apps/docker-snort resource requirements updated
 [78.81993103027344]
 [0.7787796854972839]
 [0.17417047917842865]
-[0.7199340462684631]deployment.apps "docker-snort" deleted
+[0.7199340462684631]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -141427,7 +141427,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.16053518652915955]
 [1.3660452365875244]
 [1.6755732297897339]
-[38.24980545043945]deployment.apps "docker-snort" deleted
+[38.24980545043945]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -141852,7 +141852,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.43229204416275024]
 [23.50493049621582]
 [0.14894035458564758]
-[0.13143664598464966]deployment.apps "docker-snort" deleted
+[0.13143664598464966]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -142255,7 +142255,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6789916157722473]
 [0.08235851675271988]
 [2.0182290077209473]
-[57.872352600097656]deployment.apps "docker-snort" deleted
+[57.872352600097656]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -142675,7 +142675,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.0948915481567383]
 [0.6325560212135315]
 [0.1937440037727356]
-[0.09391757100820541]deployment.apps "docker-snort" deleted
+[0.09391757100820541]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -143081,7 +143081,7 @@ deployment.apps/docker-snort resource requirements updated
 [22.36866569519043]
 [0.4437468647956848]
 [1.017555832862854]
-[0.39446479082107544]deployment.apps "docker-snort" deleted
+[0.39446479082107544]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -143500,7 +143500,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.14965535700321198]
 [0.3327978849411011]
 [0.17282944917678833]
-[0.27708226442337036]deployment.apps "docker-snort" deleted
+[0.27708226442337036]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -143913,7 +143913,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.31734442710876465]
 [48.29606628417969]
 [1.3334966897964478]
-[6.239068031311035]deployment.apps "docker-snort" deleted
+[6.239068031311035]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -144326,7 +144326,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5734884142875671]
 [19.972797393798828]
 [0.6893664598464966]
-[0.6272169351577759]deployment.apps "docker-snort" deleted
+[0.6272169351577759]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -144743,7 +144743,7 @@ deployment.apps/docker-snort resource requirements updated
 [32.335662841796875]
 [0.7849751710891724]
 [0.3464207947254181]
-[0.4470808804035187]deployment.apps "docker-snort" deleted
+[0.4470808804035187]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -145147,7 +145147,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.33005833625793457]
 [12.931897163391113]
 [1.856342077255249]
-[0.2694662809371948]deployment.apps "docker-snort" deleted
+[0.2694662809371948]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -145565,7 +145565,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2883947491645813]
 [0.35126784443855286]
 [0.4178314208984375]
-[0.2510669529438019]deployment.apps "docker-snort" deleted
+[0.2510669529438019]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -145971,7 +145971,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8629839420318604]
 [0.3641293942928314]
 [8.931723594665527]
-[0.2548390328884125]deployment.apps "docker-snort" deleted
+[0.2548390328884125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -146376,7 +146376,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8872185349464417]
 [0.04727912321686745]
 [0.7442929148674011]
-[0.22772866487503052]deployment.apps "docker-snort" deleted
+[0.22772866487503052]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -146788,7 +146788,7 @@ deployment.apps/docker-snort resource requirements updated
 [17.649242401123047]
 [1.8643513917922974]
 [2.043306827545166]
-[0.18938139081001282]deployment.apps "docker-snort" deleted
+[0.18938139081001282]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -147190,7 +147190,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5309363603591919]
 [0.05419852212071419]
 [12.594772338867188]
-[8.660568237304688]deployment.apps "docker-snort" deleted
+[8.660568237304688]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -147595,7 +147595,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6170505881309509]
 [2.003696918487549]
 [0.3891807496547699]
-[0.5192652940750122]deployment.apps "docker-snort" deleted
+[0.5192652940750122]
 deployment.apps/docker-snort created
 deployment.apps "docker-snort" deleted
 deployment.apps/docker-snort created
@@ -148006,7 +148006,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.677093267440796]
 [17.500009536743164]
 [1.0469934940338135]
-[1.6586781740188599]deployment.apps "docker-snort" deleted
+[1.6586781740188599]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -148420,7 +148420,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.672930955886841]
 [4.4917192459106445]
 [0.7203444838523865]
-[0.09440112859010696]deployment.apps "docker-snort" deleted
+[0.09440112859010696]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -149266,7 +149266,7 @@ deployment.apps/docker-snort resource requirements updated
 [13.7197847366333]
 [1.629616379737854]
 [1.164926528930664]
-[2.521984100341797]deployment.apps "docker-snort" deleted
+[2.521984100341797]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -149676,7 +149676,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6131165027618408]
 [0.4763215482234955]
 [0.09116058051586151]
-[0.5640867352485657]deployment.apps "docker-snort" deleted
+[0.5640867352485657]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -150077,7 +150077,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6994339227676392]
 [1.9570252895355225]
 [6.241450786590576]
-[0.7985530495643616]deployment.apps "docker-snort" deleted
+[0.7985530495643616]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -150480,7 +150480,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4579688012599945]
 [0.42064645886421204]
 [0.12981215119361877]
-[25.041534423828125]deployment.apps "docker-snort" deleted
+[25.041534423828125]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -150904,7 +150904,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.032148003578186]
 [26.347217559814453]
 [0.10295921564102173]
-[2.3613154888153076]deployment.apps "docker-snort" deleted
+[2.3613154888153076]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -151308,7 +151308,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.11906623840332]
 [0.6204816699028015]
 [0.2982482612133026]
-[9.046184539794922]deployment.apps "docker-snort" deleted
+[9.046184539794922]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -151735,7 +151735,7 @@ deployment.apps/docker-snort resource requirements updated
 [11.15510368347168]
 [0.34624961018562317]
 [0.7289103269577026]
-[0.6656430959701538]deployment.apps "docker-snort" deleted
+[0.6656430959701538]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -152138,7 +152138,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.1713898181915283]
 [0.19760046899318695]
 [4.41920804977417]
-[0.09697473049163818]deployment.apps "docker-snort" deleted
+[0.09697473049163818]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -152558,7 +152558,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.1991469860076904]
 [0.0770973414182663]
 [1.278018593788147]
-[0.44373923540115356]deployment.apps "docker-snort" deleted
+[0.44373923540115356]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -152968,7 +152968,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.500038146972656]
 [1.2909660339355469]
 [2.1903231143951416]
-[0.3129505217075348]deployment.apps "docker-snort" deleted
+[0.3129505217075348]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -153377,7 +153377,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6368196606636047]
 [3.761916160583496]
 [0.7519528269767761]
-[2.4518542289733887]deployment.apps "docker-snort" deleted
+[2.4518542289733887]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
@@ -153781,7 +153781,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5904194712638855]
 [0.14367006719112396]
 [25.760833740234375]
-[0.27944937348365784]deployment.apps "docker-snort" deleted
+[0.27944937348365784]
 deployment.apps/docker-snort created
 deployment.apps/docker-snort resource requirements updated
 deployment.apps "docker-snort" deleted
