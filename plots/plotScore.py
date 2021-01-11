@@ -31,6 +31,11 @@ def main():
 	ax.margins(x=0)					#remove the ugly inner side margin
 	ax.margins(y=0) 
 
+	for tick in ax.xaxis.get_major_ticks():
+		tick.label.set_fontsize(20)
+	for tick in ax.yaxis.get_major_ticks():
+		tick.label.set_fontsize(20)
+
 	#ax.set_title('Total Score by Episode')
 	ax.set_ylabel('Score Amount', fontsize='20')
 	ax.set_xlabel('Episode', fontsize='20')

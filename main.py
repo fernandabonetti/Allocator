@@ -33,7 +33,6 @@ env = gym.make('Allocator-v0', ip=ip, port=port,  container=container)
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 
-steps = []
 agent = DQNAgent(state_size, action_size, a, b, peak)
 
 for episode in range(n_episodes):
@@ -66,4 +65,3 @@ for episode in range(n_episodes):
 
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
-					

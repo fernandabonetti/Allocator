@@ -79,11 +79,6 @@ class Collector():
 			else:
 				mem = int(resource["memory"][:-2])
 			return cpu, mem
-		
-		elif spec == 'limits':
-				return 200, 200
-		else:
-			return 100, 100
 
 	def changeAllocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
 		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \

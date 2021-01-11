@@ -66,11 +66,11 @@ class AllocatorEnv(gym.Env):
 		return np.array(next_state), reward, done    
 		
 	def reset(self):
-		command = "cd services/snort && ./cleanup.sh"
-		subprocess.run(command, shell=True)
+		#command = "cd services/snort && ./cleanup.sh"
+		#subprocess.run(command, shell=True)
 		time.sleep(1)
-		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
-		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
+		self.cpu_request, self.mem_request = 100, 100
+		self.cpu_limit, self.mem_limit = 200, 200
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 

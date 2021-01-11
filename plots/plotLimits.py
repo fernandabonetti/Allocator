@@ -33,7 +33,6 @@ def main():
 			mem_min.append(state[4])
 			mem_max.append(state[5])
 
-	
 	#for i in range(0, len(cpu_usage)):
 		#print("{},{},{}".format(cpu_usage[i], cpu_min[i], cpu_max[i]))
 		#print("{},{},{}".format(mem_usage[i], mem_min[i], mem_max[i]))
