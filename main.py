@@ -25,7 +25,7 @@ file_formatter=logging.Formatter("{'time':'%(asctime)s','message': {'%(message)s
 handler.setFormatter(file_formatter)
 logger.addHandler(handler)
 
-n_episodes = 1500
+n_episodes = 1000
 batch_size = 100
 
 env = gym.make('Allocator-v0', ip=ip, port=port,  container=container)
@@ -41,7 +41,7 @@ for episode in range(n_episodes):
 	total_reward = 0
 	state = np.reshape(state, [1, 6]) 
 
-	for timestep in range(500):
+	for timestep in range(700):
 		action = agent.sample_action(state)
 
 		next_state, reward, done = env.step(action, a, b, peak)
