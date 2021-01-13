@@ -40,7 +40,7 @@ for episode in range(n_episodes):
 	total_reward = 0
 	state = np.reshape(state, [1, 6]) 
 
-	for timestep in range(700):
+	for timestep in range(500):
 		action = agent.sample_action(state)
 
 		next_state, reward, done = env.step(action, a, b, peak)
