@@ -27,18 +27,18 @@ def main():
 			rewards.append(float(record["message"]["Total Reward"]))
 			steps.append(int(record["message"]["Steps"])+1)
 
-	# for i in range(0,len(rewards)):
-	# 	mean.append(rewards[i]/steps[i])
-	i = 0
-	top = 100
-	while i <= len(rewards)-100:
-		mean.append(sum(rewards[x] for x in range(i,top))/100)
-		eps.append(i+100)
-		i+=100
-		top+=100
+	# # for i in range(0,len(rewards)):
+	# # 	mean.append(rewards[i]/steps[i])
+	# i = 0
+	# top = 100
+	# while i <= len(rewards)-100:
+	# 	mean.append(sum(rewards[x] for x in range(i,top))/100)
+	# 	eps.append(i+100)
+	# 	i+=100
+	# 	top+=100
 
-	#ax = sns.lineplot(x=episodes, y=rewards, data=rewards)
-	ax = sns.lineplot(x=eps, y=mean, data=mean)
+	ax = sns.lineplot(x=episodes, y=rewards, data=rewards)
+	#ax = sns.lineplot(x=eps, y=mean, data=mean)
 	ax.xaxis.set_major_locator(ticker.MultipleLocator(100))	#set x ticks interval
 	ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
 

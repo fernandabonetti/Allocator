@@ -536,7 +536,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.361531257629395]
 [43.25727844238281]
 [43.098506927490234]
-[23.241134643554688]deployment.apps/docker-snort resource requirements updated
+[23.241134643554688]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -957,7 +957,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.617691516876221]
 [7.000061511993408]
 [32.950958251953125]
-[11.236723899841309]deployment.apps/docker-snort resource requirements updated
+[11.236723899841309]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -1384,7 +1384,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.7660746574401855]
 [7.780519962310791]
 [3.754472494125366]
-[3.77018141746521]deployment.apps/docker-snort resource requirements updated
+[3.77018141746521]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -1829,7 +1829,7 @@ deployment.apps/docker-snort resource requirements updated
 [34.79469680786133]
 [17.57068634033203]
 [2.4861326217651367]
-[58.128257751464844]deployment.apps/docker-snort resource requirements updated
+[58.128257751464844]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -2273,7 +2273,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.779732704162598]
 [4.741055965423584]
 [61.51576614379883]
-[2.974785327911377]deployment.apps/docker-snort resource requirements updated
+[2.974785327911377]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -2715,7 +2715,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.7657713890075684]
 [2.5526208877563477]
 [1.656101942062378]
-[2.300604820251465]deployment.apps/docker-snort resource requirements updated
+[2.300604820251465]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -3151,7 +3151,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.7126288414001465]
 [1.2333296537399292]
 [1.3783782720565796]
-[28.47280502319336]deployment.apps/docker-snort resource requirements updated
+[28.47280502319336]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -3588,7 +3588,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.6633079051971436]
 [4.69259786605835]
 [4.948253631591797]
-[12.9954252243042]deployment.apps/docker-snort resource requirements updated
+[12.9954252243042]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -4029,7 +4029,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.848008394241333]
 [1.4527891874313354]
 [12.488533020019531]
-[4.889573574066162]deployment.apps/docker-snort resource requirements updated
+[4.889573574066162]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -4468,7 +4468,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.23926067352295]
 [2.9277150630950928]
 [2.7100114822387695]
-[4.019356727600098]deployment.apps/docker-snort resource requirements updated
+[4.019356727600098]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -4939,7 +4939,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9240661263465881]
 [0.8719589710235596]
 [1.201035499572754]
-[2.166369676589966]deployment.apps/docker-snort resource requirements updated
+[2.166369676589966]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -5371,7 +5371,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9666821360588074]
 [4.552811145782471]
 [2.3299479484558105]
-[0.6863663196563721]deployment.apps/docker-snort resource requirements updated
+[0.6863663196563721]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -5806,7 +5806,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.024155855178833]
 [3.976163864135742]
 [5.477053165435791]
-[1.841745376586914]deployment.apps/docker-snort resource requirements updated
+[1.841745376586914]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -6278,7 +6278,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1358081102371216]
 [1.3484537601470947]
 [0.0062029180116951466]
-[3.3554887771606445]deployment.apps/docker-snort resource requirements updated
+[3.3554887771606445]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -6739,7 +6739,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.65848708152771]
 [0.6744674444198608]
 [13.660983085632324]
-[7.718538761138916]deployment.apps/docker-snort resource requirements updated
+[7.718538761138916]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -7196,7 +7196,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.523225784301758]
 [5.089317321777344]
 [12.2133207321167]
-[2.23870587348938]deployment.apps/docker-snort resource requirements updated
+[2.23870587348938]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -7643,7 +7643,7 @@ deployment.apps/docker-snort resource requirements updated
 [10.660157203674316]
 [5.300248622894287]
 [3.016624689102173]
-[39.317047119140625]deployment.apps/docker-snort resource requirements updated
+[39.317047119140625]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -8091,7 +8091,7 @@ deployment.apps/docker-snort resource requirements updated
 [15.566089630126953]
 [24.455860137939453]
 [1.237743616104126]
-[5.7365007400512695]deployment.apps/docker-snort resource requirements updated
+[5.7365007400512695]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -9020,7 +9020,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.525517463684082]
 [4.276875019073486]
 [1.5502482652664185]
-[12.45353889465332]deployment.apps/docker-snort resource requirements updated
+[12.45353889465332]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -9476,7 +9476,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.7833290100097656]
 [8.468700408935547]
 [17.435293197631836]
-[1.8458994626998901]deployment.apps/docker-snort resource requirements updated
+[1.8458994626998901]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -9927,7 +9927,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.182377815246582]
 [8.328773498535156]
 [2.268200159072876]
-[4.84091854095459]deployment.apps/docker-snort resource requirements updated
+[4.84091854095459]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -10386,7 +10386,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1911773681640625]
 [34.995155334472656]
 [1.160904884338379]
-[1.3664357662200928]deployment.apps/docker-snort resource requirements updated
+[1.3664357662200928]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -10836,7 +10836,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.044992923736572]
 [1.5891762971878052]
 [6.240199089050293]
-[34.48123550415039]deployment.apps/docker-snort resource requirements updated
+[34.48123550415039]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -11305,7 +11305,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6001896858215332]
 [5.969824314117432]
 [222.6002197265625]
-[4.1269025802612305]deployment.apps/docker-snort resource requirements updated
+[4.1269025802612305]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -11783,7 +11783,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.2693636417388916]
 [1.4536120891571045]
 [1.9798731803894043]
-[7.2239556312561035]deployment.apps/docker-snort resource requirements updated
+[7.2239556312561035]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -12274,7 +12274,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.608762264251709]
 [0.7122289538383484]
 [2.0009727478027344]
-[7.9399003982543945]deployment.apps/docker-snort resource requirements updated
+[7.9399003982543945]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -12773,7 +12773,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.15617299079895]
 [10.851115226745605]
 [2.627563714981079]
-[1.1836836338043213]deployment.apps/docker-snort resource requirements updated
+[1.1836836338043213]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -13312,7 +13312,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3687363862991333]
 [1.857343077659607]
 [2.0017759799957275]
-[121.33968353271484]deployment.apps/docker-snort resource requirements updated
+[121.33968353271484]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -13806,7 +13806,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.23271369934082]
 [6.962646484375]
 [8.467183113098145]
-[1.4639215469360352]deployment.apps/docker-snort resource requirements updated
+[1.4639215469360352]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -14355,7 +14355,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.235434532165527]
 [4.4060211181640625]
 [0.6104944348335266]
-[37.31674575805664]deployment.apps/docker-snort resource requirements updated
+[37.31674575805664]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -14877,7 +14877,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.73787522315979]
 [2.542391061782837]
 [13.96191120147705]
-[112.92662811279297]deployment.apps/docker-snort resource requirements updated
+[112.92662811279297]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -15371,7 +15371,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.295886993408203]
 [0.9011944532394409]
 [1.6124199628829956]
-[0.8685820698738098]deployment.apps/docker-snort resource requirements updated
+[0.8685820698738098]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -15881,7 +15881,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.9672322273254395]
 [1.3346964120864868]
 [22.650196075439453]
-[13.692008018493652]deployment.apps/docker-snort resource requirements updated
+[13.692008018493652]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -16368,7 +16368,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.233230113983154]
 [3.263885498046875]
 [1.0183439254760742]
-[9.536983489990234]deployment.apps/docker-snort resource requirements updated
+[9.536983489990234]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -16818,7 +16818,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.672226905822754]
 [0.33618593215942383]
 [0.6265498399734497]
-[6.8047685623168945]deployment.apps/docker-snort resource requirements updated
+[6.8047685623168945]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -17318,7 +17318,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.262430191040039]
 [0.9452199935913086]
 [11.548627853393555]
-[2.7731058597564697]deployment.apps/docker-snort resource requirements updated
+[2.7731058597564697]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -17789,7 +17789,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.8264617919921875]
 [390.4492492675781]
 [73.0057144165039]
-[1.3493258953094482]deployment.apps/docker-snort resource requirements updated
+[1.3493258953094482]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -18313,7 +18313,7 @@ deployment.apps/docker-snort resource requirements updated
 [334.6055908203125]
 [33.314002990722656]
 [1.3931158781051636]
-[0.6195512413978577]deployment.apps/docker-snort resource requirements updated
+[0.6195512413978577]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -18779,7 +18779,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.634566307067871]
 [0.5288640260696411]
 [42.12739562988281]
-[13.323471069335938]deployment.apps/docker-snort resource requirements updated
+[13.323471069335938]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -19255,7 +19255,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.2760908603668213]
 [6.744758605957031]
 [1.8154383897781372]
-[1.0399960279464722]deployment.apps/docker-snort resource requirements updated
+[1.0399960279464722]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -19731,7 +19731,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4224259853363037]
 [0.747210681438446]
 [3.8862669467926025]
-[511.9320068359375]deployment.apps/docker-snort resource requirements updated
+[511.9320068359375]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -20218,7 +20218,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2633141577243805]
 [5.665331840515137]
 [61.38679885864258]
-[1.6101751327514648]deployment.apps/docker-snort resource requirements updated
+[1.6101751327514648]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -20758,7 +20758,7 @@ deployment.apps/docker-snort resource requirements updated
 [11.471487045288086]
 [1.2764049768447876]
 [0.2998175024986267]
-[10.778285026550293]deployment.apps/docker-snort resource requirements updated
+[10.778285026550293]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21258,7 +21258,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3528420329093933]
 [0.5381514430046082]
 [1.0519466400146484]
-[0.29109105467796326]deployment.apps/docker-snort resource requirements updated
+[0.29109105467796326]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -21779,7 +21779,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.1417205333709717]
 [8.833806037902832]
 [2.5747928619384766]
-[13.516738891601562]deployment.apps/docker-snort resource requirements updated
+[13.516738891601562]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -22303,7 +22303,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6056981086730957]
 [0.4341329336166382]
 [1.3368372917175293]
-[1.1860429048538208]deployment.apps/docker-snort resource requirements updated
+[1.1860429048538208]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -22792,7 +22792,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.6445192098617554]
 [0.2463289499282837]
 [3.1178886890411377]
-[0.5341559648513794]deployment.apps/docker-snort resource requirements updated
+[0.5341559648513794]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -23253,7 +23253,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.1792798042297363]
 [4.731482982635498]
 [0.6777722239494324]
-[42.00751876831055]deployment.apps/docker-snort resource requirements updated
+[42.00751876831055]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -23719,7 +23719,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.5084004402160645]
 [1.462519884109497]
 [0.9724243879318237]
-[2.3272855281829834]deployment.apps/docker-snort resource requirements updated
+[2.3272855281829834]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24205,7 +24205,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.7892417907714844]
 [27.68505859375]
 [0.28179407119750977]
-[11.06263542175293]deployment.apps/docker-snort resource requirements updated
+[11.06263542175293]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -24650,7 +24650,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.6649680137634277]
 [1.433475375175476]
 [0.6775422096252441]
-[0.13386324048042297]deployment.apps/docker-snort resource requirements updated
+[0.13386324048042297]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -25162,7 +25162,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.5574545860290527]
 [9.473235130310059]
 [0.9284642338752747]
-[0.0582803450524807]deployment.apps/docker-snort resource requirements updated
+[0.0582803450524807]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -25629,7 +25629,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.854555606842041]
 [0.5765537619590759]
 [0.11151397228240967]
-[15.037700653076172]deployment.apps/docker-snort resource requirements updated
+[15.037700653076172]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -26119,7 +26119,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8062859177589417]
 [1.75673508644104]
 [0.7298873662948608]
-[5.607880115509033]deployment.apps/docker-snort resource requirements updated
+[5.607880115509033]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -26579,7 +26579,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.332830905914307]
 [0.28857284784317017]
 [0.5328019857406616]
-[9.496540069580078]deployment.apps/docker-snort resource requirements updated
+[9.496540069580078]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -27031,7 +27031,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.30145063996315]
 [2.000793218612671]
 [0.6818318963050842]
-[0.7165323495864868]deployment.apps/docker-snort resource requirements updated
+[0.7165323495864868]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -27479,7 +27479,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3667910397052765]
 [2.38679575920105]
 [0.3501630127429962]
-[13.030004501342773]deployment.apps/docker-snort resource requirements updated
+[13.030004501342773]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -27925,7 +27925,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.315450668334961]
 [0.5406275987625122]
 [0.7270891070365906]
-[1.7360442876815796]deployment.apps/docker-snort resource requirements updated
+[1.7360442876815796]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -28404,7 +28404,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5268357396125793]
 [1.1693141460418701]
 [0.027384456247091293]
-[16.834299087524414]deployment.apps/docker-snort resource requirements updated
+[16.834299087524414]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -28921,7 +28921,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.569838047027588]
 [0.40470293164253235]
 [0.6568713784217834]
-[10.562691688537598]deployment.apps/docker-snort resource requirements updated
+[10.562691688537598]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -29409,7 +29409,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.3747682571411133]
 [0.6181188821792603]
 [0.5332140326499939]
-[169.6941375732422]deployment.apps/docker-snort resource requirements updated
+[169.6941375732422]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -29930,7 +29930,7 @@ deployment.apps/docker-snort resource requirements updated
 [191.6029052734375]
 [0.9520687460899353]
 [39.730560302734375]
-[0.40883803367614746]deployment.apps/docker-snort resource requirements updated
+[0.40883803367614746]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -30419,7 +30419,7 @@ deployment.apps/docker-snort resource requirements updated
 [112.0656967163086]
 [1.7409409284591675]
 [0.9015747904777527]
-[0.8269782066345215]deployment.apps/docker-snort resource requirements updated
+[0.8269782066345215]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -30900,7 +30900,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7710222601890564]
 [0.37462109327316284]
 [0.4649518132209778]
-[0.22715239226818085]deployment.apps/docker-snort resource requirements updated
+[0.22715239226818085]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -31391,7 +31391,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.37030306458473206]
 [17.276033401489258]
 [0.6357800364494324]
-[0.3746117949485779]deployment.apps/docker-snort resource requirements updated
+[0.3746117949485779]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -31868,7 +31868,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.725205659866333]
 [185.55982971191406]
 [0.37122035026550293]
-[2.112541913986206]deployment.apps/docker-snort resource requirements updated
+[2.112541913986206]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -32352,7 +32352,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8939168453216553]
 [4.169032573699951]
 [0.2045256495475769]
-[0.44434115290641785]deployment.apps/docker-snort resource requirements updated
+[0.44434115290641785]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -32827,7 +32827,7 @@ deployment.apps/docker-snort resource requirements updated
 [187.54344177246094]
 [0.17916278541088104]
 [9.640496253967285]
-[4.33615255355835]deployment.apps/docker-snort resource requirements updated
+[4.33615255355835]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -33304,7 +33304,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.44886794686317444]
 [0.41793012619018555]
 [0.1924949735403061]
-[0.1540156602859497]deployment.apps/docker-snort resource requirements updated
+[0.1540156602859497]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -33797,7 +33797,7 @@ deployment.apps/docker-snort resource requirements updated
 [214.6080322265625]
 [0.18759942054748535]
 [7.7312798500061035]
-[0.40302902460098267]deployment.apps/docker-snort resource requirements updated
+[0.40302902460098267]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -34295,7 +34295,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6816124320030212]
 [0.10501591116189957]
 [2.701807737350464]
-[1.2617777585983276]deployment.apps/docker-snort resource requirements updated
+[1.2617777585983276]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -34795,7 +34795,7 @@ deployment.apps/docker-snort resource requirements updated
 [36.92170333862305]
 [0.7274115681648254]
 [0.10408887267112732]
-[0.4468821585178375]deployment.apps/docker-snort resource requirements updated
+[0.4468821585178375]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -35263,7 +35263,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9640248417854309]
 [20.02130699157715]
 [0.06918054819107056]
-[0.07937145978212357]deployment.apps/docker-snort resource requirements updated
+[0.07937145978212357]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -35739,7 +35739,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.950232982635498]
 [2.0910983085632324]
 [0.2437957525253296]
-[9.123917579650879]deployment.apps/docker-snort resource requirements updated
+[9.123917579650879]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -36229,7 +36229,7 @@ deployment.apps/docker-snort resource requirements updated
 [82.95038604736328]
 [0.09326829761266708]
 [0.3512333333492279]
-[1.0696605443954468]deployment.apps/docker-snort resource requirements updated
+[1.0696605443954468]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -36714,7 +36714,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.26717323064804077]
 [0.9227559566497803]
 [0.03396670147776604]
-[0.32710492610931396]deployment.apps/docker-snort resource requirements updated
+[0.32710492610931396]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -37208,7 +37208,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13889428973197937]
 [0.2707251012325287]
 [0.7301861643791199]
-[0.6289205551147461]deployment.apps/docker-snort resource requirements updated
+[0.6289205551147461]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -37712,7 +37712,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7718954086303711]
 [4.080808162689209]
 [0.5818403959274292]
-[0.28012219071388245]deployment.apps/docker-snort resource requirements updated
+[0.28012219071388245]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -38211,7 +38211,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.864731788635254]
 [390.890869140625]
 [10.931602478027344]
-[27.797073364257812]deployment.apps/docker-snort resource requirements updated
+[27.797073364257812]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -38688,7 +38688,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9053794741630554]
 [6.3687357902526855]
 [0.2741125524044037]
-[60.0012321472168]deployment.apps/docker-snort resource requirements updated
+[60.0012321472168]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -39171,7 +39171,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.6393579244613647]
 [0.4460727870464325]
 [0.7001741528511047]
-[2.312692165374756]deployment.apps/docker-snort resource requirements updated
+[2.312692165374756]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -39653,7 +39653,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.37509459257125854]
 [2.1740150451660156]
 [0.23657752573490143]
-[0.2352238893508911]deployment.apps/docker-snort resource requirements updated
+[0.2352238893508911]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -40151,7 +40151,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6600870490074158]
 [0.743762731552124]
 [0.48004698753356934]
-[2.143894672393799]deployment.apps/docker-snort resource requirements updated
+[2.143894672393799]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -40626,7 +40626,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.27166828513145447]
 [68.17847442626953]
 [0.21894411742687225]
-[31.99298667907715]deployment.apps/docker-snort resource requirements updated
+[31.99298667907715]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -41135,7 +41135,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.8266364336013794]
 [2.8641130924224854]
 [3.1130008697509766]
-[0.9680124521255493]deployment.apps/docker-snort resource requirements updated
+[0.9680124521255493]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -41584,7 +41584,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.760444641113281]
 [82.44673156738281]
 [0.26941272616386414]
-[0.19596245884895325]deployment.apps/docker-snort resource requirements updated
+[0.19596245884895325]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -42082,7 +42082,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6262651681900024]
 [2.5741639137268066]
 [4.052974700927734]
-[0.341465026140213]deployment.apps/docker-snort resource requirements updated
+[0.341465026140213]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -42567,7 +42567,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.3614370822906494]
 [5.96848726272583]
 [5.531349182128906]
-[0.13955280184745789]deployment.apps/docker-snort resource requirements updated
+[0.13955280184745789]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -43011,7 +43011,7 @@ deployment.apps/docker-snort resource requirements updated
 [120.90697479248047]
 [63.057823181152344]
 [3.4745073318481445]
-[0.5378136038780212]deployment.apps/docker-snort resource requirements updated
+[0.5378136038780212]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -43489,7 +43489,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.257552623748779]
 [0.90703946352005]
 [0.503666341304779]
-[7.001208782196045]deployment.apps/docker-snort resource requirements updated
+[7.001208782196045]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -43967,7 +43967,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.16642513871192932]
 [156.49195861816406]
 [12.24636173248291]
-[0.17428594827651978]deployment.apps/docker-snort resource requirements updated
+[0.17428594827651978]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -44490,7 +44490,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.15692138671875]
 [0.8997032046318054]
 [0.22201545536518097]
-[149.55828857421875]deployment.apps/docker-snort resource requirements updated
+[149.55828857421875]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -44948,7 +44948,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1430225670337677]
 [0.31641942262649536]
 [195.2158966064453]
-[0.25402912497520447]deployment.apps/docker-snort resource requirements updated
+[0.25402912497520447]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -45463,7 +45463,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.572610855102539]
 [115.63701629638672]
 [0.24284344911575317]
-[0.22712969779968262]deployment.apps/docker-snort resource requirements updated
+[0.22712969779968262]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -45943,7 +45943,7 @@ deployment.apps/docker-snort resource requirements updated
 [19.90038299560547]
 [26.033517837524414]
 [1.0017400979995728]
-[0.35257643461227417]deployment.apps/docker-snort resource requirements updated
+[0.35257643461227417]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -46454,7 +46454,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3072311580181122]
 [1.739293098449707]
 [221.42520141601562]
-[17.823436737060547]deployment.apps/docker-snort resource requirements updated
+[17.823436737060547]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -46907,7 +46907,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.21058443188667297]
 [36.32850646972656]
 [0.9500263929367065]
-[0.23636215925216675]deployment.apps/docker-snort resource requirements updated
+[0.23636215925216675]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -47388,7 +47388,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.7885060906410217]
 [3.2383434772491455]
 [0.9632399678230286]
-[0.9507723450660706]deployment.apps/docker-snort resource requirements updated
+[0.9507723450660706]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -47852,7 +47852,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.605410575866699]
 [182.85272216796875]
 [9.994260787963867]
-[2.2860090732574463]deployment.apps/docker-snort resource requirements updated
+[2.2860090732574463]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -48331,7 +48331,7 @@ deployment.apps/docker-snort resource requirements updated
 [12.235468864440918]
 [0.2623971104621887]
 [0.2630518078804016]
-[3.1541554927825928]deployment.apps/docker-snort resource requirements updated
+[3.1541554927825928]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -48812,7 +48812,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2063106745481491]
 [0.38920724391937256]
 [2.0895729064941406]
-[8.092935562133789]deployment.apps/docker-snort resource requirements updated
+[8.092935562133789]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -49309,7 +49309,7 @@ deployment.apps/docker-snort resource requirements updated
 [209.5029296875]
 [0.3316342532634735]
 [321.23590087890625]
-[5.2170891761779785]deployment.apps/docker-snort resource requirements updated
+[5.2170891761779785]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -49767,7 +49767,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.754878282546997]
 [12.942390441894531]
 [0.3056797385215759]
-[6.4955034255981445]deployment.apps/docker-snort resource requirements updated
+[6.4955034255981445]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -50238,7 +50238,7 @@ deployment.apps/docker-snort resource requirements updated
 [29.173898696899414]
 [0.17157906293869019]
 [6.2446608543396]
-[8.822883605957031]deployment.apps/docker-snort resource requirements updated
+[8.822883605957031]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -50745,7 +50745,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.480170339345932]
 [2.1176304817199707]
 [16.44198989868164]
-[0.6040729880332947]deployment.apps/docker-snort resource requirements updated
+[0.6040729880332947]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -51239,7 +51239,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8299165964126587]
 [2.2727346420288086]
 [1.016432285308838]
-[204.6688690185547]deployment.apps/docker-snort resource requirements updated
+[204.6688690185547]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -51692,7 +51692,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.455745220184326]
 [131.71298217773438]
 [4.093448162078857]
-[0.13046765327453613]deployment.apps/docker-snort resource requirements updated
+[0.13046765327453613]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -52174,7 +52174,7 @@ deployment.apps/docker-snort resource requirements updated
 [21.638652801513672]
 [4.821293830871582]
 [15.626659393310547]
-[0.49214795231819153]deployment.apps/docker-snort resource requirements updated
+[0.49214795231819153]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -52634,7 +52634,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3351278007030487]
 [1.4755126237869263]
 [171.1322479248047]
-[2.274024486541748]deployment.apps/docker-snort resource requirements updated
+[2.274024486541748]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -53103,7 +53103,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.5793356895446777]
 [6.3746657371521]
 [0.1326095461845398]
-[0.18750610947608948]deployment.apps/docker-snort resource requirements updated
+[0.18750610947608948]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -53547,7 +53547,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9802101254463196]
 [0.26502975821495056]
 [0.6938489079475403]
-[5.578283309936523]deployment.apps/docker-snort resource requirements updated
+[5.578283309936523]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -54067,7 +54067,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.0913712978363037]
 [0.17494593560695648]
 [164.67869567871094]
-[3.7563610076904297]deployment.apps/docker-snort resource requirements updated
+[3.7563610076904297]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -54559,7 +54559,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.257124900817871]
 [343.9424743652344]
 [157.93203735351562]
-[14.629902839660645]deployment.apps/docker-snort resource requirements updated
+[14.629902839660645]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -55051,7 +55051,7 @@ deployment.apps/docker-snort resource requirements updated
 [14.286299705505371]
 [32.94174575805664]
 [0.7618889212608337]
-[0.7573541402816772]deployment.apps/docker-snort resource requirements updated
+[0.7573541402816772]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -55523,7 +55523,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.586545944213867]
 [1.3536462783813477]
 [115.74589538574219]
-[1.1353458166122437]deployment.apps/docker-snort resource requirements updated
+[1.1353458166122437]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -56009,7 +56009,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2986990213394165]
 [0.5081993341445923]
 [10.993293762207031]
-[17.143043518066406]deployment.apps/docker-snort resource requirements updated
+[17.143043518066406]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -56541,7 +56541,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.964788019657135]
 [7.500552654266357]
 [4.816381931304932]
-[124.12629699707031]deployment.apps/docker-snort resource requirements updated
+[124.12629699707031]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -57063,7 +57063,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2574288547039032]
 [0.2288963794708252]
 [1.2535943984985352]
-[0.3681805729866028]deployment.apps/docker-snort resource requirements updated
+[0.3681805729866028]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -57548,7 +57548,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.14789703488349915]
 [29.623641967773438]
 [8.846479415893555]
-[0.7511690855026245]deployment.apps/docker-snort resource requirements updated
+[0.7511690855026245]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -58064,7 +58064,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.651052713394165]
 [0.5215050578117371]
 [1.4983925819396973]
-[0.084336057305336]deployment.apps/docker-snort resource requirements updated
+[0.084336057305336]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -58599,7 +58599,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.09946762025356293]
 [18.124540328979492]
 [0.3127957284450531]
-[0.11065865308046341]deployment.apps/docker-snort resource requirements updated
+[0.11065865308046341]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -59097,7 +59097,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.111157178878784]
 [0.10590334981679916]
 [2.0735270977020264]
-[0.11558560281991959]deployment.apps/docker-snort resource requirements updated
+[0.11558560281991959]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -59586,7 +59586,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.2704503536224365]
 [82.3207778930664]
 [0.4958699941635132]
-[0.8368034362792969]deployment.apps/docker-snort resource requirements updated
+[0.8368034362792969]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -60070,7 +60070,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5777783989906311]
 [1.168101191520691]
 [0.13503524661064148]
-[0.22949564456939697]deployment.apps/docker-snort resource requirements updated
+[0.22949564456939697]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -60560,7 +60560,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1107591986656189]
 [0.14105436205863953]
 [0.6507033705711365]
-[0.36031776666641235]deployment.apps/docker-snort resource requirements updated
+[0.36031776666641235]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -61031,7 +61031,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.197750091552734]
 [0.3210616707801819]
 [0.17598667740821838]
-[0.5228382349014282]deployment.apps/docker-snort resource requirements updated
+[0.5228382349014282]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -61487,7 +61487,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.047497935593128204]
 [0.4360339939594269]
 [0.09955142438411713]
-[1.477997899055481]deployment.apps/docker-snort resource requirements updated
+[1.477997899055481]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -61970,7 +61970,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5637632608413696]
 [0.3190540671348572]
 [8.562687873840332]
-[0.29935216903686523]deployment.apps/docker-snort resource requirements updated
+[0.29935216903686523]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -62450,7 +62450,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5322418212890625]
 [1.0454481840133667]
 [99.94145965576172]
-[2.729213237762451]deployment.apps/docker-snort resource requirements updated
+[2.729213237762451]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -62945,7 +62945,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.622882127761841]
 [0.23085129261016846]
 [0.5050650835037231]
-[1.0399901866912842]deployment.apps/docker-snort resource requirements updated
+[1.0399901866912842]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -63404,7 +63404,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.9171745181083679]
 [0.26307398080825806]
 [4.082030296325684]
-[0.6482066512107849]deployment.apps/docker-snort resource requirements updated
+[0.6482066512107849]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -63896,7 +63896,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.627476215362549]
 [0.2926235496997833]
 [0.14576713740825653]
-[2.941555976867676]deployment.apps/docker-snort resource requirements updated
+[2.941555976867676]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -64376,7 +64376,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3202071487903595]
 [142.54867553710938]
 [0.14437074959278107]
-[0.25642290711402893]deployment.apps/docker-snort resource requirements updated
+[0.25642290711402893]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -64860,7 +64860,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.500197887420654]
 [140.2886505126953]
 [0.4942970275878906]
-[0.09026847779750824]deployment.apps/docker-snort resource requirements updated
+[0.09026847779750824]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -65353,7 +65353,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.133779048919678]
 [3.736349105834961]
 [1.7358096837997437]
-[12.393505096435547]deployment.apps/docker-snort resource requirements updated
+[12.393505096435547]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -65830,7 +65830,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.881397008895874]
 [2.7199230194091797]
 [0.8730387091636658]
-[0.3433697819709778]deployment.apps/docker-snort resource requirements updated
+[0.3433697819709778]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -66331,7 +66331,7 @@ deployment.apps/docker-snort resource requirements updated
 [13.186463356018066]
 [0.4922816753387451]
 [4.718184471130371]
-[7.600997447967529]deployment.apps/docker-snort resource requirements updated
+[7.600997447967529]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -66797,7 +66797,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.44972658157348633]
 [4.668961048126221]
 [2.831987142562866]
-[0.25218817591667175]deployment.apps/docker-snort resource requirements updated
+[0.25218817591667175]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -67273,7 +67273,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.16456927359104156]
 [0.17737282812595367]
 [0.3355795443058014]
-[0.6716019511222839]deployment.apps/docker-snort resource requirements updated
+[0.6716019511222839]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -67753,7 +67753,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.5114414691925049]
 [0.15749287605285645]
 [0.25211355090141296]
-[0.4920375943183899]deployment.apps/docker-snort resource requirements updated
+[0.4920375943183899]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -68245,7 +68245,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.666593551635742]
 [1.5770984888076782]
 [0.38310688734054565]
-[11.000545501708984]deployment.apps/docker-snort resource requirements updated
+[11.000545501708984]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -68723,7 +68723,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.4532470703125]
 [0.9289054274559021]
 [2.411029815673828]
-[2.5600593090057373]deployment.apps/docker-snort resource requirements updated
+[2.5600593090057373]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -69180,7 +69180,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.199683904647827]
 [0.4294520914554596]
 [0.7491557002067566]
-[30.84700584411621]deployment.apps/docker-snort resource requirements updated
+[30.84700584411621]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -69645,7 +69645,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.29305124282836914]
 [0.23474638164043427]
 [0.28987768292427063]
-[0.08249352127313614]deployment.apps/docker-snort resource requirements updated
+[0.08249352127313614]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -70131,7 +70131,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5217373371124268]
 [6.3979597091674805]
 [0.15192122757434845]
-[0.6789635419845581]deployment.apps/docker-snort resource requirements updated
+[0.6789635419845581]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -70630,7 +70630,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.17407220602035522]
 [0.18723857402801514]
 [0.7222604751586914]
-[4.3602471351623535]deployment.apps/docker-snort resource requirements updated
+[4.3602471351623535]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -71102,7 +71102,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.2233691215515137]
 [0.8142494559288025]
 [1.043959617614746]
-[0.1954411417245865]deployment.apps/docker-snort resource requirements updated
+[0.1954411417245865]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -71618,7 +71618,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.11734713613986969]
 [0.21294620633125305]
 [0.11326256394386292]
-[67.79061889648438]deployment.apps/docker-snort resource requirements updated
+[67.79061889648438]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -72120,7 +72120,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13022959232330322]
 [4.720211505889893]
 [0.12599767744541168]
-[0.18838827311992645]deployment.apps/docker-snort resource requirements updated
+[0.18838827311992645]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -72632,7 +72632,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.29267916083335876]
 [0.7238683700561523]
 [0.10843440145254135]
-[2.3551769256591797]deployment.apps/docker-snort resource requirements updated
+[2.3551769256591797]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -73139,7 +73139,7 @@ deployment.apps/docker-snort resource requirements updated
 [8.566091537475586]
 [4.085508823394775]
 [0.1788530945777893]
-[1.4427504539489746]deployment.apps/docker-snort resource requirements updated
+[1.4427504539489746]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -73596,7 +73596,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.472121715545654]
 [0.7742622494697571]
 [5.509356498718262]
-[13.624895095825195]deployment.apps/docker-snort resource requirements updated
+[13.624895095825195]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -74131,7 +74131,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.6604390144348145]
 [9.161097526550293]
 [8.292475700378418]
-[0.805487871170044]deployment.apps/docker-snort resource requirements updated
+[0.805487871170044]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -74638,7 +74638,7 @@ deployment.apps/docker-snort resource requirements updated
 [100.90396881103516]
 [4.331740379333496]
 [0.37457215785980225]
-[9.118814468383789]deployment.apps/docker-snort resource requirements updated
+[9.118814468383789]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -75128,7 +75128,7 @@ deployment.apps/docker-snort resource requirements updated
 [9.313451766967773]
 [64.93708801269531]
 [0.8367355465888977]
-[13.01197624206543]deployment.apps/docker-snort resource requirements updated
+[13.01197624206543]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -75606,7 +75606,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.47958770394325256]
 [10.581396102905273]
 [0.16741116344928741]
-[0.5020539164543152]deployment.apps/docker-snort resource requirements updated
+[0.5020539164543152]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -76096,7 +76096,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.38270801305770874]
 [0.12366676330566406]
 [0.3009578585624695]
-[0.1252998560667038]deployment.apps/docker-snort resource requirements updated
+[0.1252998560667038]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -76564,7 +76564,7 @@ deployment.apps/docker-snort resource requirements updated
 [102.92432403564453]
 [3.3400542736053467]
 [0.06335069984197617]
-[0.20999020338058472]deployment.apps/docker-snort resource requirements updated
+[0.20999020338058472]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -77059,7 +77059,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6882293820381165]
 [10.760607719421387]
 [2.7070484161376953]
-[125.58332824707031]deployment.apps/docker-snort resource requirements updated
+[125.58332824707031]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -77537,7 +77537,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6133405566215515]
 [0.17071998119354248]
 [0.4287758767604828]
-[0.5486842393875122]deployment.apps/docker-snort resource requirements updated
+[0.5486842393875122]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -78496,7 +78496,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.0615217685699463]
 [0.20388492941856384]
 [0.17002169787883759]
-[0.043118368834257126]deployment.apps/docker-snort resource requirements updated
+[0.043118368834257126]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -79002,7 +79002,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.058932214975357056]
 [1.8441848754882812]
 [0.5175416469573975]
-[0.08686220645904541]deployment.apps/docker-snort resource requirements updated
+[0.08686220645904541]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -79476,7 +79476,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.968079090118408]
 [2.917476177215576]
 [5.016329288482666]
-[4.425074577331543]deployment.apps/docker-snort resource requirements updated
+[4.425074577331543]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -79927,7 +79927,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.19596163928508759]
 [1.6374170780181885]
 [1.6306449174880981]
-[6.7575602531433105]deployment.apps/docker-snort resource requirements updated
+[6.7575602531433105]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -80397,7 +80397,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.08331941813230515]
 [0.08862728625535965]
 [3.347475290298462]
-[4.069166660308838]deployment.apps/docker-snort resource requirements updated
+[4.069166660308838]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -80878,7 +80878,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.14106503129005432]
 [0.22560513019561768]
 [0.264308363199234]
-[0.4739585518836975]deployment.apps/docker-snort resource requirements updated
+[0.4739585518836975]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -81349,7 +81349,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.898444652557373]
 [9.915745735168457]
 [0.2907768487930298]
-[0.6887149214744568]deployment.apps/docker-snort resource requirements updated
+[0.6887149214744568]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -81848,7 +81848,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8227295875549316]
 [1.7849787473678589]
 [119.70744323730469]
-[0.253539115190506]deployment.apps/docker-snort resource requirements updated
+[0.253539115190506]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -82311,7 +82311,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.38390615582466125]
 [0.5312243700027466]
 [2.983196258544922]
-[0.6797301769256592]deployment.apps/docker-snort resource requirements updated
+[0.6797301769256592]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -82792,7 +82792,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.18859341740608215]
 [139.56460571289062]
 [0.14573875069618225]
-[0.8048319816589355]deployment.apps/docker-snort resource requirements updated
+[0.8048319816589355]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -83233,7 +83233,7 @@ deployment.apps/docker-snort resource requirements updated
 [19.177080154418945]
 [0.23678436875343323]
 [0.5456188917160034]
-[0.8119534850120544]deployment.apps/docker-snort resource requirements updated
+[0.8119534850120544]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -84214,7 +84214,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.8817627429962158]
 [19.841171264648438]
 [62.38582229614258]
-[0.1891738772392273]deployment.apps/docker-snort resource requirements updated
+[0.1891738772392273]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -84688,7 +84688,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.32120776176452637]
 [1.4193196296691895]
 [4.414425373077393]
-[10.172057151794434]deployment.apps/docker-snort resource requirements updated
+[10.172057151794434]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -85156,7 +85156,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.08848133683204651]
 [0.09528663009405136]
 [97.94559478759766]
-[2.8312156200408936]deployment.apps/docker-snort resource requirements updated
+[2.8312156200408936]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -85618,7 +85618,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.981194019317627]
 [0.16990412771701813]
 [5.651738166809082]
-[5.997591495513916]deployment.apps/docker-snort resource requirements updated
+[5.997591495513916]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -86057,7 +86057,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.11445096135139465]
 [1.602558970451355]
 [3.976346969604492]
-[0.8091712594032288]deployment.apps/docker-snort resource requirements updated
+[0.8091712594032288]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -86552,7 +86552,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.21705979108810425]
 [0.6324467658996582]
 [0.6911939382553101]
-[1.4849557876586914]deployment.apps/docker-snort resource requirements updated
+[1.4849557876586914]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -87034,7 +87034,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5158290863037109]
 [11.378218650817871]
 [0.5495992302894592]
-[0.24320366978645325]deployment.apps/docker-snort resource requirements updated
+[0.24320366978645325]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -87505,7 +87505,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4059159755706787]
 [1.4007898569107056]
 [0.28663399815559387]
-[0.2332930862903595]deployment.apps/docker-snort resource requirements updated
+[0.2332930862903595]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -88458,7 +88458,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1631735861301422]
 [0.16225118935108185]
 [0.3803507387638092]
-[0.11296027898788452]deployment.apps/docker-snort resource requirements updated
+[0.11296027898788452]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -88918,7 +88918,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.848012924194336]
 [0.44037070870399475]
 [1.317286729812622]
-[19.607702255249023]deployment.apps/docker-snort resource requirements updated
+[19.607702255249023]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -89390,7 +89390,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.22553102672100067]
 [339.4399719238281]
 [0.1627577543258667]
-[0.07382522523403168]deployment.apps/docker-snort resource requirements updated
+[0.07382522523403168]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -89848,7 +89848,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.771022319793701]
 [0.33127617835998535]
 [0.16464632749557495]
-[0.21967913210391998]deployment.apps/docker-snort resource requirements updated
+[0.21967913210391998]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -90350,7 +90350,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.6227856874465942]
 [0.2956574559211731]
 [0.2713121473789215]
-[0.340514212846756]deployment.apps/docker-snort resource requirements updated
+[0.340514212846756]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -90836,7 +90836,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.06351505219936371]
 [0.21905645728111267]
 [0.04997480288147926]
-[1.3301035165786743]deployment.apps/docker-snort resource requirements updated
+[1.3301035165786743]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -91305,7 +91305,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.10376904159784317]
 [124.27308654785156]
 [1.1618258953094482]
-[0.406706839799881]deployment.apps/docker-snort resource requirements updated
+[0.406706839799881]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -91766,7 +91766,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.3189658224582672]
 [0.26947370171546936]
 [0.23761773109436035]
-[0.4133855104446411]deployment.apps/docker-snort resource requirements updated
+[0.4133855104446411]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -92213,7 +92213,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.28152963519096375]
 [3.411546468734741]
 [8.81641674041748]
-[0.36749982833862305]deployment.apps/docker-snort resource requirements updated
+[0.36749982833862305]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -92712,7 +92712,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.3121107816696167]
 [3.02126145362854]
 [0.0892089456319809]
-[0.19983813166618347]deployment.apps/docker-snort resource requirements updated
+[0.19983813166618347]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -93179,7 +93179,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4904773235321045]
 [0.38559824228286743]
 [0.38429030776023865]
-[0.3527126610279083]deployment.apps/docker-snort resource requirements updated
+[0.3527126610279083]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -93643,7 +93643,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.188047170639038]
 [8.329601287841797]
 [0.14951713383197784]
-[0.14108185470104218]deployment.apps/docker-snort resource requirements updated
+[0.14108185470104218]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -94126,7 +94126,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.19570079445838928]
 [13.762202262878418]
 [8.376795768737793]
-[1.8071696758270264]deployment.apps/docker-snort resource requirements updated
+[1.8071696758270264]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -94595,7 +94595,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.23038578033447266]
 [0.1094827726483345]
 [1.1687768697738647]
-[0.1419946402311325]deployment.apps/docker-snort resource requirements updated
+[0.1419946402311325]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -95072,7 +95072,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.594638347625732]
 [1.6831231117248535]
 [0.35047483444213867]
-[1.2578243017196655]deployment.apps/docker-snort resource requirements updated
+[1.2578243017196655]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -96037,7 +96037,7 @@ deployment.apps/docker-snort resource requirements updated
 [101.06099700927734]
 [2.1932756900787354]
 [0.2715108096599579]
-[0.24079088866710663]deployment.apps/docker-snort resource requirements updated
+[0.24079088866710663]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -96493,7 +96493,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.8284464478492737]
 [0.23282471299171448]
 [0.8900136351585388]
-[123.70661163330078]deployment.apps/docker-snort resource requirements updated
+[123.70661163330078]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -96926,7 +96926,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1645987182855606]
 [88.94281005859375]
 [7.4215264320373535]
-[6.568515300750732]deployment.apps/docker-snort resource requirements updated
+[6.568515300750732]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -97419,7 +97419,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.1437397450208664]
 [0.27605974674224854]
 [0.22928011417388916]
-[0.12362199276685715]deployment.apps/docker-snort resource requirements updated
+[0.12362199276685715]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -97882,7 +97882,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5671616792678833]
 [1.7766036987304688]
 [0.11419321596622467]
-[0.09049619734287262]deployment.apps/docker-snort resource requirements updated
+[0.09049619734287262]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -98351,7 +98351,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4347994029521942]
 [3.3713126182556152]
 [0.9512242674827576]
-[3.7525970935821533]deployment.apps/docker-snort resource requirements updated
+[3.7525970935821533]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -98826,7 +98826,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5714983344078064]
 [2.0405349731445312]
 [2.3157238960266113]
-[0.24355390667915344]deployment.apps/docker-snort resource requirements updated
+[0.24355390667915344]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -99349,7 +99349,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.46537184715270996]
 [2.978734254837036]
 [0.20908109843730927]
-[2.546253204345703]deployment.apps/docker-snort resource requirements updated
+[2.546253204345703]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -99845,7 +99845,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.569528102874756]
 [0.5649782419204712]
 [0.16386757791042328]
-[1.6317297220230103]deployment.apps/docker-snort resource requirements updated
+[1.6317297220230103]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -100313,7 +100313,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.9471510648727417]
 [10.459630966186523]
 [10.690245628356934]
-[4.867281436920166]deployment.apps/docker-snort resource requirements updated
+[4.867281436920166]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -100787,7 +100787,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4195950031280518]
 [0.20452815294265747]
 [0.09087981283664703]
-[0.08784522861242294]deployment.apps/docker-snort resource requirements updated
+[0.08784522861242294]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -102154,7 +102154,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.0379557609558105]
 [120.23506164550781]
 [1.4635438919067383]
-[0.06112154200673103]deployment.apps/docker-snort resource requirements updated
+[0.06112154200673103]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -102647,7 +102647,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.20355719327926636]
 [0.5670137405395508]
 [0.15490634739398956]
-[0.04424481838941574]deployment.apps/docker-snort resource requirements updated
+[0.04424481838941574]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -103096,7 +103096,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.4193601906299591]
 [3.889887809753418]
 [0.22791899740695953]
-[0.6494829654693604]deployment.apps/docker-snort resource requirements updated
+[0.6494829654693604]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -103547,7 +103547,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.14732670783996582]
 [4.280457973480225]
 [4.562229633331299]
-[2.905369758605957]deployment.apps/docker-snort resource requirements updated
+[2.905369758605957]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -104038,7 +104038,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.03978731110692024]
 [5.0285186767578125]
 [1.9054142236709595]
-[0.04851500689983368]deployment.apps/docker-snort resource requirements updated
+[0.04851500689983368]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -104527,7 +104527,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.13787072896957397]
 [1.12590754032135]
 [0.1582777500152588]
-[0.043708305805921555]deployment.apps/docker-snort resource requirements updated
+[0.043708305805921555]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -105032,7 +105032,7 @@ deployment.apps/docker-snort resource requirements updated
 [3.6244425773620605]
 [2.9474565982818604]
 [0.1376475840806961]
-[2.593883752822876]deployment.apps/docker-snort resource requirements updated
+[2.593883752822876]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -105505,7 +105505,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.716030597686768]
 [0.4548766016960144]
 [4.987851619720459]
-[115.01533508300781]deployment.apps/docker-snort resource requirements updated
+[115.01533508300781]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -105987,7 +105987,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.4097086191177368]
 [128.5386505126953]
 [0.2248820811510086]
-[3.383035659790039]deployment.apps/docker-snort resource requirements updated
+[3.383035659790039]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -106437,7 +106437,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.05844837427139282]
 [0.10817674547433853]
 [0.0625627413392067]
-[0.11731229722499847]deployment.apps/docker-snort resource requirements updated
+[0.11731229722499847]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -106909,7 +106909,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2875928282737732]
 [0.08965545892715454]
 [0.07274730503559113]
-[3.064800262451172]deployment.apps/docker-snort resource requirements updated
+[3.064800262451172]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -107369,7 +107369,7 @@ deployment.apps/docker-snort resource requirements updated
 [2.0351054668426514]
 [0.44393131136894226]
 [0.6852647662162781]
-[125.75537872314453]deployment.apps/docker-snort resource requirements updated
+[125.75537872314453]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -107834,7 +107834,7 @@ deployment.apps/docker-snort resource requirements updated
 [5.039941787719727]
 [0.6197780966758728]
 [2.2682435512542725]
-[99.77106475830078]deployment.apps/docker-snort resource requirements updated
+[99.77106475830078]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -108313,7 +108313,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.5197026133537292]
 [3.2368052005767822]
 [5.761911869049072]
-[0.061506956815719604]deployment.apps/docker-snort resource requirements updated
+[0.061506956815719604]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -108821,7 +108821,7 @@ deployment.apps/docker-snort resource requirements updated
 [6.5941667556762695]
 [1.094041109085083]
 [4.042129039764404]
-[2.495290756225586]deployment.apps/docker-snort resource requirements updated
+[2.495290756225586]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -109258,7 +109258,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.0822649002075195]
 [0.27841851115226746]
 [0.2884278893470764]
-[0.2423376888036728]deployment.apps/docker-snort resource requirements updated
+[0.2423376888036728]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -109732,7 +109732,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.654842853546143]
 [5.577852725982666]
 [0.549669086933136]
-[0.8173449039459229]deployment.apps/docker-snort resource requirements updated
+[0.8173449039459229]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -110216,7 +110216,7 @@ deployment.apps/docker-snort resource requirements updated
 [4.275680065155029]
 [0.5393080711364746]
 [5.156447887420654]
-[8.382400512695312]deployment.apps/docker-snort resource requirements updated
+[8.382400512695312]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -110670,7 +110670,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.8279415369033813]
 [0.24230113625526428]
 [0.29506716132164]
-[0.2976536154747009]deployment.apps/docker-snort resource requirements updated
+[0.2976536154747009]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -111140,7 +111140,7 @@ deployment.apps/docker-snort resource requirements updated
 [7.341314315795898]
 [2.136065721511841]
 [0.735994815826416]
-[3.1741461753845215]deployment.apps/docker-snort resource requirements updated
+[3.1741461753845215]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -112137,7 +112137,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.29584410786628723]
 [98.40835571289062]
 [0.9325166940689087]
-[7.573459625244141]deployment.apps/docker-snort resource requirements updated
+[7.573459625244141]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -112644,7 +112644,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.249017596244812]
 [0.2666841149330139]
 [5.488551616668701]
-[6.761386394500732]deployment.apps/docker-snort resource requirements updated
+[6.761386394500732]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -113129,7 +113129,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2507437467575073]
 [0.5431271195411682]
 [0.12486982345581055]
-[0.2754535675048828]deployment.apps/docker-snort resource requirements updated
+[0.2754535675048828]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -113584,7 +113584,7 @@ deployment.apps/docker-snort resource requirements updated
 [1.2655072212219238]
 [0.8141655921936035]
 [0.6597475409507751]
-[0.582761824131012]deployment.apps/docker-snort resource requirements updated
+[0.582761824131012]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -114038,7 +114038,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.06504007428884506]
 [0.07242517918348312]
 [0.21879863739013672]
-[0.06796437501907349]deployment.apps/docker-snort resource requirements updated
+[0.06796437501907349]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -114534,7 +114534,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.2239178866147995]
 [0.28213003277778625]
 [0.1021924540400505]
-[0.02111554890871048]deployment.apps/docker-snort resource requirements updated
+[0.02111554890871048]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -114987,7 +114987,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.19272619485855103]
 [0.9938695430755615]
 [1.728600025177002]
-[0.2313220500946045]deployment.apps/docker-snort resource requirements updated
+[0.2313220500946045]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -115456,7 +115456,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.10630389302968979]
 [6.117362022399902]
 [3.0209743976593018]
-[1.048486590385437]deployment.apps/docker-snort resource requirements updated
+[1.048486590385437]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
@@ -115936,7 +115936,7 @@ deployment.apps/docker-snort resource requirements updated
 [0.08842429518699646]
 [66.7742919921875]
 [10.137744903564453]
-[1.4176580905914307]deployment.apps/docker-snort resource requirements updated
+[1.4176580905914307]
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
 deployment.apps/docker-snort resource requirements updated
