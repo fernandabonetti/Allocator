@@ -45,7 +45,7 @@ class AllocatorEnv(gym.Env):
 		done = False 
 		reward = 0
 		self._take_action(action)
-		time.sleep(10) #sleep 10 seconds while the container restarts
+		time.sleep(5) #sleep 5 seconds while the container restarts
 		
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		
@@ -69,7 +69,6 @@ class AllocatorEnv(gym.Env):
 	def reset(self):
 		command = "cd services/snort && ./cleanup.sh"
 		subprocess.run(command, shell=True)
-		time.sleep(2)
 		self.cpu_request, self.mem_request = 100, 100
 		self.cpu_limit, self.mem_limit = 200, 200
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
