@@ -32,8 +32,6 @@ def main():
 	x = np.arange(0, len(y), 1)
 
 	ax = sns.lineplot(x=x, y=y, data=y)
-	# ax.xaxis.set_major_locator(ticker.MultipleLocator(10000))	#set x ticks interval
-	# ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
 	ax.margins(x=0)				#remove the ugly inner side margin
 	ax.margins(y=0.01) 
 

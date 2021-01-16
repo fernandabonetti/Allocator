@@ -6,22 +6,9 @@ import matplotlib.ticker as ticker
 import numpy as np
 
 def main():
-	if len(sys.argv) < 1:
-		exit(1)
 
-	filename = sys.argv[1]
-	data = {}
-
-	with open(filename, 'r') as fp:
-		for index, line in enumerate(fp.readlines()):
-			data.update({index: json.loads(line)})
-
-	episodes = []
-	score = []
-	for record in data.values():
-		if 'score' in record["message"].keys():
-			score.append(int(record["message"]["score"]))
-			episodes.append(int(record["message"]["episode"][:-5]))
+	with open('score.csv', 'r') as fp:
+		score = [int(line) for line in fp.readlines()]	
 	
 	mean = []
 	top = 100
@@ -32,10 +19,9 @@ def main():
 		eps.append(i+100)
 		i+=100
 		top+=100
-	sns.set_theme(style="darkgrid")
 	
 	ax = sns.lineplot(x=eps, y=mean, data=mean)
-	ax.margins(x=0)					#remove the ugly inner side margin 
+	ax.margins(x=0)						#remove the ugly inner side margin 
 
 	ax.set_title('Average Score by Episode')
 	ax.set_ylabel('Score Amount')

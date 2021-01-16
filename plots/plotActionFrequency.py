@@ -5,24 +5,14 @@ import seaborn as sns
 import matplotlib.ticker as ticker
 
 def main():
-	if len(sys.argv) < 1:
-		exit(1)
-	filename = sys.argv[1]
+
+	with open('action.csv', 'r') as fp:
+		action = [int(line) for line in fp.readlines()]
 	
-	data = {}
-
-	with open(filename, 'r') as fp:
-		for index, line in enumerate(fp.readlines()):
-			data.update({index: json.loads(line)})
-
-	action = []
-	for record in data.values():
-		if 'action' in record["message"].keys():
-			action.append(int(record["message"]["action"]))
 	action.sort()	
-	sns.set_theme(style="darkgrid")
 	sns.set(font_scale=0.6)
 
+	# Histograma de ações
 	ax = sns.countplot(x=action)
 	ax.margins(x=0)				#remove the ugly inner side margin 
 
@@ -30,6 +20,7 @@ def main():
 	ax.set_ylabel('Number of times the action was chosen', fontsize=10)
 	ax.set_xlabel('Action Number', fontsize=10)
 
+	# put count above each column	
 	for p in ax.patches:
 		height = p.get_height()
 		ax.text(p.get_x()+p.get_width()/2., height + 0.1, height, ha="center")

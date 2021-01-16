@@ -19,20 +19,29 @@ def main():
 	score = []
 	reward = []
 	action = []
+	cpu = []
+	mem = []
 	for record in data.values():
 		if 'Steps' in record["message"].keys():
 			score.append(str(int(record["message"]["Steps"])+1)+'\n')
 			reward.append(record["message"]["Total Reward"]+'\n')
 		if 'action' in record["message"].keys():
 			action.append(record["message"]["action"]+'\n')
-
+			state = [value for value in record["message"]["state"][2:].replace(']', '').split(' ') if value != '']
+			cpu.append(state[0]+','+state[1]+','+state[2]+'\n')
+			mem.append(state[3]+','+state[4]+','+state[5]+'\n')
+		
 	fs = open('score.csv', 'a')
 	fr = open('reward.csv', 'a')
 	fa = open('action.csv', 'a')
+	fc = open('cpu.csv', 'a')
+	fm = open('mem.csv', 'a')
 
 	fs.writelines(score)
 	fr.writelines(reward)
 	fa.writelines(action)
+	fc.writelines(cpu)
+	fm.writelines(mem)
 
 if __name__ == '__main__':
 	main()
