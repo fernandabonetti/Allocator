@@ -59,7 +59,7 @@ for episode in range(n_episodes):
 
 	logger.info("Steps\': \'{}\', \'Episode\': \'{}\', \'Total Reward\': \'{}".format(timestep+1, episode, total_reward))
 
-	if len(agent.replay_memory) > batch_size and episode % 50 == 0:
+	if len(agent.replay_memory) > batch_size and episode % 10 == 0:
 		agent.replay(batch_size)
 		agent.target_train()
 
