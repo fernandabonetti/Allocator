@@ -5,13 +5,13 @@ Dynamic Resource Allocation for Containerized Network Functions
 
 ## Prerequisites
 
-* [jq](https://stedolan.github.io/jq/)
+To install the project dependencies, run:
 
-* [Requests](https://requests.readthedocs.io/en/master/)
+```sh
 
-* [Numpy](https://numpy.org/)
+pip3 install -r requirements.txt
 
-* [Gym](https://gym.openai.com/docs/)
+```
 
 ## Installation  
 
