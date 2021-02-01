@@ -38,6 +38,9 @@ class DQNAgent():
 		self.replay_memory.append((state, action, reward, next_state, done))
 			
 	def sample_action(self, state):
+		if self.epsilon > self.epsilon_min:
+			self.epsilon *= self.epsilon_decay
+
 		if self.epsilon >= np.random.rand():
 			return random.randrange(self.action_size)
 		action_values = self.model.predict(state)
@@ -54,9 +57,6 @@ class DQNAgent():
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
 			print(history.history['loss'])
-			 
-		if self.epsilon > self.epsilon_min:
-			self.epsilon *= self.epsilon_decay
 
 	def target_train(self):
 		online_weights = self.model.get_weights()
