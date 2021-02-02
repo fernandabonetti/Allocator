@@ -18,12 +18,12 @@ class DQNAgent():
 		self.alpha = 0.0001
 		self.tau = 0.01
 
-		self.epsilon = 0.096
-		self.epsilon_decay = 0.90
+		self.epsilon = 0.1
+		self.epsilon_decay = 0.995
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		self.model.load_weights("model_output/#41/weights_100.hdf5")
+		#self.model.load_weights("model_output/#41/weights_100.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
