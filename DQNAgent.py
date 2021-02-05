@@ -19,7 +19,7 @@ class DQNAgent():
 		self.tau = 0.01
 
 		self.epsilon = 0.1
-		self.epsilon_decay = 0.995
+		self.epsilon_decay = 0.999
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
@@ -37,10 +37,13 @@ class DQNAgent():
 	def store_experience(self, state, action, reward, next_state, done):
 		self.replay_memory.append((state, action, reward, next_state, done))
 			
-	def sample_action(self, state):
+	# Decay epsilon at each episode		
+	def decay_epsilon(self):
 		if self.epsilon > self.epsilon_min:
 			self.epsilon *= self.epsilon_decay
 
+	# Selects action randomly or takes the one with the higher q-value
+	def sample_action(self, state):
 		if self.epsilon >= np.random.rand():
 			return random.randrange(self.action_size)
 		action_values = self.model.predict(state)
@@ -58,6 +61,7 @@ class DQNAgent():
 			history = self.model.fit(state, target, epochs=1, verbose=0)
 			print(history.history['loss'])
 
+	# Copies the weights from the online network to the target
 	def target_train(self):
 		online_weights = self.model.get_weights()
 		target_weights = self.target_model.get_weights()
