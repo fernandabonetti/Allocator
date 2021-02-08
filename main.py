@@ -58,7 +58,6 @@ for episode in range(n_episodes):
 			break
 
 	logger.info("Steps\': \'{}\', \'Episode\': \'{}\', \'Total Reward\': \'{}".format(timestep+1, episode, total_reward))
-	agent.decay_epsilon()	#decay the epsilon at each episode
 
 	if len(agent.replay_memory) > batch_size and episode % 10 == 0:
 		agent.replay(batch_size)
@@ -67,3 +66,4 @@ for episode in range(n_episodes):
 	#keep this just to test
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
+		agent.decay_epsilon()	#decay the epsilon at each episode

@@ -32,17 +32,13 @@ def main():
 			mem_usage.append(state[3])
 			mem_min.append(state[4])
 			mem_max.append(state[5])
-
-	#for i in range(0, len(cpu_usage)):
-		#print("{},{},{}".format(cpu_usage[i], cpu_min[i], cpu_max[i]))
-		#print("{},{},{}".format(mem_usage[i], mem_min[i], mem_max[i]))
 			
 	steps = np.arange(0, len(cpu_usage), 1)
 	#[print(d) for d in steps]
 
-	ax = sns.lineplot(x=steps, y=mem_usage, data=mem_usage, lw=1)
-	ax = sns.lineplot(x=steps, y=mem_max, data=mem_max, lw=1)
-	ax = sns.lineplot(x=steps, y=mem_min, data=mem_min, lw=1)
+	ax = sns.lineplot(x=steps, y=cpu_usage, data=cpu_usage, lw=1)
+	ax = sns.lineplot(x=steps, y=cpu_max, data=cpu_max, lw=1)
+	ax = sns.lineplot(x=steps, y=cpu_min, data=cpu_min, lw=1)
 	
 	ax.margins(x=0)				#remove the ugly inner side margin 
 
@@ -53,7 +49,7 @@ def main():
 		tick.label.set_fontsize(20)
 	for tick in ax.yaxis.get_major_ticks():
 		tick.label.set_fontsize(20)
-	plt.legend(loc='upper left', labels=['MEM Usage', 'MEM Limits', "MEM Request"], fontsize=20)
+	plt.legend(loc='upper left', labels=['CPU Usage', 'CPU Limits', "CPU Request"], fontsize=20)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 
