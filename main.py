@@ -1,39 +1,23 @@
 import gym
 import envs
 import numpy as np
-import os
-import logging
-from dotenv import load_dotenv
+from utils.logger import logger
+from utils.parser import Props
 from DQNAgent import DQNAgent
 
-load_dotenv('.env')
-ip = os.getenv("IP")
-port = os.getenv("PORT")
-container = os.getenv("CONTAINER")
-output_dir = os.getenv("OUTPUT_DIR")
-
-# a and b are 'boundness' parameters of each resource
-a = float(os.getenv("A"))
-b = float(os.getenv("B"))
-peak = int(os.getenv("PEAK"))
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler('dracon.log')
-
-file_formatter=logging.Formatter("{'time':'%(asctime)s','message': {'%(message)s'}}")
-handler.setFormatter(file_formatter)
-logger.addHandler(handler)
-
+props = Props()
 n_episodes = 1000
 batch_size = 50
 
-env = gym.make('Allocator-v0', ip=ip, port=port,  container=container)
+env = gym.make('Allocator-v0', ip=props.ip, port=props.port,  container=props.container)
 
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 
-agent = DQNAgent(state_size, action_size, a, b, peak)
+state_size = 10
+action_size = 10
+
+agent = DQNAgent(state_size, action_size, props.a, props.b, props.peak)
 
 for episode in range(n_episodes):
 	state = env.reset()
@@ -43,7 +27,7 @@ for episode in range(n_episodes):
 	for timestep in range(500):
 		action = agent.sample_action(state)
 
-		next_state, reward, done = env.step(action, a, b, peak)
+		next_state, reward, done = env.step(action, props.a, props.b, props.peak)
 		next_state = np.reshape(next_state, [1, 6])
 
 		#reward = reward if not done else -1
@@ -63,7 +47,6 @@ for episode in range(n_episodes):
 		agent.replay(batch_size)
 		agent.target_train()
 
-	#keep this just to test
 	if episode % 50 == 0:
 		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
 		agent.decay_epsilon()	#decay the epsilon at each episode

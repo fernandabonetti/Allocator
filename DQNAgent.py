@@ -1,6 +1,6 @@
 import random
 import numpy as np
-import logging
+from utils.logger import logger
 from collections import deque
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
@@ -59,7 +59,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			print(history.history['loss'])
+			logger.info("loss\': \'{}".format(history.history['loss']))
 
 	# Copies the weights from the online network to the target
 	def target_train(self):
@@ -74,4 +74,4 @@ class DQNAgent():
 		self.model.load_weights(name)
 
 	def save(self, name):
-		self.model.save_weights(name) 
+		self.model.save_weights(name)
