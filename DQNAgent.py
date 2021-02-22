@@ -19,7 +19,7 @@ class DQNAgent():
 		self.tau = 0.01
 
 		self.epsilon = 0.1
-		self.epsilon_decay = 0.95
+		self.epsilon_decay = 0.90
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
