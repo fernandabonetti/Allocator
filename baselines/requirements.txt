@@ -1,0 +1,8 @@
+gym==0.17.2
+requests==2.22.0
+numpy==1.18.5
+tensorflow==1.15.5
+python-dotenv==0.15.0
+scapy==2.4.4
+jq==1.1.1
+stable-baselines
