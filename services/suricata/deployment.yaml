@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suricata
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: suricata
+  template:
+    metadata:
+      name: suricata
+      labels:
+        app: suricata
+    spec:
+      terminationGracePeriodSeconds: 10      
+      containers:
+      - name: suricata
+        image: jasonish/suricata:latest
+        volumeMounts:
+        - mountPath: /var/log/suricata
+          name: test-volume
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+              - SYS_NICE
+        resources:
+          requests: 
+            memory: 100Mi
+            cpu: 100m
+          limits:
+            memory: 200Mi
+            cpu: 200m
+        imagePullPolicy: IfNotPresent
+      volumes:
+      - name: test-volume
+        hostPath:
+          path: /home/fsbonetti/Documentos/DRACON/services/suricata/logs
+      hostNetwork: true  

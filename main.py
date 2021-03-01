@@ -1,7 +1,7 @@
 import gym
 import envs
 import numpy as np
-from utils.logger import logger
+from utils.logger import Logger as logger
 from utils.parser import Props
 from DQNAgent import DQNAgent
 
