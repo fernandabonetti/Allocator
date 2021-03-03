@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: baselines
+  name: baselines
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: baselines
+  template:
+    metadata:
+      name: baselines
+      labels:
+        app: baselines
+    spec:
+      serviceAccountName: baselines
+      containers:
+      - name: baselines
+        image: fsbonetti/dracon-baselines
+        # volumeMounts:
+        # - mountPath: /logs
+        #   name: base-volume
+        stdin: true 
+        tty: true 
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+        imagePullPolicy: Never
+      # volumes:
+      # - name: base-volume
+      #   hostPath:
+      #     path: /home/fsbonetti/Documentos/DRACON/logs/
+      hostNetwork: true  

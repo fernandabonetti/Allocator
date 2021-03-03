@@ -9,12 +9,15 @@ from resourceCollector import Collector
 
 class AllocatorEnv(gym.Env):
 
-	def __init__(self, ip, port, container):
+	def __init__(self, props):
 		super(AllocatorEnv, self).__init__()
 			
-		self.ip = ip
-		self.port = port
-		self.container = container
+		self.ip = props.ip
+		self.port = props.port
+		self.container = props.container
+		self.a = props.a
+		self.b = props.b 
+		self.peak = props.peak
 		self.collector = Collector(self.ip, self.port, self.container)
 		
 		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
@@ -25,10 +28,11 @@ class AllocatorEnv(gym.Env):
 		self.actions = self._load_actions()
 
 		# Observation Space is a box with 3-tuple elements
-		self.observation_space = spaces.Box(low=0, high=10000, shape=(1,6), dtype=np.float32)
+		self.observation_space = spaces.Box(low=0, high=10000, shape=(6,), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(self.actions))
 		
 	def _take_action(self, action):
+
 		cpu_thresh, mem_thresh = self.actions[action]
 		
 		if cpu_thresh != 0.0:
@@ -41,7 +45,7 @@ class AllocatorEnv(gym.Env):
 
 		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
-	def step(self, action, a, b, peak):
+	def step(self, action):
 		done = False 
 		reward = 0
 		self._take_action(action)
@@ -57,14 +61,14 @@ class AllocatorEnv(gym.Env):
 			done = True	
 
 		# (limit - request) = 100%
-		peak_mem = self.mem_request + ((self.mem_limit - self.mem_request) * peak)/100 # transform peak to be limits relative
-		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * peak)/100
+		peak_mem = self.mem_request + ((self.mem_limit - self.mem_request) * self.peak)/100 # transform peak to be limits relative
+		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * self.peak)/100
 
 		if self.cpu_limit > 0 and self.mem_limit > 0 and self.cpu_limit > self.cpu_request and self.mem_limit > self.mem_request:
-			reward =  a * (1 - (abs(cpu_usage - peak_cpu)/(self.cpu_limit - self.cpu_request))) + b * (1 - (abs(mem_usage - peak_mem)/(self.mem_limit - self.mem_request)))
+			reward =  self.a * (1 - (abs(cpu_usage - peak_cpu)/(self.cpu_limit - self.cpu_request))) + self.b * (1 - (abs(mem_usage - peak_mem)/(self.mem_limit - self.mem_request)))
 		else:
 			done = True
-		return np.array(next_state), reward, done    
+		return np.array(next_state), reward, done, {}   
 		
 	def reset(self):
 		command = "cd services/snort && ./cleanup.sh"
