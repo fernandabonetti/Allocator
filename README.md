@@ -23,11 +23,11 @@ git clone https://github.com/fernandabonetti/DRACON.git
 
 ```
 
-2. Install Gym Environment located on `AllocatorGym` directory 
+2. Install Gym Environment
 
 ```sh
 
-pip install -e .
+pip install -e AllocatorGym
 ```
 
   

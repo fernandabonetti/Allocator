@@ -1,15 +1,16 @@
 import gym
 import envs
 import numpy as np
-from utils.logger import Logger as logger
+from utils.logger import logger
 from utils.parser import Props
 from DQNAgent import DQNAgent
+from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
 
 props = Props()
 n_episodes = 1000
 batch_size = 50
 
-env = gym.make('Allocator-v0', ip=props.ip, port=props.port,  container=props.container)
+env = AllocatorEnv(ip=props.ip, port=props.port,  container=props.container)
 
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
@@ -48,5 +49,5 @@ for episode in range(n_episodes):
 		agent.target_train()
 
 	if episode % 50 == 0:
-		agent.save(output_dir + "weights_" + str(episode) + ".hdf5")
+		agent.save(props.output_dir + "weights_" + str(episode) + ".hdf5")
 		agent.decay_epsilon()	#decay the epsilon at each episode

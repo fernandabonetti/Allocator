@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from utils.logger import Logger as logger
+from utils.logger import logger
 from collections import deque
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
