@@ -4,5 +4,3 @@ __pycache__/
 *.pcap
 test*
 *.csv
-agente_baselines/
-venv/
