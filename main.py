@@ -15,9 +15,6 @@ env = AllocatorEnv(ip=props.ip, port=props.port,  container=props.container)
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 
-state_size = 10
-action_size = 10
-
 agent = DQNAgent(state_size, action_size, props.a, props.b, props.peak)
 
 for episode in range(n_episodes):
