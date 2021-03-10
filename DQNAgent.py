@@ -15,11 +15,11 @@ class DQNAgent():
 
 		# Discount and Learning Rate
 		self.gamma = 0.95
-		self.alpha = 0.01
+		self.alpha = 0.001
 		self.tau = 0.01
 
 		self.epsilon = 0.1
-		self.epsilon_decay = 0.90
+		self.epsilon_decay = 0.95
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
@@ -28,8 +28,8 @@ class DQNAgent():
 
 	def _build_model(self):
 		model = Sequential()
-		model.add(Dense(70, input_dim=1, activation='relu'))
-		model.add(Dense(100, activation='relu')) 
+		model.add(Dense(256, input_dim=1, activation='relu'))
+		model.add(Dense(256, activation='relu')) 
 		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model

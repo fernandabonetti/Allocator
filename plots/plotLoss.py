@@ -9,14 +9,11 @@ def main():
 	if len(sys.argv) < 1:
 		exit(1)
 
-	filename = sys.argv[1]
-	data = {}
 	x= []
 	y = []
-	with open(filename, 'r') as fp:
+	with open('loss.csv', 'r') as fp:
 		for line in fp.readlines():
-			if line[0]=='[':
-				y.append(float(line[1:-2]))  
+			y.append(float(line))  
 	
 	mean = []
 	top = 100
