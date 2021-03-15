@@ -19,7 +19,7 @@ class DQNAgent():
 		self.tau = 0.01
 
 		self.epsilon = 0.1
-		self.epsilon_decay = 0.95
+		self.epsilon_decay = 0.99
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
@@ -28,8 +28,9 @@ class DQNAgent():
 
 	def _build_model(self):
 		model = Sequential()
-		model.add(Dense(256, input_dim=1, activation='relu'))
-		model.add(Dense(256, activation='relu')) 
+		model.add(Dense(24, input_dim=6, activation='relu'))
+		model.add(Dense(48, activation='relu')) 
+		model.add(Dense(96, activation='relu'))
 		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model

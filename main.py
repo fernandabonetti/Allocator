@@ -21,13 +21,13 @@ agent = DQNAgent(state_size, action_size, props.a, props.b, props.peak)
 for episode in range(n_episodes):
 	state = env.reset()
 	total_reward = 0
-	state = tf.reshape(state, (6,)) 
+	state = np.reshape(state, [1,6])
 
 	for timestep in range(500):
 		action = agent.sample_action(state)
 
 		next_state, reward, done = env.step(action, props.a, props.b, props.peak)
-		next_state = tf.reshape(next_state, (6,)) 
+		next_state = np.reshape(next_state, [1,6]) 
 	
 		reward = reward if not done else -1
 		total_reward += reward
