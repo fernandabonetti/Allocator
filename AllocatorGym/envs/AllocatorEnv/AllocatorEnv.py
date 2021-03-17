@@ -53,6 +53,8 @@ class AllocatorEnv(gym.Env):
 			
 		if cpu_usage > self.cpu_limit or mem_usage > self.mem_limit:
 			done = True
+		# if cpu_usage < self.cpu_request or mem_usage < self.mem_request:
+		# 	done = True	
 		if self.cpu_limit >= self.node_max_cpu or self.mem_limit >= self.node_max_memory:
 			done = True	
 
@@ -61,7 +63,8 @@ class AllocatorEnv(gym.Env):
 		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * peak)/100
 
 		if self.cpu_limit > 0 and self.mem_limit > 0 and self.cpu_limit > self.cpu_request and self.mem_limit > self.mem_request:
-			reward =  a * (1 - (abs(cpu_usage - peak_cpu)/(self.cpu_limit - self.cpu_request))) + b * (1 - (abs(mem_usage - peak_mem)/(self.mem_limit - self.mem_request)))
+			#reward =  a * (1 - (abs(cpu_usage - peak_cpu)/(self.cpu_limit - self.cpu_request))) + b * (1 - (abs(mem_usage - peak_mem)/(self.mem_limit - self.mem_request)))
+			reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
 		else:
 			done = True
 		return np.array(next_state), reward, done    
