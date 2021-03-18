@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: squid
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: squid
+  template:
+    metadata:
+      name: squid
+      labels:
+        app: squid
+    spec:
+      terminationGracePeriodSeconds: 10      
+      containers:
+      - name: squid
+        image: jpetazzo/squid-in-a-can
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+        ports:
+        - containerPort: 3129
+        resources:
+          requests: 
+            memory: 100Mi
+            cpu: 100m
+          limits:
+            memory: 200Mi
+            cpu: 200m
+        imagePullPolicy: IfNotPresent
+      hostNetwork: true 
