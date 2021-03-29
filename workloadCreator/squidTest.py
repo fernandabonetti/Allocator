@@ -1,3 +1,4 @@
+import time
 from subprocess import PIPE, run
 
 def main():

@@ -70,7 +70,7 @@ class AllocatorEnv(gym.Env):
 		return np.array(next_state), reward, done    
 		
 	def reset(self):
-		command = "cd services/snort && ./cleanup.sh"
+		command = "cd services/squid && ./cleanup.sh"
 		subprocess.run(command, shell=True)
 		self.cpu_request, self.mem_request = 100, 100
 		self.cpu_limit, self.mem_limit = 200, 200
