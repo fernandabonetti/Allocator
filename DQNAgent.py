@@ -15,15 +15,15 @@ class DQNAgent():
 
 		# Discount and Learning Rate
 		self.gamma = 0.95
-		self.alpha = 0.001
+		self.alpha = 0.00025
 		self.tau = 0.01
 
-		self.epsilon = 0.1
+		self.epsilon = 0.05
 		self.epsilon_decay = 0.99
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		#self.model.load_weights("model_output/#41/weights_100.hdf5")
+		self.model.load_weights("model_output/#53/weights_950.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
@@ -32,7 +32,7 @@ class DQNAgent():
 		model.add(Dense(48, activation='relu')) 
 		model.add(Dense(96, activation='relu'))
 		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
-		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
+		model.compile(loss='mse', optimizer=Adam(lr=self.alpha), metrics=['accuracy'])
 		return model
 
 	def store_experience(self, state, action, reward, next_state, done):
@@ -60,7 +60,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			logger.info("loss\': \'{}".format(history.history['loss']))
+			logger.info("loss\': \'{} \'acc\':\'{}".format(history.history['loss'], history.history['accuracy']))
 
 	# Copies the weights from the online network to the target
 	def target_train(self):
@@ -69,7 +69,16 @@ class DQNAgent():
 		for i in range(len(target_weights)):
 			target_weights[i] = online_weights[i] * self.tau + (1 - self.tau) * target_weights[i]
 		self.target_model.set_weights(target_weights)
-	
+
+	def test(self, state):
+		target = self.target_model.predict(state)
+		if done:
+				target[0][action] = reward
+			else:			
+				q_future = np.amax(self.model.predict(next_state)[0])
+				target[0][action] = reward + q_future * self.gamma
+		return self.model.evaluate(state, target)
+
 	# Load previously trained weights from HDF5 file
 	def load(self, name):
 		self.model.load_weights(name)

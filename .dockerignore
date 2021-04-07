@@ -1,8 +1,0 @@
-**/__pycache__
-**/.vscode
-**/*.pcap
-**/model_output
-**/services
-**/workloadCreator
-**/plots
-**/.git

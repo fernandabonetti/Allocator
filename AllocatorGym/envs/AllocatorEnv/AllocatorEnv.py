@@ -67,10 +67,10 @@ class AllocatorEnv(gym.Env):
 			reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
 		else:
 			done = True
-		return np.array(next_state), reward, done    
+		return np.array(next_state), reward, done 
 		
 	def reset(self):
-		command = "cd services/squid && ./cleanup.sh"
+		command = "cd services/snort && ./cleanup.sh"
 		subprocess.run(command, shell=True)
 		self.cpu_request, self.mem_request = 100, 100
 		self.cpu_limit, self.mem_limit = 200, 200
