@@ -73,10 +73,10 @@ class DQNAgent():
 	def test(self, state):
 		target = self.target_model.predict(state)
 		if done:
-				target[0][action] = reward
-			else:			
-				q_future = np.amax(self.model.predict(next_state)[0])
-				target[0][action] = reward + q_future * self.gamma
+			target[0][action] = reward
+		else:			
+			q_future = np.amax(self.model.predict(next_state)[0])
+			target[0][action] = reward + q_future * self.gamma
 		return self.model.evaluate(state, target)
 
 	# Load previously trained weights from HDF5 file
