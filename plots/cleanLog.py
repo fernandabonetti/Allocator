@@ -29,7 +29,6 @@ def main():
 		if 'action' in record["message"].keys():
 			action.append(record["message"]["action"]+'\n')
 			state = [value for value in record["message"]["state"][2:].replace(']', '').split(' ') if value != '']
-			print(state)
 			cpu.append(state[0]+','+state[1]+','+state[2]+'\n')
 			mem.append(state[3]+','+state[4]+','+state[5]+'\n')
 		if 'loss' in record["message"].keys():
