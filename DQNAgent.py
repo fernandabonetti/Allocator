@@ -28,11 +28,11 @@ class DQNAgent():
 
 	def _build_model(self):
 		model = Sequential()
-		model.add(Dense(24, input_dim=6, activation='relu'))
-		model.add(Dense(48, activation='relu')) 
-		model.add(Dense(96, activation='relu'))
-		model.add(Dense(self.action_size, activation='linear')) # 100 actions on output layer
-		model.compile(loss='mse', optimizer=Adam(lr=self.alpha), metrics=['accuracy'])
+		model.add(Dense(32, input_dim=6, activation='relu'))
+		model.add(Dense(64, activation='relu', kernel_initializer= tf.keras.initializers.GlorotUniform())) 
+		#model.add(Dense(96, activation='relu', kernel_initializer= tf.keras.initializers.GlorotUniform()))
+		model.add(Dense(self.action_size, activation='linear')) 
+		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model
 
 	def store_experience(self, state, action, reward, next_state, done):
@@ -60,7 +60,7 @@ class DQNAgent():
 				q_future = np.amax(self.model.predict(next_state)[0])
 				target[0][action] = reward + q_future * self.gamma
 			history = self.model.fit(state, target, epochs=1, verbose=0)
-			logger.info("loss\': \'{} \'acc\':\'{}".format(history.history['loss'], history.history['accuracy']))
+			logger.info("loss\': \'{}".format(history.history['loss']))
 
 	# Copies the weights from the online network to the target
 	def target_train(self):
