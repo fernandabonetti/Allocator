@@ -14,7 +14,7 @@ class DQNAgent():
 		self.replay_memory = deque(maxlen=1000)
 
 		# Discount and Learning Rate
-		self.gamma = 0.95
+		self.gamma = 0.8
 		self.alpha = 0.001
 		self.tau = 0.01
 
@@ -28,9 +28,9 @@ class DQNAgent():
 
 	def _build_model(self):
 		model = Sequential()
-		model.add(Dense(32, input_dim=6, activation='relu'))
-		model.add(Dense(64, activation='relu', kernel_initializer= tf.keras.initializers.GlorotUniform())) 
-		#model.add(Dense(96, activation='relu', kernel_initializer= tf.keras.initializers.GlorotUniform()))
+		model.add(Dense(24, input_dim=6, activation='relu'))
+		model.add(Dense(48, activation='relu') 
+		model.add(Dense(96, activation='relu')
 		model.add(Dense(self.action_size, activation='linear')) 
 		model.compile(loss='mse', optimizer=Adam(lr=self.alpha))
 		return model
