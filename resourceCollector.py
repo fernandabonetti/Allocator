@@ -7,14 +7,16 @@ import json
 import time
 
 class Collector():
-	def __init__(self, ip, port, container):
+	def __init__(self, ip, port, container, namespace):
 		self.ip = ip
 		self.port = port
 		self.container = container
+		self.namespace = namespace
 
 	def assembleQuery(self, metric, options):
 		address = 'http://' + self.ip + ':' + self.port
-		url = address + '/api/v1/query?query=' + metric + '{container="' + self.container + '"}' + options
+		url = address + '/api/v1/query?query=' + \
+				 metric + '{container="' + self.container + '",namespace=\"' + self.namespace + '\"}' + options
 		return url
 
 	def queryExec(self, query):
@@ -25,11 +27,11 @@ class Collector():
 		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
 
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):
-			return response['data']['result'][0]['value'][1] 		# verify scale
+			return response['data']['result'][0]['value'][1] 		
 		return 0
 
 	def checkMetricsApi(self):
-		command = "kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods | jq \".items[0].containers[0].usage\""
+		command = "kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/"+ self.namespace +"/pods | jq \".items[0].containers[0].usage\""
 		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
 		return result.stdout
 		
@@ -64,7 +66,9 @@ class Collector():
 		return cpu, mem
 
 	def getResourceSpecs(self, spec):
-		command = "kubectl get pods -o json | jq \".items[0].spec.containers[0].resources." + spec + "\""
+		command = "kubectl get pods -o json -n " + self.namespace + \
+							" | jq \".items[0].spec.containers[0].resources." + spec + "\""
+
 		result = run(command, stdout=PIPE, universal_newlines=True, shell=True)
 		
 		if len(result.stdout) > 5:
@@ -81,6 +85,6 @@ class Collector():
 			return cpu, mem
 
 	def changeAllocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
-		command = 'kubectl set resources deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
+		command = 'kubectl set resources -n ' + self.namespace +' deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
 			 +'m,memory=' + str(mem_limit) + 'Mi --requests=cpu=' + str(cpu_request) + 'm,memory=' + str(mem_request) + 'Mi'
 		run(command, shell=True)

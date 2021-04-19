@@ -5,20 +5,20 @@ import time
 import pickle
 import gym
 from gym import spaces
-from resourceCollector import Collector
 
 class AllocatorEnv(gym.Env):
 
-	def __init__(self, ip, port, container):
+	def __init__(self, props):
 		super(AllocatorEnv, self).__init__()
 			
-		self.ip = ip
-		self.port = port
-		self.container = container
-		self.collector = Collector(self.ip, self.port, self.container)
+		self.ip = props.ip
+		self.port = props.port
+		self.a = props.a 
+		self.b = props.b 
+		self.peak = props.peak
 		
-		self.cpu_limit, self.mem_limit = self.collector.getResourceSpecs("limits")
-		self.cpu_request, self.mem_request = self.collector.getResourceSpecs("requests")
+		self.cpu_limit, self.mem_limit = 200, 200
+		self.cpu_request, self.mem_request = 100, 100
 		self.node_max_memory = 2418
 		self.node_max_cpu = 1250
 		
@@ -28,7 +28,7 @@ class AllocatorEnv(gym.Env):
 		self.observation_space = spaces.Box(low=0, high=10000, shape=(1,6), dtype=np.float32)
 		self.action_space = spaces.Discrete(len(self.actions))
 		
-	def _take_action(self, action):
+	def _take_action(self, action, collector):
 		cpu_thresh, mem_thresh = self.actions[action]
 		
 		if cpu_thresh != 0.0:
@@ -39,15 +39,15 @@ class AllocatorEnv(gym.Env):
 			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
 			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
 
-		self.collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
+		collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
-	def step(self, action, a, b, peak):
+	def step(self, action, collector):
 		done = False 
 		reward = 0
-		self._take_action(action)
+		self._take_action(action, collector)
 		time.sleep(20) #sleep 20 seconds while the container restarts
 		
-		cpu_usage, mem_usage = self.collector.getResourceUsage()
+		cpu_usage, mem_usage = collector.getResourceUsage()
 		
 		next_state = (cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit)
 			
@@ -59,24 +59,24 @@ class AllocatorEnv(gym.Env):
 			done = True	
 
 		# (limit - request) = 100%
-		peak_mem = self.mem_request + ((self.mem_limit - self.mem_request) * peak)/100 # transform peak to be limits relative
-		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * peak)/100
+		peak_mem = self.mem_request + ((self.mem_limit - self.mem_request) * self.peak)/100 # transform peak to be limits relative
+		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * self.peak)/100
 
 		if self.cpu_limit > 0 and self.mem_limit > 0 and self.cpu_limit > self.cpu_request and self.mem_limit > self.mem_request:
-			rew_mem = b * (1 - (self.mem_limit - mem_usage)/peak_mem)
-			rew_cpu =  a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu)
+			rew_mem = self.b * (1 - (self.mem_limit - mem_usage)/peak_mem)
+			rew_cpu =  self.a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu)
 			reward = min(rew_mem, rew_cpu)
 			#reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
 		else:
 			done = True
 		return np.array(next_state), reward, done 
 		
-	def reset(self):
-		command = "cd services/snort && ./cleanup.sh"
+	def reset(self, collector):
+		command = "cd services/"+ collector.container + " && ./cleanup.sh"
 		subprocess.run(command, shell=True)
 		self.cpu_request, self.mem_request = 100, 100
 		self.cpu_limit, self.mem_limit = 200, 200
-		cpu_usage, mem_usage = self.collector.getResourceUsage()
+		cpu_usage, mem_usage = collector.getResourceUsage()
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def _load_actions(self):

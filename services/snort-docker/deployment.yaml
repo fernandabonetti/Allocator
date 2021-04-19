@@ -1,7 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: docker-snort
+  name: snort-docker
+  namespace: snort-2
+  labels:
+    app: snort-docker
 spec:
   replicas: 1
   strategy:
@@ -11,16 +14,16 @@ spec:
       maxUnavailable: 0
   selector:
     matchLabels:
-      app: docker-snort
+      app: snort-docker
   template:
     metadata:
-      name: docker-snort
+      name: snort-docker
       labels:
-        app: docker-snort
+        app: snort-docker
     spec:
       terminationGracePeriodSeconds: 10      
       containers:
-      - name: docker-snort
+      - name: snort-docker
         image: linton/docker-snort:latest
         stdin: true 
         tty: true 

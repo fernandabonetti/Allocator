@@ -5,28 +5,30 @@ from utils.logger import logger
 from utils.parser import Props
 from DQNAgent import DQNAgent
 from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
+from resourceCollector import Collector
 import tensorflow as tf
 
 props = Props()
 n_episodes = 1000
 batch_size = 50
 
-env = AllocatorEnv(ip=props.ip, port=props.port,  container=props.container)
+env = AllocatorEnv(props=props)
 
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 
-agent = DQNAgent(state_size, action_size, props.a, props.b, props.peak)
+agent = DQNAgent(state_size, action_size)
+collector = Collector(props.ip, props.port, props.container[0][0], props.namespaces[0][0])
 
 for episode in range(n_episodes):
-	state = env.reset()
+	state = env.reset(collector)
 	total_reward = 0
 	state = np.reshape(state, [1,6])
 
 	for timestep in range(500):
 		action = agent.sample_action(state)
 
-		next_state, reward, done = env.step(action, props.a, props.b, props.peak)
+		next_state, reward, done = env.step(action, collector)
 		next_state = np.reshape(next_state, [1,6]) 
 	
 		reward = reward if not done else -1

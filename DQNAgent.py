@@ -8,7 +8,7 @@ from tensorflow.keras.optimizers import Adam
 
 class DQNAgent():
 
-	def __init__(self, state_size, action_size, a, b, peak):
+	def __init__(self, state_size, action_size):
 		self.state_size = state_size
 		self.action_size = action_size
 		self.replay_memory = deque(maxlen=1000)
