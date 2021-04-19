@@ -45,7 +45,7 @@ class AllocatorEnv(gym.Env):
 		done = False 
 		reward = 0
 		self._take_action(action)
-		time.sleep(15) #sleep 20 seconds while the container restarts
+		time.sleep(20) #sleep 20 seconds while the container restarts
 		
 		cpu_usage, mem_usage = self.collector.getResourceUsage()
 		
@@ -63,8 +63,10 @@ class AllocatorEnv(gym.Env):
 		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * peak)/100
 
 		if self.cpu_limit > 0 and self.mem_limit > 0 and self.cpu_limit > self.cpu_request and self.mem_limit > self.mem_request:
-			#reward =  a * (1 - (abs(cpu_usage - peak_cpu)/(self.cpu_limit - self.cpu_request))) + b * (1 - (abs(mem_usage - peak_mem)/(self.mem_limit - self.mem_request)))
-			reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
+			rew_mem = b * (1 - (self.mem_limit - mem_usage)/peak_mem)
+			rew_cpu =  a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu)
+			reward = min(rew_mem, rew_cpu)
+			#reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
 		else:
 			done = True
 		return np.array(next_state), reward, done 
