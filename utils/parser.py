@@ -6,8 +6,8 @@ class Props():
 		load_dotenv('.env')
 		self.ip = os.getenv("IP")
 		self.port = os.getenv("PORT")
-		self.container = [os.getenv("CONTAINER").split(',')]
-		self.namespaces = [os.getenv("NAMESPACE").split(',')]
+		self.container = os.getenv("CONTAINER").split(',')
+		self.namespaces = os.getenv("NAMESPACE").split(',')
 		self.output_dir = os.getenv("OUTPUT_DIR")
 
 		# a and b are 'boundness' parameters of each resource

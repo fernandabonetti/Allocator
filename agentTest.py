@@ -18,8 +18,8 @@ TRAIN_STEPS = 100
 vnfs = CircularList(None, None, 0)
 
 for i in range(len(props.container)):
-	collector = Collector(props.ip, props.port, props.container[0][i], props.namespaces[0][i])
-	node = Node(props.container[0][i], props.namespaces[0][i], collector, None)
+	collector = Collector(props.ip, props.port, props.container[i], props.namespaces[i])
+	node = Node(props.container[i], props.namespaces[i], collector, None)
 	vnfs.insert(node)
 
 env = AllocatorEnv(props=props)
@@ -48,9 +48,9 @@ while True:
 
 		total_reward += reward
 		
+		vnf = vnf.next
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		
-		vnf = vnf.next
 
 		if done:
 			logger.info("Steps\': \'{}\', \'Total Reward\': \'{}".format(i, total_reward))

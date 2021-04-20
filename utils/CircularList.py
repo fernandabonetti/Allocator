@@ -23,6 +23,6 @@ class CircularList:
 
 	def iterate(self):
 		it = self.head
-		while it != self.tail:
+		for i in range(self.len):
 			print(it.container)
 			it = it.next	 
