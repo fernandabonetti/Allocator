@@ -39,7 +39,7 @@ class AllocatorEnv(gym.Env):
 			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
 			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
 
-		collector.changeAllocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
+		collector.change_allocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
 	def step(self, action, collector):
 		done = False 
@@ -47,7 +47,7 @@ class AllocatorEnv(gym.Env):
 		self._take_action(action, collector)
 		time.sleep(20) #sleep 20 seconds while the container restarts
 		
-		cpu_usage, mem_usage = collector.getResourceUsage()
+		cpu_usage, mem_usage = collector.get_resource_usage()
 		
 		next_state = (cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit)
 			
@@ -76,7 +76,7 @@ class AllocatorEnv(gym.Env):
 		subprocess.run(command, shell=True)
 		self.cpu_request, self.mem_request = 100, 100
 		self.cpu_limit, self.mem_limit = 200, 200
-		cpu_usage, mem_usage = collector.getResourceUsage()
+		cpu_usage, mem_usage = collector.get_resource_usage()
 		return np.array((cpu_usage, self.cpu_request, self.cpu_limit, mem_usage, self.mem_request, self.mem_limit))
 
 	def _load_actions(self):

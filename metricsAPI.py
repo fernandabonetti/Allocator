@@ -53,7 +53,6 @@ class Collector():
 									}}}							
 
 		api_response = v1.patch_namespaced_deployment(name=self.container, namespace=self.namespace, body=body)
-		print(api_response)
 
 	def check_usage(self):
 		cpu, mem = None, None
@@ -62,12 +61,11 @@ class Collector():
 		for item in resource['items']:
 			for container in item['containers']:
 				if container['name'] == self.container:
-					print(container['usage']['cpu'])
 					mem = math.floor(float(container['usage']['memory'][:-2]))
 					cpu = math.floor(float(container['usage']['cpu']))
 		return cpu, mem
 
-	def getResourceUsage(self):
+	def get_resource_usage(self):
 		query_mem = self.assembleQuery('container_memory_usage_bytes', "")
 		options = '[1m]))'
 		query_cpu = self.assembleQuery('sum%20by%20(pod)(rate(container_cpu_usage_seconds_total' , options)
