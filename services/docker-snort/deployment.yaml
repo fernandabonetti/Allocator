@@ -26,9 +26,11 @@ spec:
       - name: docker-snort
         image: linton/docker-snort:latest
         stdin: true 
-        tty: true 
-        command: ["/bin/sh", "-c"]
-        args: ["echo \"alert icmp any any -> any any (msg:\'Pinging...\';sid:1000004;)\" >> /etc/snort/rules/local.rules & snort -i eth0 -c /etc/snort/etc/snort.conf -A console"]
+        tty: true
+         command: 
+          - '/bin/sh'
+          - '-c'
+          - ' snort -i eth0 -c /etc/snort/etc/snort.conf -A console'
         securityContext:
           capabilities:
             add:

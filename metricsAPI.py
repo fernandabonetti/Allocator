@@ -2,10 +2,13 @@ from kubernetes import client, config
 import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+import os
+from os import path
 from subprocess import PIPE, run
 import math
 import json
 import time
+import yaml
 
 class Collector():
 	def __init__(self, ip, port, container, namespace):
@@ -77,4 +80,20 @@ class Collector():
 			self.mem_usage = math.ceil(float(mem)/1049000)
 			self.cpu_usage = cpu = math.floor(float(cpu) *1000)
 
-		return self.cpu_usage, self.mem_usage			
+		return self.cpu_usage, self.mem_usage
+
+	def delete_deployment(self):
+		configuration = client.Configuration()
+		v1 = client.AppsV1Api(client.ApiClient(configuration))
+
+		result = v1.delete_namespaced_deployment(name=self.container, namespace=self.namespace, grace_period_seconds=0)
+
+	def create_deployment(self):
+		p = os.getcwd() + '/services/' + self.container + '/deployment.yaml'
+		
+		with open(p) as fp:
+			deployment = yaml.safe_load(fp)
+
+			api = client.AppsV1Api()
+			response = api.create_namespaced_deployment(body=deployment, namespace=self.namespace)
+			
