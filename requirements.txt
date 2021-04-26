@@ -1,9 +1,10 @@
 matplotlib==3.2.2
-requests==2.22.0
-seaborn==0.11.0
-gym==0.17.2
-numpy==1.18.5
+kubernetes==11.0.0
 tensorflow==2.3.1
 scapy==2.4.4
-python-dotenv==0.15.0
-jq==1.1.1
+seaborn==0.11.0
+numpy==1.18.5
+requests==2.22.0
+gym==0.17.2
+python-dotenv==0.17.0
+PyYAML==5.4.1
