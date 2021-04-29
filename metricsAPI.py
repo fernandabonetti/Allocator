@@ -18,7 +18,10 @@ class Collector():
 		self.cpu_usage = 0
 		self.container = container
 		self.namespace = namespace
-		config.load_kube_config()
+		if os.getenv('KUBERNETES_SERVICE_HOST'): 
+			config.load_incluster_config()
+		else:
+			config.load_kube_config()
 		self.api = client.CoreV1Api()
 
 	def assembleQuery(self, metric, options):

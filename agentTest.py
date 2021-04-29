@@ -6,7 +6,7 @@ from utils.parser import Props
 from DQNAgent import DQNAgent
 from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
 from utils.CircularList import CircularList, Node
-from resourceCollector import Collector
+from metricsAPI import Collector
 import tensorflow as tf
 from tensorflow import keras
 
@@ -51,7 +51,6 @@ while True:
 		vnf = vnf.next
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		
-
 		if done:
 			logger.info("Steps\': \'{}\', \'Total Reward\': \'{}".format(i, total_reward))
 			break
