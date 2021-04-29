@@ -11,4 +11,4 @@ COPY . .
 
 RUN cd AllocatorGym/ && pip install -e .
 
-CMD ["bash", "-c", "python3 main.py"]
+CMD ["bash", "-c", "python3 agentTest.py"]
