@@ -63,10 +63,7 @@ class AllocatorEnv(gym.Env):
 		peak_cpu = self.cpu_request + ((self.cpu_limit - self.cpu_request) * self.peak)/100
 
 		if self.cpu_limit > 0 and self.mem_limit > 0 and self.cpu_limit > self.cpu_request and self.mem_limit > self.mem_request:
-			rew_mem = self.b * (1 - (self.mem_limit - mem_usage)/peak_mem)
-			rew_cpu =  self.a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu)
-			reward = min(rew_mem, rew_cpu)
-			#reward = a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
+			reward = self.a * (1 - (self.cpu_limit - cpu_usage)/peak_cpu) +  self.b * (1 - (self.mem_limit - mem_usage)/peak_mem) 
 		else:
 			done = True
 		return np.array(next_state), reward, done 
