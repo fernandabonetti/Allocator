@@ -2,10 +2,13 @@ from metricsAPI import Collector
 from utils.logger import logger
 from utils.parser import Props
 from utils.CircularList import CircularList, Node
+import time
 
 
 num_episodes = 100 
 props = Props()
+
+vnfs = CircularList(None, None, 0)
 
 for i in range(len(props.container)):
 	collector = Collector(props.ip, props.port, props.container[i], props.namespaces[i])
@@ -18,23 +21,29 @@ mem_lower = 90
 mem_upper = 180
 
 for i in range(num_episodes):
-	cpu_usage, mem_usage = collector.get_resource_usage()
+	vnf = vnfs.head
+
+	cpu_usage, mem_usage = vnf.collector.get_resource_usage()
 
 	if cpu_usage >= cpu_upper:
 		cpu_upper += 0.1 * cpu_upper
 
 	if cpu_usage <= cpu_lower:
 		cpu_lower -= 0.1 * cpu_lower
+		if cpu_lower < 0: cpu_lower = 0
 
 	if mem_usage >= mem_upper:
-		mem_upper += 244.141
+		mem_upper += 244.14
 
 	if mem_usage <= mem_lower:
 		mem_lower -= 122.07	
+		if mem_lower < 0: mem_lower = 0
+	
+	vnf.collector.change_allocation(cpu_lower, cpu_upper, mem_lower, mem_upper)
+	vnf = vnf.next
 
-	collector.change_allocation(cpu_lower, cpu_upper, mem_lower, mem_upper)
-
-	logger.info("{},{},{},{},{},{}".format(cpu_usage, cpu_lower, cpu_upper, cpu_usage, mem_lower, mem_upper))	
+	time.sleep(20)
+	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, cpu_usage, mem_lower, mem_upper))	
 		
 
 	
