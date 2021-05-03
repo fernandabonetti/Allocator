@@ -13,7 +13,7 @@ from tensorflow import keras
 props = Props()
 n_episodes = 1000
 batch_size = 50
-TRAIN_STEPS = 100
+TRAIN_STEPS = 5
 
 vnfs = CircularList(None, None, 0)
 

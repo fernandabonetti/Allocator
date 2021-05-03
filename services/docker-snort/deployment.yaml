@@ -27,7 +27,7 @@ spec:
         image: linton/docker-snort:latest
         stdin: true 
         tty: true
-         command: 
+        command: 
           - '/bin/sh'
           - '-c'
           - ' snort -i eth0 -c /etc/snort/etc/snort.conf -A console'

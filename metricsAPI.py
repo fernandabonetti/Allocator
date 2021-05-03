@@ -45,7 +45,7 @@ class Collector():
 		pods = self.api.list_pod_for_all_namespaces(watch=False)	
 		return pods
 
-	def change_allocation(self, cpu_request, cpu_limit, mem_request, mem_limit):
+	def change_allocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
 		configuration = client.Configuration()
 		v1 = client.AppsV1Api(client.ApiClient(configuration))
 
@@ -59,6 +59,11 @@ class Collector():
 									}}}							
 
 		api_response = v1.patch_namespaced_deployment(name=self.container, namespace=self.namespace, body=body)
+
+	def change_alloc(self, cpu_limit, mem_limit, cpu_request, mem_request):
+		command = 'kubectl set resources -n ' + self.namespace +' deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
+			 +'m,memory=' + str(mem_limit) + 'Mi --requests=cpu=' + str(cpu_request) + 'm,memory=' + str(mem_request) + 'Mi'
+		run(command, shell=True)	
 
 	def check_usage(self):
 		cpu, mem = None, None
@@ -99,4 +104,3 @@ class Collector():
 
 			api = client.AppsV1Api()
 			response = api.create_namespaced_deployment(body=deployment, namespace=self.namespace)
-			

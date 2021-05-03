@@ -4,7 +4,6 @@ from utils.parser import Props
 from utils.CircularList import CircularList, Node
 import time
 
-
 num_episodes = 100 
 props = Props()
 
@@ -38,12 +37,14 @@ for i in range(num_episodes):
 	if mem_usage <= mem_lower:
 		mem_lower -= 122.07	
 		if mem_lower < 0: mem_lower = 0
-	
-	vnf.collector.change_allocation(cpu_lower, cpu_upper, mem_lower, mem_upper)
+
+	vnf.collector.change_allocation(cpu_upper, mem_upper, cpu_lower, mem_lower)
+
 	vnf = vnf.next
 
 	time.sleep(20)
-	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, cpu_usage, mem_lower, mem_upper))	
+
+	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
 		
 
 	

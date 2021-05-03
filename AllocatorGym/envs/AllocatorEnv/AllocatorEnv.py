@@ -39,7 +39,7 @@ class AllocatorEnv(gym.Env):
 			self.mem_limit += math.floor(((mem_thresh * 100) * self.mem_limit)/100)
 			self.mem_request += math.floor(((mem_thresh * 100) * self.mem_request)/100)
 
-		collector.change_allocation(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
+		collector.change_alloc(self.cpu_limit, self.mem_limit, self.cpu_request, self.mem_request)
 
 	def step(self, action, collector):
 		done = False 

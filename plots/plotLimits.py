@@ -6,50 +6,49 @@ import matplotlib.ticker as ticker
 import numpy as np
 
 def main():
-	if len(sys.argv) < 1:
-		exit(1)
 
-	filename = sys.argv[1]
-	
-	data = {}
-	with open(filename, 'r') as fp:
-		for index, line in enumerate(fp.readlines()):
-			data.update({index: json.loads(line)})
+	with open('cpu.csv', 'r') as fp, open('mem.csv', 'r') as fr:
+		cpu = [line.replace('\n', '').split(',') for line in fp.readlines()]
+		mem = [line.replace('\n', '').split(',') for line in fr.readlines()]
 
-	cpu_usage = []
-	cpu_min = []
-	cpu_max = []
-	mem_usage = []
-	mem_min = []
-	mem_max = []
+	cpu_usage = [float(i[0]) for i in cpu]
+	cpu_min = [float(i[1]) for i in cpu]
+	cpu_max = [float(i[2]) for i in cpu]
+
+	mem_usage = [float(i[0]) for i in mem]
+	mem_min = [float(i[1]) for i in mem]
+	mem_max = [float(i[2]) for i in mem]
+
 	i = 0
-	for record in data.values():
-		if 'state' in record["message"].keys():
-			state = [int(value) for value in record["message"]["state"][2:].replace(']', '').split(' ') if value != '']
-			cpu_usage.append(state[0])
-			cpu_min.append(state[1])
-			cpu_max.append(state[2])
-			mem_usage.append(state[3])
-			mem_min.append(state[4])
-			mem_max.append(state[5])
-			
+	print(len(cpu_usage))
 	steps = np.arange(0, len(cpu_usage), 1)
-	#[print(d) for d in steps]
 
-	ax = sns.lineplot(x=steps, y=cpu_usage, data=cpu_usage, lw=1)
-	ax = sns.lineplot(x=steps, y=cpu_max, data=cpu_max, lw=1)
-	ax = sns.lineplot(x=steps, y=cpu_min, data=cpu_min, lw=1)
+
+	# ax = sns.lineplot(x=steps[61125:], y=cpu_usage[61125:], data=cpu_usage, lw=1, color='red')
+	# ax = sns.lineplot(x=steps[61125:], y=cpu_max[61125:], data=cpu_max[61125:], lw=1)
+	# ax = sns.lineplot(x=steps[61125:], y=cpu_min[61125:], data=cpu_min[61125:], lw=1)
+
+
+	ax = sns.lineplot(x=steps[:100], y=cpu_usage[100:200], data=cpu_usage, lw=1, color='red')
+	ax = sns.lineplot(x=steps[:100], y=cpu_max[100:200], data=cpu_max[100:200], lw=1)
+	ax = sns.lineplot(x=steps[:100], y=cpu_min[100:200], data=cpu_min[100:200], lw=1)
 	
 	ax.margins(x=0)				#remove the ugly inner side margin 
 
-	#ax.set_title('Limits Behaviour')
-	ax.set_ylabel('Resource', fontsize=24)
-	ax.set_xlabel('Steps', fontsize=24)
+	ax.set_ylabel('CPU (m)', fontsize=12)
+	ax.set_xlabel('Steps', fontsize=12)
+
+	# ax.set_ylabel('Memory (MiB)', fontsize=12)
+	# ax.set_xlabel('Steps', fontsize=12)
+
+
 	for tick in ax.xaxis.get_major_ticks():
-		tick.label.set_fontsize(20)
+		tick.label.set_fontsize(12)
 	for tick in ax.yaxis.get_major_ticks():
-		tick.label.set_fontsize(20)
-	plt.legend(loc='upper left', labels=['CPU Usage', 'CPU Limits', "CPU Request"], fontsize=20)
+		tick.label.set_fontsize(12)
+	#plt.yscale("log")	
+
+	#plt.legend(loc='upper center', labels=['Usage', 'Limits', "Request"], fontsize=12, bbox_to_anchor=(0.5, 1.1), ncol=3)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 
