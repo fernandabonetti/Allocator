@@ -91,6 +91,8 @@ class Collector():
 		return self.cpu_usage, self.mem_usage
 
 	def delete_deployment(self):
+		config.load_incluster_config()
+
 		configuration = client.Configuration()
 		v1 = client.AppsV1Api(client.ApiClient(configuration))
 

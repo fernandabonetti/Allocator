@@ -23,7 +23,7 @@ for i in range(len(props.container)):
 	vnfs.insert(node)
 
 env = AllocatorEnv(props=props)
-
+                 
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 

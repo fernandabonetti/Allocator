@@ -23,7 +23,7 @@ class DQNAgent():
 		self.epsilon_min = 0.01
 
 		self.model = self._build_model()
-		self.model.load_weights("model_output/#53/weights_950.hdf5")
+		self.model.load_weights("weights_950.hdf5")
 		self.target_model = self._build_model()
 
 	def _build_model(self):
