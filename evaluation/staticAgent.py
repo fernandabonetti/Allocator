@@ -42,8 +42,6 @@ for i in range(num_episodes):
 
 	vnf = vnf.next
 
-	time.sleep(20)
-
 	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
 		
 

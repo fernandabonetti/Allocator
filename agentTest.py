@@ -9,11 +9,12 @@ from utils.CircularList import CircularList, Node
 from metricsAPI import Collector
 import tensorflow as tf
 from tensorflow import keras
+import time
 
 props = Props()
 n_episodes = 1000
 batch_size = 50
-TRAIN_STEPS = 5
+TRAIN_STEPS = 100
 
 vnfs = CircularList(None, None, 0)
 
@@ -49,6 +50,7 @@ while True:
 		total_reward += reward
 		
 		vnf = vnf.next
+
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		
 		if done:
