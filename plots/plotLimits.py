@@ -28,7 +28,6 @@ def main():
 	# ax = sns.lineplot(x=steps[61125:], y=cpu_max[61125:], data=cpu_max[61125:], lw=1)
 	# ax = sns.lineplot(x=steps[61125:], y=cpu_min[61125:], data=cpu_min[61125:], lw=1)
 
-
 	ax = sns.lineplot(x=steps[:100], y=cpu_usage[100:200], data=cpu_usage, lw=1, color='red')
 	ax = sns.lineplot(x=steps[:100], y=cpu_max[100:200], data=cpu_max[100:200], lw=1)
 	ax = sns.lineplot(x=steps[:100], y=cpu_min[100:200], data=cpu_min[100:200], lw=1)

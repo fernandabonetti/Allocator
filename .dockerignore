@@ -2,6 +2,7 @@
 **/.vscode
 **/*.pcap
 **/model_output
+**/evaluation
 **/workloadCreator
 **/plots
 **/setup_baselines
