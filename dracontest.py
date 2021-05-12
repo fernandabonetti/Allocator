@@ -1,7 +1,6 @@
 from metricsAPI import Collector
 from utils.logger import logger
 from utils.parser import Props
-from utils.CircularList import CircularList, Node
 import time
 
 container = "dracon"

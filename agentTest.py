@@ -1,15 +1,11 @@
-import gym
-import envs
 import numpy as np
+import time
 from utils.logger import logger
 from utils.parser import Props
 from DQNAgent import DQNAgent
 from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
 from utils.CircularList import CircularList, Node
 from metricsAPI import Collector
-import tensorflow as tf
-from tensorflow import keras
-import time
 
 props = Props()
 n_episodes = 1000
@@ -50,6 +46,10 @@ while True:
 		total_reward += reward
 		
 		vnf = vnf.next
+
+		delay = 20/vnfs.len
+		
+		time.sleep(delay)
 
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		
