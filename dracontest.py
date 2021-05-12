@@ -11,7 +11,7 @@ props = Props()
 
 collector = Collector(props.ip, props.port, container, namespace)
 
-for i in range(100):
+for i in range(200):
 	cpu_usage, mem_usage = collector.get_resource_usage()
 
 	time.sleep(20)
