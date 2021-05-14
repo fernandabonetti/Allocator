@@ -15,10 +15,10 @@ class Collector():
 		self.cpu_usage = 0
 		self.container = container
 		self.namespace = namespace
-		if os.getenv('KUBERNETES_SERVICE_HOST'): 
-			config.load_incluster_config()
-		else:
-			config.load_kube_config()
+		# if os.getenv('KUBERNETES_SERVICE_HOST'): 
+		# 	config.load_incluster_config()
+		# else:
+		config.load_kube_config()
 		self.api = client.CoreV1Api()
 
 	def assembleQuery(self, metric, options):
@@ -88,7 +88,8 @@ class Collector():
 		return self.cpu_usage, self.mem_usage
 
 	def delete_deployment(self):
-		config.load_incluster_config()
+		#config.load_incluster_config()
+		config.load_kube_config()
 
 		configuration = client.Configuration()
 		v1 = client.AppsV1Api(client.ApiClient(configuration))
