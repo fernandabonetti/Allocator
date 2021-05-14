@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 f1 = "../evaluation/results/test-1-vnf-snort.txt"
-f2 = "../evaluation/results/test-2-vnfs-snort.txt"
-f3 = "../evaluation/results/test-4-vnfs-snort.txt"
+f2 = "../evaluation/results/test-2-vnfs-time.txt"
+f3 = "../evaluation/results/test-4-time.txt"
 
 
 with open(f1, 'r') as fp, open(f2, 'r') as fr, open(f3, 'r') as ft:
@@ -25,16 +25,14 @@ cpu = np.array(cpu).astype(float)
 fig, (ax1, ax2) = plt.subplots(1, 2)
 ax1.margins(x=0)
 ax2.margins(x=0)
-for i in range(0, 3):
-	ax1.plot(steps, mem[:,i], linewidth=2)
-
-ax1.set(xlabel='Steps', ylabel='Memory (MiB)')
-ax2.set(xlabel='Steps', ylabel='CPU (m)')
 
 for i in range(0, 3):
-	ax2.plot(steps, cpu[:,i], linewidth=2)
+	ax1.plot(steps, cpu[:,i], linewidth=2)
+for i in range(0, 3):
+	ax2.plot(steps, mem[:,i], linewidth=2)
 
-ax2.legend(loc="upper left", labels=['1', '2', "4"], bbox_to_anchor=[1, 1], ncol=1, fancybox=True)
+ax1.set(xlabel='Steps', ylabel='CPU (m)')
+ax2.set(xlabel='Steps', ylabel='Memory (MiB)')
+ax2.legend(loc="upper left", title="# of VNFs", labels=['1', '2', "4"], bbox_to_anchor=[1, 1], ncol=1, fancybox=True)
 
 plt.show()
-

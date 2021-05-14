@@ -7,10 +7,14 @@ from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
 from utils.CircularList import CircularList, Node
 from metricsAPI import Collector
 
+import tracemalloc
+
+tracemalloc.start()
+
 props = Props()
 n_episodes = 1000
 batch_size = 50
-TRAIN_STEPS = 100
+TRAIN_STEPS = 50
 
 vnfs = CircularList(None, None, 0)
 
@@ -56,3 +60,7 @@ while True:
 		if done:
 			logger.info("Steps\': \'{}\', \'Total Reward\': \'{}".format(i, total_reward))
 			break
+		
+		snapshot = tracemalloc.take_snapshot()
+		for stat in snapshot.statistics("lineno"):
+			print(stat)

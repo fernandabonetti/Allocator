@@ -3,11 +3,8 @@ import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 import os
-from os import path
-from subprocess import PIPE, run
+from subprocess import run
 import math
-import json
-import time
 import yaml
 
 class Collector():
