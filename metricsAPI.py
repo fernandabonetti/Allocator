@@ -20,6 +20,8 @@ class Collector():
 		# else:
 		config.load_kube_config()
 		self.api = client.CoreV1Api()
+		configuration = client.Configuration()
+		self.v1 = client.AppsV1Api(client.ApiClient(configuration))
 
 	def assembleQuery(self, metric, options):
 		address = 'http://' + self.ip + ':' + self.port
@@ -34,6 +36,9 @@ class Collector():
 		session.mount('http://', adapter)
 		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
 
+		session.close()
+		response.close()
+		
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):
 			return response['data']['result'][0]['value'][1] 		
 		return 0	
@@ -43,8 +48,6 @@ class Collector():
 		return pods
 
 	def change_allocation(self, cpu_limit, mem_limit, cpu_request, mem_request):
-		configuration = client.Configuration()
-		v1 = client.AppsV1Api(client.ApiClient(configuration))
 
 		body = {"spec": {"template": {
 						"spec": {"containers": [{
@@ -55,7 +58,7 @@ class Collector():
 										}]}
 									}}}							
 
-		api_response = v1.patch_namespaced_deployment(name=self.container, namespace=self.namespace, body=body)
+		self.v1.patch_namespaced_deployment(name=self.container, namespace=self.namespace, body=body)
 
 	def change_alloc(self, cpu_limit, mem_limit, cpu_request, mem_request):
 		command = 'kubectl set resources -n ' + self.namespace +' deployment ' + self.container + ' --limits=cpu=' + str(cpu_limit) \
@@ -66,6 +69,7 @@ class Collector():
 		cpu, mem = None, None
 		api = client.CustomObjectsApi()
 		resource = api.list_cluster_custom_object("metrics.k8s.io", "v1beta1", "pods")
+
 		for item in resource['items']:
 			for container in item['containers']:
 				if container['name'] == self.container:
@@ -89,12 +93,9 @@ class Collector():
 
 	def delete_deployment(self):
 		#config.load_incluster_config()
-		config.load_kube_config()
+		#config.load_kube_config()
 
-		configuration = client.Configuration()
-		v1 = client.AppsV1Api(client.ApiClient(configuration))
-
-		result = v1.delete_namespaced_deployment(name=self.container, namespace=self.namespace, grace_period_seconds=0)
+		self.v1.delete_namespaced_deployment(name=self.container, namespace=self.namespace, grace_period_seconds=0)
 
 	def create_deployment(self):
 		p = os.getcwd() + '/services/' + self.container + '/deployment.yaml'
@@ -103,4 +104,4 @@ class Collector():
 			deployment = yaml.safe_load(fp)
 
 			api = client.AppsV1Api()
-			response = api.create_namespaced_deployment(body=deployment, namespace=self.namespace)
+			api.create_namespaced_deployment(body=deployment, namespace=self.namespace)

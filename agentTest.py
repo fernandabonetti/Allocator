@@ -50,10 +50,8 @@ while True:
 		total_reward += reward
 		
 		vnf = vnf.next
-
-		delay = 20/vnfs.len
 		
-		time.sleep(delay)
+		time.sleep(20/vnfs.len)
 
 		logger.info("state\':\'{}\', \'action\': \'{}\', \'next_state\': \'{}\', \'reward\': \'{}".format(state, action, next_state, reward))
 		
@@ -61,6 +59,6 @@ while True:
 			logger.info("Steps\': \'{}\', \'Total Reward\': \'{}".format(i, total_reward))
 			break
 		
-		snapshot = tracemalloc.take_snapshot()
-		for stat in snapshot.statistics("lineno"):
-			print(stat)
+	snapshot = tracemalloc.take_snapshot()
+	for stat in snapshot.statistics("lineno"):
+		print(stat)
