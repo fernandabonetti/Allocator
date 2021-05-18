@@ -1,11 +1,11 @@
 from kubernetes import client, config
-import requests
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
-import os
 from subprocess import run
+from requests.packages.urllib3.util.retry import Retry
+import urllib3
 import math
 import yaml
+import json
+import os
 
 class Collector():
 	def __init__(self, ip, port, container, namespace):
@@ -15,10 +15,10 @@ class Collector():
 		self.cpu_usage = 0
 		self.container = container
 		self.namespace = namespace
-		# if os.getenv('KUBERNETES_SERVICE_HOST'): 
-		# 	config.load_incluster_config()
-		# else:
-		config.load_kube_config()
+		if os.getenv('KUBERNETES_SERVICE_HOST'): 
+			config.load_incluster_config()
+		else:
+			config.load_kube_config()
 		self.api = client.CoreV1Api()
 		configuration = client.Configuration()
 		self.v1 = client.AppsV1Api(client.ApiClient(configuration))
@@ -30,15 +30,11 @@ class Collector():
 		return url
 
 	def queryExec(self, query):
-		session = requests.Session()
-		retry = Retry(connect=3, backoff_factor=3)
-		adapter = HTTPAdapter(max_retries=retry)
-		session.mount('http://', adapter)
-		response = session.get(query, headers={'Connection':'close'}, verify=False).json()
+		http = urllib3.PoolManager(retries=Retry(connect=3, backoff_factor=3), cert_reqs = 'CERT_NONE')
+		response = http.request('GET', query)
 
-		session.close()
-		response.close()
-		
+		response = json.loads(response.data)
+
 		if (response['status'] == 'success' and len(response['data']['result']) > 0):
 			return response['data']['result'][0]['value'][1] 		
 		return 0	
@@ -103,5 +99,4 @@ class Collector():
 		with open(p) as fp:
 			deployment = yaml.safe_load(fp)
 
-			api = client.AppsV1Api()
-			api.create_namespaced_deployment(body=deployment, namespace=self.namespace)
+			self.v1.create_namespaced_deployment(body=deployment, namespace=self.namespace)
