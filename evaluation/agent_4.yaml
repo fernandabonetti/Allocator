@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 10      
       containers:
       - name: dracon
-        image: fsbonetti/dracon:latest
+        image: fsbonetti/dracon:snort-4
         volumeMounts:
         - mountPath: /project/logs
           name: test-volume
