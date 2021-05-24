@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-f1 = "../evaluation/results/teste-1-2.txt"
-f2 = "../evaluation/results/test-2-vnfs-url.txt"
-f3 = "../evaluation/results/test-4-19.txt"
-f4 = "../evaluation/results/test-8-vnfs.txt"
-
+f1 = "../evaluation/results/22-05/test-1-vnf-snort.txt"
+f2 = "../evaluation/results/22-05/test-2-vnf-snort.txt"
+f3 = "../evaluation/results/22-05/test-4-vnf-snort.txt"
+f4 = "../evaluation/results/22-05/test-8-vnf-snort.txt"
 
 with open(f1, 'r') as fp, open(f2, 'r') as fr, open(f3, 'r') as ft, open(f4, 'r') as fk:
 	t1 = [line.replace('\n', '').split(" ") for line in fp.readlines()]
@@ -24,11 +23,10 @@ for i in range(0, len(t1)):
 mem = np.array(mem).astype(float)
 cpu = np.array(cpu).astype(float)
 
-mean_1 = np.mean(cpu[:,0])
-mean_2 = np.mean(cpu[:,1])
-mean_3 = np.mean(cpu[:,2])
-mean_4 = np.mean(cpu[:,3])
-
+mean_1 = np.median(mem[:,0])
+mean_2 = np.median(mem[:,1])
+mean_3 = np.median(mem[:,2])
+mean_4 = np.median(mem[:,3])
 
 print(mean_1, mean_2, mean_3, mean_4)
 print(np.var(mem[:,0]))
@@ -44,19 +42,21 @@ print(np.var(mem[:,3]))
 # plt.ylabel(ylabel='Memory (MiB)')
 # plt.legend(loc="upper left", title="# of VNFs", labels=['1', '2', "4", "8"], bbox_to_anchor=[1, 1], ncol=1, fancybox=True)
 
-fig, (ax1, ax2) = plt.subplots(2, 1)
-ax1.margins(x=0)
-ax2.margins(x=0)
 
-for i in range(0, 4):
-	ax1.plot(steps, cpu[:,i], linewidth=2)
-for i in range(0, 4):
-	ax2.plot(steps, mem[:,i], linewidth=2)
 
-fig.tight_layout()
+# fig, (ax1, ax2) = plt.subplots(2, 1)
+# ax1.margins(x=0)
+# ax2.margins(x=0)
 
-ax1.set(xlabel='Steps', ylabel='CPU (m)')
-ax2.set(xlabel='Steps', ylabel='Memory (MiB)')
-ax1.legend(loc="upper left", title="# of VNFs", labels=['1', '2', "4", "8"], bbox_to_anchor=[1, 1], ncol=1, fancybox=True)
+# for i in range(0, 4):
+# 	ax1.plot(steps, cpu[:,i], linewidth=2)
+# for i in range(0, 4):
+# 	ax2.plot(steps, mem[:,i], linewidth=2)
+
+# fig.tight_layout()
+
+# ax1.set(xlabel='Steps', ylabel='CPU (m)')
+# ax2.set(xlabel='Steps', ylabel='Memory (MiB)')
+# ax1.legend(loc="upper left", title="# of VNFs", labels=['1', '2', "4", "8"], bbox_to_anchor=[1, 1], ncol=1, fancybox=True)
 
 plt.show()
