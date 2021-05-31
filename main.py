@@ -6,10 +6,9 @@ from utils.parser import Props
 from DQNAgent import DQNAgent
 from AllocatorGym.envs.AllocatorEnv.AllocatorEnv import AllocatorEnv
 from metricsAPI import Collector
-import tensorflow as tf
 
 props = Props()
-n_episodes = 1000
+n_episodes = 2000
 batch_size = 50
 
 env = AllocatorEnv(props=props)
