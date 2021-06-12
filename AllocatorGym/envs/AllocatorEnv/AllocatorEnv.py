@@ -45,7 +45,7 @@ class AllocatorEnv(gym.Env):
 		done = False 
 		reward = 0
 		self._take_action(action, collector)
-		time.sleep(5) #sleep 20 seconds while the container restarts
+		time.sleep(20) #sleep 20 seconds while the container restarts
 		
 		cpu_usage, mem_usage = collector.get_resource_usage()
 		

@@ -88,10 +88,12 @@ class Collector():
 		return self.cpu_usage, self.mem_usage
 
 	def delete_deployment(self):
-		#config.load_incluster_config()
-		#config.load_kube_config()
 
-		self.v1.delete_namespaced_deployment(name=self.container, namespace=self.namespace, grace_period_seconds=0)
+		#config.load_kube_config()
+		configuration = client.Configuration()
+		v1 = client.AppsV1Api(client.ApiClient(configuration))
+
+		v1.delete_namespaced_deployment(name=self.container, namespace=self.namespace, grace_period_seconds=0)
 
 	def create_deployment(self):
 		p = os.getcwd() + '/services/' + self.container + '/deployment.yaml'
