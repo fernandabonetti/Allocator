@@ -1,7 +1,4 @@
-import json
-import sys
 import matplotlib.pyplot as plt
-import seaborn as sns
 import matplotlib.ticker as ticker
 import numpy as np
 
@@ -20,12 +17,11 @@ def main():
 		i+=100
 		top+=100
 	
-	ax = sns.lineplot(x=eps, y=mean, data=mean)
-	ax.margins(x=0)						#remove the ugly inner side margin 
+	plt.plot(eps, mean)
+	plt.margins(x=0)						#remove the ugly inner side margin 
 
-	ax.set_title('Average Score by Episode')
-	ax.set_ylabel('Score Amount')
-	ax.set_xlabel('Episode')
+	plt.ylabel('Score Amount')
+	plt.xlabel('Episode')
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 

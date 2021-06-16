@@ -1,7 +1,6 @@
 import json
 import sys
 import matplotlib.pyplot as plt
-import seaborn as sns
 import matplotlib.ticker as ticker
 import numpy as np
 

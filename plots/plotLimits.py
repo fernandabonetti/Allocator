@@ -1,8 +1,4 @@
-import json
-import sys
 import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib.ticker as ticker
 import numpy as np
 
 def main():
@@ -19,32 +15,24 @@ def main():
 	mem_min = [float(i[1]) for i in mem]
 	mem_max = [float(i[2]) for i in mem]
 
-	i = 0
-	print(len(cpu_usage))
 	steps = np.arange(0, len(cpu_usage), 1)
 
+	plt.plot(steps, mem_max, lw=1)
+	plt.plot(steps, mem_min, lw=1)
+	plt.plot(steps, mem_usage, lw=1, color='red')
 
-	# ax = sns.lineplot(x=steps[61125:], y=cpu_usage[61125:], data=cpu_usage, lw=1, color='red')
-	# ax = sns.lineplot(x=steps[61125:], y=cpu_max[61125:], data=cpu_max[61125:], lw=1)
-	# ax = sns.lineplot(x=steps[61125:], y=cpu_min[61125:], data=cpu_min[61125:], lw=1)
-
-	ax = sns.lineplot(x=steps[:100], y=cpu_usage[100:200], data=cpu_usage, lw=1, color='red')
-	ax = sns.lineplot(x=steps[:100], y=cpu_max[100:200], data=cpu_max[100:200], lw=1)
-	ax = sns.lineplot(x=steps[:100], y=cpu_min[100:200], data=cpu_min[100:200], lw=1)
+	# plt.plot(steps, cpu_max, lw=1)
+	# plt.plot(steps, cpu_min, lw=1)
+	# plt.plot(steps, cpu_usage, lw=1, color='red')
 	
-	ax.margins(x=0)				#remove the ugly inner side margin 
+	plt.margins(x=0)				#remove the ugly inner side margin 
 
-	ax.set_ylabel('CPU (m)', fontsize=12)
-	ax.set_xlabel('Steps', fontsize=12)
+	#plt.ylabel('CPU (m)', fontsize=12)
+	plt.ylabel('Memory (MiB)', fontsize=12)
+	plt.xlabel('Steps', fontsize=12)
 
-	# ax.set_ylabel('Memory (MiB)', fontsize=12)
-	# ax.set_xlabel('Steps', fontsize=12)
-
-
-	for tick in ax.xaxis.get_major_ticks():
-		tick.label.set_fontsize(12)
-	for tick in ax.yaxis.get_major_ticks():
-		tick.label.set_fontsize(12)
+	plt.xticks(fontsize=14)
+	plt.yticks(fontsize=14)
 	#plt.yscale("log")	
 
 	#plt.legend(loc='upper center', labels=['Usage', 'Limits', "Request"], fontsize=12, bbox_to_anchor=(0.5, 1.1), ncol=3)

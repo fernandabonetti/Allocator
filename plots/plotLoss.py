@@ -28,17 +28,15 @@ def main():
 	[print(d) for d in mean]	
 	x = np.arange(0, len(y), 1)
 
-	ax = sns.lineplot(x=x, y=y, data=y)
-	ax.margins(x=0)				#remove the ugly inner side margin
-	ax.margins(y=0.01) 
+	plt.plot(x, y)
+	plt.xticks(fontsize=14)
+	plt.yticks(fontsize=14)
 
-	for tick in ax.xaxis.get_major_ticks():
-		tick.label.set_fontsize(20)
-	for tick in ax.yaxis.get_major_ticks():
-		tick.label.set_fontsize(20)
+	plt.margins(x=0)				#remove the ugly inner side margin
+	plt.margins(y=0.01) 
 
-	ax.set_ylabel('Loss', fontsize=24)
-	ax.set_xlabel('Episode', fontsize=24)
+	plt.ylabel('Loss', fontsize=24)
+	plt.xlabel('Episode', fontsize=24)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 

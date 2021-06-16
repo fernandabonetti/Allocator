@@ -6,7 +6,7 @@ import numpy as np
 
 def main():
 
-	with open("carai.csv", 'r') as fp:
+	with open(".csv", 'r') as fp:
 		data = [line.replace('\n', '').split(',') for line in fp.readlines()]
 
 		steps = np.arange(0, len(data), 1)
