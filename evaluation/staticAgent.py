@@ -2,6 +2,7 @@ from metricsAPI import Collector
 from utils.logger import logger
 from utils.parser import Props
 from utils.CircularList import CircularList, Node
+import time
 
 num_episodes = 1000 
 props = Props()
@@ -17,7 +18,6 @@ cpu_lower = 90
 cpu_upper = 180
 mem_lower = 90
 mem_upper = 180
-
 
 for i in range(num_episodes):
 	vnf = vnfs.head
@@ -43,7 +43,7 @@ for i in range(num_episodes):
 	vnf.collector.change_allocation(cpu_upper, mem_upper, cpu_lower, mem_lower)
 
 	vnf = vnf.next
-
+	time.sleep(20)
 	#logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
 		
 
