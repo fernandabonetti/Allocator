@@ -2,9 +2,8 @@ from metricsAPI import Collector
 from utils.logger import logger
 from utils.parser import Props
 from utils.CircularList import CircularList, Node
-import time
 
-num_episodes = 100 
+num_episodes = 1000 
 props = Props()
 
 vnfs = CircularList(None, None, 0)
@@ -19,11 +18,14 @@ cpu_upper = 180
 mem_lower = 90
 mem_upper = 180
 
+
 for i in range(num_episodes):
 	vnf = vnfs.head
 
 	cpu_usage, mem_usage = vnf.collector.get_resource_usage()
 
+	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
+	
 	if cpu_usage >= cpu_upper:
 		cpu_upper += 0.1 * cpu_upper
 
@@ -42,7 +44,7 @@ for i in range(num_episodes):
 
 	vnf = vnf.next
 
-	logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
+	#logger.info("{}, {}, {}, {}, {}, {}".format(cpu_usage, cpu_lower, cpu_upper, mem_usage, mem_lower, mem_upper))
 		
 
 	
