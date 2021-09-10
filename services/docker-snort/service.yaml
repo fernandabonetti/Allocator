@@ -6,8 +6,8 @@ metadata:
 spec:
   selector:
     app: docker-snort
-  type: NodePort  
+  type: ClusterIP  
   ports:
-    - port: 3002
-      targetPort: 3002
-      nodePort: 3002
+    - port: 30002
+      targetPort: 30002
+#      nodePort: 30002
