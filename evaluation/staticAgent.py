@@ -4,7 +4,7 @@ from utils.parser import Props
 from utils.CircularList import CircularList, Node
 import time
 
-num_episodes = 1000 
+num_episodes = 1000
 props = Props()
 
 vnfs = CircularList(None, None, 0)
