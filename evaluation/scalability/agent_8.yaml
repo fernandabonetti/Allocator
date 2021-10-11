@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dracon
+  labels:
+    app: dracon
+spec:
+  selector:
+    matchLabels:
+      app: dracon
+  template:
+    metadata:
+      name: dracon
+      labels:
+        app: dracon
+    spec:
+      terminationGracePeriodSeconds: 10      
+      containers:
+      - name: dracon
+        image: fsbonetti/dracon:snort-8
+        volumeMounts:
+        - mountPath: /project/logs
+          name: test-volume
+        stdin: true 
+        tty: true
+      volumes:
+      - name: test-volume
+        hostPath:
+          path: /home/fsbonetti/Documentos/DRACON/logs

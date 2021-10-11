@@ -17,13 +17,13 @@ def main():
 
 	steps = np.arange(0, len(cpu_usage), 1)
 
-	plt.plot(steps, mem_max, lw=1)
-	plt.plot(steps, mem_min, lw=1)
-	plt.plot(steps, mem_usage, lw=1, color='red')
+	plt.plot(steps, mem_usage, lw=2, color='#edd400ff')
+	plt.plot(steps, mem_max, lw=2)
+	plt.plot(steps, mem_min, lw=2, color='#ff0000ff')
 
-	# plt.plot(steps, cpu_max, lw=1)
-	# plt.plot(steps, cpu_min, lw=1)
-	# plt.plot(steps, cpu_usage, lw=1, color='red')
+	# plt.plot(steps, cpu_usage, lw=2, color='#edd400ff')
+	# plt.plot(steps, cpu_max, lw=2)
+	# plt.plot(steps, cpu_min, lw=2, color='#ff0000ff')
 	
 	plt.margins(x=0)				#remove the ugly inner side margin 
 
@@ -35,7 +35,7 @@ def main():
 	plt.yticks(fontsize=14)
 	#plt.yscale("log")	
 
-	#plt.legend(loc='upper center', labels=['Usage', 'Limits', "Request"], fontsize=12, bbox_to_anchor=(0.5, 1.1), ncol=3)
+	plt.legend(loc='upper center', labels=['Usage','Max',"Min"], fontsize=12, bbox_to_anchor=(0.5, 1.15), ncol=3)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 
