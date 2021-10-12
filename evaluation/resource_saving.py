@@ -24,6 +24,4 @@ cpu = read_usage('../plots/cpu.csv')
 mem = read_usage('../plots/mem.csv')
 
 print(utilization(cpu))
-	
 
-print(cpu_under, cpu_over)
