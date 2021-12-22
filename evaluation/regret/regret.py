@@ -12,6 +12,8 @@ import pandas as pd
 
 		taken_actions = read_metrics('actions.csv', 'int')
 		granted_rewards = read_metrics('rewards.csv','float')
+		#TODO: read array of actions dracon
+		
 
 		calculate_reward(cpu, mem, action)
 

@@ -14,7 +14,7 @@ def utilization(resource):
 	resource_over = 0
 	resource_under = 0
 
-	for i in resource.itertuples():
+	for i in resource.head(200).itertuples():
 		resource_over += abs(i.max - i.usage)
 		resource_under += abs(i.usage - i.min)
 
@@ -24,4 +24,5 @@ cpu = read_usage('../plots/cpu.csv')
 mem = read_usage('../plots/mem.csv')
 
 print(utilization(cpu))
+print(utilization(mem))
 

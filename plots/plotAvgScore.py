@@ -19,9 +19,12 @@ def main():
 	
 	plt.plot(eps, mean)
 	plt.margins(x=0)						#remove the ugly inner side margin 
+	plt.xticks(fontsize=14)
+	plt.yticks(fontsize=14)
+	
+	plt.ylabel('Score Amount', fontsize=14)
 
-	plt.ylabel('Score Amount')
-	plt.xlabel('Episode')
+	plt.xlabel('Episode',fontsize=14)
 	plt.subplots_adjust(bottom=0.11, left=0.035, right=0.99, hspace=0.2, wspace=0.2)
 	plt.show()
 
