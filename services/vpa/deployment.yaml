@@ -6,9 +6,9 @@ spec:
   targetRef:
     apiVersion: "apps/v1"
     kind: Deployment
-    name: haproxy-ingress
+    name: nginx
   updatePolicy: 
-    updateMode: Auto
+    updateMode: "Off"
   resourcePolicy:
     containerPolicies:
       - containerName: '*'
